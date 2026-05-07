@@ -1,0 +1,1196 @@
+
+--- 2026-04-27T09:29:09.168Z debug
+🪵  Writing logs to "/home/sora81dev/.config/.wrangler/logs/wrangler-2026-04-27_09-29-09_047.log"
+---
+
+--- 2026-04-27T09:29:09.168Z debug
+.env file not found at "/home/sora81dev/kosen/test-notice/test-notice-web/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-04-27T09:29:09.169Z debug
+.env file not found at "/home/sora81dev/kosen/test-notice/test-notice-web/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-04-27T09:29:09.176Z log
+
+ ⛅️ wrangler 4.61.1 (update available 4.85.0)
+─────────────────────────────────────────────
+---
+
+--- 2026-04-27T09:29:09.178Z debug
+Metrics dispatcher: Posting data {"deviceId":"20b5732c-5bd8-49f2-9822-765f219bb4d8","event":"wrangler command started","timestamp":1777282149178,"properties":{"amplitude_session_id":1777282149176,"amplitude_event_id":0,"wranglerVersion":"4.61.1","wranglerMajorVersion":4,"wranglerMinorVersion":61,"wranglerPatchVersion":1,"osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":24,"packageManager":"npm","isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","agent":null,"sanitizedCommand":"pages dev","sanitizedArgs":{}}}
+---
+
+--- 2026-04-27T09:29:09.247Z warn
+▲ [WARNING] Specifying a `-- <command>` or `--proxy` is deprecated and will be removed in a future version of Wrangler.
+
+  Build your application to a directory and run the `wrangler pages dev <directory>` instead.
+  This results in a more faithful emulation of production behavior.
+
+
+---
+
+--- 2026-04-27T09:29:09.248Z log
+Running npm run vite-dev...
+---
+
+--- 2026-04-27T09:29:09.250Z log
+Sleeping 5 seconds to allow proxy process to start before attempting to automatically determine port...
+---
+
+--- 2026-04-27T09:29:09.250Z log
+To skip, specify the proxy port with --proxy.
+---
+
+--- 2026-04-27T09:29:09.322Z log
+[proxy]: 
+> test-notice-web@0.0.0 vite-dev
+> vite
+
+
+---
+
+--- 2026-04-27T09:29:09.596Z log
+[proxy]: 
+  VITE v7.3.1  ready in 250 ms
+
+
+---
+
+--- 2026-04-27T09:29:09.597Z log
+[proxy]:   ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+
+---
+
+--- 2026-04-27T09:29:17.293Z log
+Automatically determined the proxy port to be 5173.
+---
+
+--- 2026-04-27T09:29:17.294Z debug
+Compiling worker to "/home/sora81dev/kosen/test-notice/test-notice-web/.wrangler/tmp/pages-amYEFq/functionsWorker-0.6640337379088591.mjs"...
+---
+
+--- 2026-04-27T09:29:17.333Z log
+✨ Compiled Worker successfully
+---
+
+--- 2026-04-27T09:29:17.334Z debug
+Metrics dispatcher: Posting data {"deviceId":"20b5732c-5bd8-49f2-9822-765f219bb4d8","event":"build pages functions","timestamp":1777282157334,"properties":{"category":"Workers","wranglerVersion":"4.61.1","wranglerMajorVersion":4,"wranglerMinorVersion":61,"wranglerPatchVersion":1,"os":"linux:x64","agent":null}}
+---
+
+--- 2026-04-27T09:29:17.337Z debug
+setting config
+---
+
+--- 2026-04-27T09:29:17.337Z debug
+Updating config... undefined undefined
+---
+
+--- 2026-04-27T09:29:17.342Z debug
+local dev variables file not found at ".dev.vars". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-04-27T09:29:17.342Z debug
+.env file not found at "/home/sora81dev/kosen/test-notice/test-notice-web/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-04-27T09:29:17.343Z debug
+.env file not found at "/home/sora81dev/kosen/test-notice/test-notice-web/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-04-27T09:29:17.356Z debug
+Metrics dispatcher: Posting data {"deviceId":"20b5732c-5bd8-49f2-9822-765f219bb4d8","event":"run pages dev","timestamp":1777282157356,"properties":{"category":"Workers","wranglerVersion":"4.61.1","wranglerMajorVersion":4,"wranglerMinorVersion":61,"wranglerPatchVersion":1,"os":"linux:x64","agent":null}}
+---
+
+--- 2026-04-27T09:29:17.401Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-04-27T09:29:17.401Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-04-27T09:29:17.407Z log
+⎔ Starting local server...
+---
+
+--- 2026-04-27T09:29:17.567Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadStart"}
+---
+
+--- 2026-04-27T09:29:17.694Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadComplete","proxyData":{"userWorkerUrl":{"protocol":"http:","hostname":"127.0.0.1","port":"41981"},"userWorkerInspectorUrl":{"protocol":"ws:","hostname":"127.0.0.1","port":"38377","pathname":"/core:user:test-notice-web"},"userWorkerInnerUrlOverrides":{"protocol":"http:"},"headers":{"MF-Proxy-Shared-Secret":"387878bc-78d4-4960-955a-9093453d3f59"},"liveReload":false,"proxyLogsToController":false}}
+---
+
+--- 2026-04-27T09:29:17.695Z debug
+[InspectorProxyWorker] reconnectRuntimeWebSocket
+---
+
+--- 2026-04-27T09:29:17.695Z debug
+[InspectorProxyWorker] NEW RUNTIME WEBSOCKET http://127.0.0.1:38377/core:user:test-notice-web
+---
+
+--- 2026-04-27T09:29:17.696Z debug
+[InspectorProxyWorker] SEND TO DEVTOOLS {"method":"Runtime.executionContextsCleared"}
+---
+
+--- 2026-04-27T09:29:17.697Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET OPENED
+---
+
+--- 2026-04-27T09:29:17.698Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.enable","id":100000001}
+---
+
+--- 2026-04-27T09:29:17.698Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Debugger.enable","id":100000002}
+---
+
+--- 2026-04-27T09:29:17.698Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Runtime.executionContextCreated',
+  params: {
+    context: {
+      id: 125398561,
+      origin: '',
+      name: 'Worker',
+      uniqueId: '-2528988291010075600.6659555886542395323'
+    }
+  }
+}
+---
+
+--- 2026-04-27T09:29:17.699Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000001, result: {} }
+---
+
+--- 2026-04-27T09:29:17.699Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Debugger.scriptParsed',
+  params: {
+    scriptId: '3',
+    url: 'file:///home/sora81dev/kosen/test-notice/test-notice-web/.wrangler/tmp/dev-aKonmU/functionsWorker-0.6640337379088591.js',
+    startLine: 0,
+    startColumn: 0,
+    endLine: 929,
+    endColumn: 133,
+    executionContextId: 125398561,
+    hash: '7676b32e4395ce5873b44d7befc33055c317247816cdad46f06daa438404fb76',
+    buildId: '',
+    isLiveEdit: false,
+    sourceMapURL: 'functionsWorker-0.6640337379088591.js.map',
+    hasSourceURL: true,
+    isModule: true,
+    length: 30349,
+    scriptLanguage: 'JavaScript',
+    embedderName: 'functionsWorker-0.6640337379088591.js'
+  }
+}
+---
+
+--- 2026-04-27T09:29:17.700Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Network.enable","id":100000003}
+---
+
+--- 2026-04-27T09:29:17.700Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  id: 100000002,
+  result: { debuggerId: '573019718797981217.8330927854913989389' }
+}
+---
+
+--- 2026-04-27T09:29:17.700Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000003, method: 'Network.enable', result: {} }
+---
+
+--- 2026-04-27T09:29:27.698Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000004}
+---
+
+--- 2026-04-27T09:29:27.699Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000004, result: { id: 'deacec043a08a79b' } }
+---
+
+--- 2026-04-27T09:29:37.698Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000005}
+---
+
+--- 2026-04-27T09:29:37.698Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000005, result: { id: 'deacec043a08a79b' } }
+---
+
+--- 2026-04-27T09:29:47.700Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000006}
+---
+
+--- 2026-04-27T09:29:47.701Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000006, result: { id: 'deacec043a08a79b' } }
+---
+
+--- 2026-04-27T09:30:00.431Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000007}
+---
+
+--- 2026-04-27T09:30:00.432Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000007, result: { id: 'deacec043a08a79b' } }
+---
+
+--- 2026-04-27T09:30:07.699Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000008}
+---
+
+--- 2026-04-27T09:30:07.700Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000008, result: { id: 'deacec043a08a79b' } }
+---
+
+--- 2026-04-27T09:30:17.699Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000009}
+---
+
+--- 2026-04-27T09:30:17.699Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000009, result: { id: 'deacec043a08a79b' } }
+---
+
+--- 2026-04-27T09:30:30.730Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000010}
+---
+
+--- 2026-04-27T09:30:30.730Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000010, result: { id: 'deacec043a08a79b' } }
+---
+
+--- 2026-04-27T09:30:37.699Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000011}
+---
+
+--- 2026-04-27T09:30:37.699Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000011, result: { id: 'deacec043a08a79b' } }
+---
+
+--- 2026-04-27T09:30:47.701Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000012}
+---
+
+--- 2026-04-27T09:30:47.702Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000012, result: { id: 'deacec043a08a79b' } }
+---
+
+--- 2026-04-27T09:30:57.699Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000013}
+---
+
+--- 2026-04-27T09:30:57.699Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000013, result: { id: 'deacec043a08a79b' } }
+---
+
+--- 2026-04-27T09:31:10.394Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000014}
+---
+
+--- 2026-04-27T09:31:10.395Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000014, result: { id: 'deacec043a08a79b' } }
+---
+
+--- 2026-04-27T09:31:17.698Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000015}
+---
+
+--- 2026-04-27T09:31:17.699Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000015, result: { id: 'deacec043a08a79b' } }
+---
+
+--- 2026-04-27T09:31:27.701Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000016}
+---
+
+--- 2026-04-27T09:31:27.702Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000016, result: { id: 'deacec043a08a79b' } }
+---
+
+--- 2026-04-27T09:31:28.261Z log
+[proxy]: 6:31:28 PM [vite] (client) hmr update /src/pages/Home.tsx, /src/index.css
+
+---
+
+--- 2026-04-27T09:31:37.675Z debug
+🌀 "add" event detected at functions/api/get.ts.
+---
+
+--- 2026-04-27T09:31:37.738Z log
+[proxy]: 6:31:37 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:37.759Z log
+✨ Compiled Worker successfully
+---
+
+--- 2026-04-27T09:31:37.761Z debug
+Metrics dispatcher: Posting data {"deviceId":"20b5732c-5bd8-49f2-9822-765f219bb4d8","event":"build pages functions","timestamp":1777282297761,"properties":{"category":"Workers","wranglerVersion":"4.61.1","wranglerMajorVersion":4,"wranglerMinorVersion":61,"wranglerPatchVersion":1,"os":"linux:x64","agent":null}}
+---
+
+--- 2026-04-27T09:31:37.763Z log
+[proxy]: 6:31:37 PM [vite] (client) hmr update /src/index.css
+6:31:37 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:37.773Z log
+[proxy]: 6:31:37 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:37.773Z log
+[proxy]: 6:31:37 PM [vite] (client) hmr update /src/index.css
+6:31:37 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:37.774Z debug
+🌀 "unlink" event detected at functions/get.ts.
+---
+
+--- 2026-04-27T09:31:37.809Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-04-27T09:31:37.809Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-04-27T09:31:37.809Z log
+⎔ Reloading local server...
+---
+
+--- 2026-04-27T09:31:37.811Z log
+[proxy]: 6:31:37 PM [vite] (client) hmr update /src/index.css
+6:31:37 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:37.812Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadStart"}
+---
+
+--- 2026-04-27T09:31:37.812Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.discardConsoleEntries","id":100000017}
+---
+
+--- 2026-04-27T09:31:37.813Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000017, result: {} }
+---
+
+--- 2026-04-27T09:31:37.837Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET CLOSED 1006 WebSocket disconnected without sending Close frame.
+---
+
+--- 2026-04-27T09:31:37.843Z log
+[proxy]: 6:31:37 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:37.859Z log
+✨ Compiled Worker successfully
+---
+
+--- 2026-04-27T09:31:37.860Z debug
+Metrics dispatcher: Posting data {"deviceId":"20b5732c-5bd8-49f2-9822-765f219bb4d8","event":"build pages functions","timestamp":1777282297860,"properties":{"category":"Workers","wranglerVersion":"4.61.1","wranglerMajorVersion":4,"wranglerMinorVersion":61,"wranglerPatchVersion":1,"os":"linux:x64","agent":null}}
+---
+
+--- 2026-04-27T09:31:37.862Z log
+[proxy]: 6:31:37 PM [vite] (client) hmr update /src/index.css
+6:31:37 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:37.899Z log
+⎔ Local server updated and ready
+---
+
+--- 2026-04-27T09:31:37.902Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadComplete","proxyData":{"userWorkerUrl":{"protocol":"http:","hostname":"127.0.0.1","port":"39595"},"userWorkerInspectorUrl":{"protocol":"ws:","hostname":"127.0.0.1","port":"38377","pathname":"/core:user:test-notice-web"},"userWorkerInnerUrlOverrides":{"protocol":"http:"},"headers":{"MF-Proxy-Shared-Secret":"387878bc-78d4-4960-955a-9093453d3f59"},"liveReload":false,"proxyLogsToController":false}}
+---
+
+--- 2026-04-27T09:31:37.902Z debug
+[InspectorProxyWorker] reconnectRuntimeWebSocket
+---
+
+--- 2026-04-27T09:31:37.902Z debug
+[InspectorProxyWorker] NEW RUNTIME WEBSOCKET http://127.0.0.1:38377/core:user:test-notice-web
+---
+
+--- 2026-04-27T09:31:37.902Z debug
+[InspectorProxyWorker] SEND TO DEVTOOLS {"method":"Runtime.executionContextsCleared"}
+---
+
+--- 2026-04-27T09:31:37.903Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000018, result: {} }
+---
+
+--- 2026-04-27T09:31:37.903Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Runtime.executionContextCreated',
+  params: {
+    context: {
+      id: 527790913,
+      origin: '',
+      name: 'Worker',
+      uniqueId: '1215677822691180200.5836116405000607962'
+    }
+  }
+}
+---
+
+--- 2026-04-27T09:31:37.904Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Debugger.scriptParsed',
+  params: {
+    scriptId: '3',
+    url: 'file:///home/sora81dev/kosen/test-notice/test-notice-web/.wrangler/tmp/dev-aKonmU/functionsWorker-0.6640337379088591.js',
+    startLine: 0,
+    startColumn: 0,
+    endLine: 929,
+    endColumn: 133,
+    executionContextId: 527790913,
+    hash: 'd4676d412c0a7c65726dd71bb2c986d5dbebbb2bdc1217f94285e18e6780a6da',
+    buildId: '',
+    isLiveEdit: false,
+    sourceMapURL: 'functionsWorker-0.6640337379088591.js.map',
+    hasSourceURL: true,
+    isModule: true,
+    length: 30356,
+    scriptLanguage: 'JavaScript',
+    embedderName: 'functionsWorker-0.6640337379088591.js'
+  }
+}
+---
+
+--- 2026-04-27T09:31:37.905Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  id: 100000019,
+  result: { debuggerId: '-918244888609028872.-8907931102638453667' }
+}
+---
+
+--- 2026-04-27T09:31:37.905Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET OPENED
+---
+
+--- 2026-04-27T09:31:37.905Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.enable","id":100000018}
+---
+
+--- 2026-04-27T09:31:37.906Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Debugger.enable","id":100000019}
+---
+
+--- 2026-04-27T09:31:37.906Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Network.enable","id":100000020}
+---
+
+--- 2026-04-27T09:31:37.906Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000020, method: 'Network.enable', result: {} }
+---
+
+--- 2026-04-27T09:31:37.916Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-04-27T09:31:37.916Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-04-27T09:31:37.916Z log
+⎔ Reloading local server...
+---
+
+--- 2026-04-27T09:31:37.917Z log
+[proxy]: 6:31:37 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:37.918Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadStart"}
+---
+
+--- 2026-04-27T09:31:37.918Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.discardConsoleEntries","id":100000021}
+---
+
+--- 2026-04-27T09:31:37.918Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000021, result: {} }
+---
+
+--- 2026-04-27T09:31:37.931Z log
+[proxy]: 6:31:37 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:37.932Z log
+[proxy]: 6:31:37 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:37.935Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET CLOSED 1006 WebSocket disconnected without sending Close frame.
+---
+
+--- 2026-04-27T09:31:37.982Z log
+⎔ Local server updated and ready
+---
+
+--- 2026-04-27T09:31:37.985Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadComplete","proxyData":{"userWorkerUrl":{"protocol":"http:","hostname":"127.0.0.1","port":"46299"},"userWorkerInspectorUrl":{"protocol":"ws:","hostname":"127.0.0.1","port":"38377","pathname":"/core:user:test-notice-web"},"userWorkerInnerUrlOverrides":{"protocol":"http:"},"headers":{"MF-Proxy-Shared-Secret":"387878bc-78d4-4960-955a-9093453d3f59"},"liveReload":false,"proxyLogsToController":false}}
+---
+
+--- 2026-04-27T09:31:37.985Z debug
+[InspectorProxyWorker] reconnectRuntimeWebSocket
+---
+
+--- 2026-04-27T09:31:37.985Z debug
+[InspectorProxyWorker] NEW RUNTIME WEBSOCKET http://127.0.0.1:38377/core:user:test-notice-web
+---
+
+--- 2026-04-27T09:31:37.985Z debug
+[InspectorProxyWorker] SEND TO DEVTOOLS {"method":"Runtime.executionContextsCleared"}
+---
+
+--- 2026-04-27T09:31:37.986Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000022, result: {} }
+---
+
+--- 2026-04-27T09:31:37.986Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Runtime.executionContextCreated',
+  params: {
+    context: {
+      id: 431820385,
+      origin: '',
+      name: 'Worker',
+      uniqueId: '-8148131284757591357.7637564687798474972'
+    }
+  }
+}
+---
+
+--- 2026-04-27T09:31:37.986Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET OPENED
+---
+
+--- 2026-04-27T09:31:37.987Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.enable","id":100000022}
+---
+
+--- 2026-04-27T09:31:37.987Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Debugger.enable","id":100000023}
+---
+
+--- 2026-04-27T09:31:37.987Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Network.enable","id":100000024}
+---
+
+--- 2026-04-27T09:31:37.987Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  id: 100000023,
+  result: { debuggerId: '-4232169097795495006.-1812578713434836083' }
+}
+---
+
+--- 2026-04-27T09:31:37.988Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Debugger.scriptParsed',
+  params: {
+    scriptId: '3',
+    url: 'file:///home/sora81dev/kosen/test-notice/test-notice-web/.wrangler/tmp/dev-aKonmU/functionsWorker-0.6640337379088591.js',
+    startLine: 0,
+    startColumn: 0,
+    endLine: 929,
+    endColumn: 133,
+    executionContextId: 431820385,
+    hash: 'd4676d412c0a7c65726dd71bb2c986d5dbebbb2bdc1217f94285e18e6780a6da',
+    buildId: '',
+    isLiveEdit: false,
+    sourceMapURL: 'functionsWorker-0.6640337379088591.js.map',
+    hasSourceURL: true,
+    isModule: true,
+    length: 30356,
+    scriptLanguage: 'JavaScript',
+    embedderName: 'functionsWorker-0.6640337379088591.js'
+  }
+}
+---
+
+--- 2026-04-27T09:31:37.988Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000024, method: 'Network.enable', result: {} }
+---
+
+--- 2026-04-27T09:31:47.990Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000025}
+---
+
+--- 2026-04-27T09:31:47.991Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000025, result: { id: 'c26e70d04f9b2785' } }
+---
+
+--- 2026-04-27T09:31:48.027Z debug
+🌀 "addDir" event detected at functions/api/schedule.
+---
+
+--- 2026-04-27T09:31:48.086Z log
+[proxy]: 6:31:48 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:48.095Z log
+✨ Compiled Worker successfully
+---
+
+--- 2026-04-27T09:31:48.096Z debug
+Metrics dispatcher: Posting data {"deviceId":"20b5732c-5bd8-49f2-9822-765f219bb4d8","event":"build pages functions","timestamp":1777282308096,"properties":{"category":"Workers","wranglerVersion":"4.61.1","wranglerMajorVersion":4,"wranglerMinorVersion":61,"wranglerPatchVersion":1,"os":"linux:x64","agent":null}}
+---
+
+--- 2026-04-27T09:31:48.105Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-04-27T09:31:48.105Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-04-27T09:31:48.105Z log
+⎔ Reloading local server...
+---
+
+--- 2026-04-27T09:31:48.107Z log
+[proxy]: 6:31:48 PM [vite] (client) hmr update /src/index.css
+6:31:48 PM [vite] (client) hmr update /src/index.css
+6:31:48 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:48.107Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadStart"}
+---
+
+--- 2026-04-27T09:31:48.108Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.discardConsoleEntries","id":100000026}
+---
+
+--- 2026-04-27T09:31:48.108Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000026, result: {} }
+---
+
+--- 2026-04-27T09:31:48.124Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET CLOSED 1006 WebSocket disconnected without sending Close frame.
+---
+
+--- 2026-04-27T09:31:48.173Z log
+⎔ Local server updated and ready
+---
+
+--- 2026-04-27T09:31:48.175Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadComplete","proxyData":{"userWorkerUrl":{"protocol":"http:","hostname":"127.0.0.1","port":"34493"},"userWorkerInspectorUrl":{"protocol":"ws:","hostname":"127.0.0.1","port":"38377","pathname":"/core:user:test-notice-web"},"userWorkerInnerUrlOverrides":{"protocol":"http:"},"headers":{"MF-Proxy-Shared-Secret":"387878bc-78d4-4960-955a-9093453d3f59"},"liveReload":false,"proxyLogsToController":false}}
+---
+
+--- 2026-04-27T09:31:48.175Z debug
+[InspectorProxyWorker] reconnectRuntimeWebSocket
+---
+
+--- 2026-04-27T09:31:48.175Z debug
+[InspectorProxyWorker] NEW RUNTIME WEBSOCKET http://127.0.0.1:38377/core:user:test-notice-web
+---
+
+--- 2026-04-27T09:31:48.176Z debug
+[InspectorProxyWorker] SEND TO DEVTOOLS {"method":"Runtime.executionContextsCleared"}
+---
+
+--- 2026-04-27T09:31:48.176Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Runtime.executionContextCreated',
+  params: {
+    context: {
+      id: 351751393,
+      origin: '',
+      name: 'Worker',
+      uniqueId: '-5318918332597291892.6554598242813006730'
+    }
+  }
+}
+---
+
+--- 2026-04-27T09:31:48.176Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET OPENED
+---
+
+--- 2026-04-27T09:31:48.177Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000029, method: 'Network.enable', result: {} }
+---
+
+--- 2026-04-27T09:31:48.178Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000027, result: {} }
+---
+
+--- 2026-04-27T09:31:48.178Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Debugger.scriptParsed',
+  params: {
+    scriptId: '3',
+    url: 'file:///home/sora81dev/kosen/test-notice/test-notice-web/.wrangler/tmp/dev-aKonmU/functionsWorker-0.6640337379088591.js',
+    startLine: 0,
+    startColumn: 0,
+    endLine: 929,
+    endColumn: 133,
+    executionContextId: 351751393,
+    hash: 'd4676d412c0a7c65726dd71bb2c986d5dbebbb2bdc1217f94285e18e6780a6da',
+    buildId: '',
+    isLiveEdit: false,
+    sourceMapURL: 'functionsWorker-0.6640337379088591.js.map',
+    hasSourceURL: true,
+    isModule: true,
+    length: 30356,
+    scriptLanguage: 'JavaScript',
+    embedderName: 'functionsWorker-0.6640337379088591.js'
+  }
+}
+---
+
+--- 2026-04-27T09:31:48.178Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.enable","id":100000027}
+---
+
+--- 2026-04-27T09:31:48.179Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Debugger.enable","id":100000028}
+---
+
+--- 2026-04-27T09:31:48.179Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Network.enable","id":100000029}
+---
+
+--- 2026-04-27T09:31:48.179Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  id: 100000028,
+  result: { debuggerId: '4223835232610102178.-5928846910997059267' }
+}
+---
+
+--- 2026-04-27T09:31:48.180Z log
+[proxy]: 6:31:48 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:48.180Z log
+[proxy]: 6:31:48 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:52.836Z debug
+🌀 "add" event detected at functions/api/schedule/get.ts.
+---
+
+--- 2026-04-27T09:31:52.894Z log
+[proxy]: 6:31:52 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:52.908Z log
+✨ Compiled Worker successfully
+---
+
+--- 2026-04-27T09:31:52.909Z debug
+Metrics dispatcher: Posting data {"deviceId":"20b5732c-5bd8-49f2-9822-765f219bb4d8","event":"build pages functions","timestamp":1777282312908,"properties":{"category":"Workers","wranglerVersion":"4.61.1","wranglerMajorVersion":4,"wranglerMinorVersion":61,"wranglerPatchVersion":1,"os":"linux:x64","agent":null}}
+---
+
+--- 2026-04-27T09:31:52.912Z log
+[proxy]: 6:31:52 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:52.912Z log
+[proxy]: 6:31:52 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:52.936Z debug
+🌀 "unlink" event detected at functions/api/get.ts.
+---
+
+--- 2026-04-27T09:31:52.936Z log
+[proxy]: 6:31:52 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:52.936Z log
+[proxy]: 6:31:52 PM [vite] (client) hmr update /src/index.css
+6:31:52 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:52.948Z log
+[proxy]: 6:31:52 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:52.948Z log
+[proxy]: 6:31:52 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:52.949Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-04-27T09:31:52.949Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-04-27T09:31:52.949Z log
+⎔ Reloading local server...
+---
+
+--- 2026-04-27T09:31:52.952Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadStart"}
+---
+
+--- 2026-04-27T09:31:52.952Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.discardConsoleEntries","id":100000030}
+---
+
+--- 2026-04-27T09:31:52.952Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000030, result: {} }
+---
+
+--- 2026-04-27T09:31:52.969Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET CLOSED 1006 WebSocket disconnected without sending Close frame.
+---
+
+--- 2026-04-27T09:31:52.988Z log
+[proxy]: 6:31:52 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:52.993Z log
+[proxy]: 6:31:52 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:53.001Z log
+✨ Compiled Worker successfully
+---
+
+--- 2026-04-27T09:31:53.002Z debug
+Metrics dispatcher: Posting data {"deviceId":"20b5732c-5bd8-49f2-9822-765f219bb4d8","event":"build pages functions","timestamp":1777282313002,"properties":{"category":"Workers","wranglerVersion":"4.61.1","wranglerMajorVersion":4,"wranglerMinorVersion":61,"wranglerPatchVersion":1,"os":"linux:x64","agent":null}}
+---
+
+--- 2026-04-27T09:31:53.003Z log
+[proxy]: 6:31:53 PM [vite] (client) hmr update /src/index.css
+6:31:53 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:53.022Z log
+⎔ Local server updated and ready
+---
+
+--- 2026-04-27T09:31:53.024Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadComplete","proxyData":{"userWorkerUrl":{"protocol":"http:","hostname":"127.0.0.1","port":"45965"},"userWorkerInspectorUrl":{"protocol":"ws:","hostname":"127.0.0.1","port":"38377","pathname":"/core:user:test-notice-web"},"userWorkerInnerUrlOverrides":{"protocol":"http:"},"headers":{"MF-Proxy-Shared-Secret":"387878bc-78d4-4960-955a-9093453d3f59"},"liveReload":false,"proxyLogsToController":false}}
+---
+
+--- 2026-04-27T09:31:53.025Z debug
+[InspectorProxyWorker] reconnectRuntimeWebSocket
+---
+
+--- 2026-04-27T09:31:53.025Z debug
+[InspectorProxyWorker] NEW RUNTIME WEBSOCKET http://127.0.0.1:38377/core:user:test-notice-web
+---
+
+--- 2026-04-27T09:31:53.025Z debug
+[InspectorProxyWorker] SEND TO DEVTOOLS {"method":"Runtime.executionContextsCleared"}
+---
+
+--- 2026-04-27T09:31:53.025Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET OPENED
+---
+
+--- 2026-04-27T09:31:53.025Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.enable","id":100000031}
+---
+
+--- 2026-04-27T09:31:53.026Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Debugger.enable","id":100000032}
+---
+
+--- 2026-04-27T09:31:53.026Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Network.enable","id":100000033}
+---
+
+--- 2026-04-27T09:31:53.026Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000031, result: {} }
+---
+
+--- 2026-04-27T09:31:53.027Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Runtime.executionContextCreated',
+  params: {
+    context: {
+      id: 413300641,
+      origin: '',
+      name: 'Worker',
+      uniqueId: '-5407925024701500234.-6129493102017730851'
+    }
+  }
+}
+---
+
+--- 2026-04-27T09:31:53.027Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Debugger.scriptParsed',
+  params: {
+    scriptId: '3',
+    url: 'file:///home/sora81dev/kosen/test-notice/test-notice-web/.wrangler/tmp/dev-aKonmU/functionsWorker-0.6640337379088591.js',
+    startLine: 0,
+    startColumn: 0,
+    endLine: 929,
+    endColumn: 133,
+    executionContextId: 413300641,
+    hash: '3f1fb7312bc9099cca01018cfc8011f72bacdc856ae9bcbfddd0eced47893601',
+    buildId: '',
+    isLiveEdit: false,
+    sourceMapURL: 'functionsWorker-0.6640337379088591.js.map',
+    hasSourceURL: true,
+    isModule: true,
+    length: 30374,
+    scriptLanguage: 'JavaScript',
+    embedderName: 'functionsWorker-0.6640337379088591.js'
+  }
+}
+---
+
+--- 2026-04-27T09:31:53.027Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  id: 100000032,
+  result: { debuggerId: '4853504139448304822.-3101792111479140146' }
+}
+---
+
+--- 2026-04-27T09:31:53.027Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000033, method: 'Network.enable', result: {} }
+---
+
+--- 2026-04-27T09:31:53.056Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-04-27T09:31:53.056Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-04-27T09:31:53.057Z log
+⎔ Reloading local server...
+---
+
+--- 2026-04-27T09:31:53.058Z log
+[proxy]: 6:31:53 PM [vite] (client) hmr update /src/index.css
+
+---
+
+--- 2026-04-27T09:31:53.059Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadStart"}
+---
+
+--- 2026-04-27T09:31:53.059Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.discardConsoleEntries","id":100000034}
+---
+
+--- 2026-04-27T09:31:53.059Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000034, result: {} }
+---
+
+--- 2026-04-27T09:31:53.073Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET CLOSED 1006 WebSocket disconnected without sending Close frame.
+---
+
+--- 2026-04-27T09:31:53.120Z log
+⎔ Local server updated and ready
+---
+
+--- 2026-04-27T09:31:53.122Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadComplete","proxyData":{"userWorkerUrl":{"protocol":"http:","hostname":"127.0.0.1","port":"42115"},"userWorkerInspectorUrl":{"protocol":"ws:","hostname":"127.0.0.1","port":"38377","pathname":"/core:user:test-notice-web"},"userWorkerInnerUrlOverrides":{"protocol":"http:"},"headers":{"MF-Proxy-Shared-Secret":"387878bc-78d4-4960-955a-9093453d3f59"},"liveReload":false,"proxyLogsToController":false}}
+---
+
+--- 2026-04-27T09:31:53.123Z debug
+[InspectorProxyWorker] reconnectRuntimeWebSocket
+---
+
+--- 2026-04-27T09:31:53.123Z debug
+[InspectorProxyWorker] NEW RUNTIME WEBSOCKET http://127.0.0.1:38377/core:user:test-notice-web
+---
+
+--- 2026-04-27T09:31:53.123Z debug
+[InspectorProxyWorker] SEND TO DEVTOOLS {"method":"Runtime.executionContextsCleared"}
+---
+
+--- 2026-04-27T09:31:53.123Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Runtime.executionContextCreated',
+  params: {
+    context: {
+      id: 437359681,
+      origin: '',
+      name: 'Worker',
+      uniqueId: '-6559869180227088267.6358586687574084768'
+    }
+  }
+}
+---
+
+--- 2026-04-27T09:31:53.124Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET OPENED
+---
+
+--- 2026-04-27T09:31:53.124Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.enable","id":100000035}
+---
+
+--- 2026-04-27T09:31:53.124Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Debugger.enable","id":100000036}
+---
+
+--- 2026-04-27T09:31:53.124Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Network.enable","id":100000037}
+---
+
+--- 2026-04-27T09:31:53.124Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000035, result: {} }
+---
+
+--- 2026-04-27T09:31:53.125Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Debugger.scriptParsed',
+  params: {
+    scriptId: '3',
+    url: 'file:///home/sora81dev/kosen/test-notice/test-notice-web/.wrangler/tmp/dev-aKonmU/functionsWorker-0.6640337379088591.js',
+    startLine: 0,
+    startColumn: 0,
+    endLine: 929,
+    endColumn: 133,
+    executionContextId: 437359681,
+    hash: '3f1fb7312bc9099cca01018cfc8011f72bacdc856ae9bcbfddd0eced47893601',
+    buildId: '',
+    isLiveEdit: false,
+    sourceMapURL: 'functionsWorker-0.6640337379088591.js.map',
+    hasSourceURL: true,
+    isModule: true,
+    length: 30374,
+    scriptLanguage: 'JavaScript',
+    embedderName: 'functionsWorker-0.6640337379088591.js'
+  }
+}
+---
+
+--- 2026-04-27T09:31:53.125Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  id: 100000036,
+  result: { debuggerId: '-1280685534635741178.6222568129825776165' }
+}
+---
+
+--- 2026-04-27T09:31:53.126Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000037, method: 'Network.enable', result: {} }
+---
+
+--- 2026-04-27T09:32:03.128Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000038}
+---
+
+--- 2026-04-27T09:32:03.129Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000038, result: { id: '71b3f3911fad60c6' } }
+---
+
+--- 2026-04-27T09:32:03.589Z log
+[proxy]: 6:32:03 PM [vite] (client) hmr update /src/pages/Home.tsx, /src/index.css
+
+---
+
+--- 2026-04-27T09:32:06.377Z log
+[proxy]: 6:32:06 PM [vite] (client) hmr update /src/pages/Home.tsx, /src/index.css
+
+---
+
+--- 2026-04-27T09:32:15.922Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000039}
+---
+
+--- 2026-04-27T09:32:15.923Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000039, result: { id: '71b3f3911fad60c6' } }
+---
+
+--- 2026-04-27T09:32:21.895Z log
+[proxy]: 6:32:21 PM [vite] vite.config.ts changed, restarting server...
+
+---
+
+--- 2026-04-27T09:32:21.913Z log
+[proxy]: 6:32:21 PM [vite] server restarted.
+
+---
+
+--- 2026-04-27T09:32:23.125Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000040}
+---
+
+--- 2026-04-27T09:32:23.126Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000040, result: { id: '71b3f3911fad60c6' } }
+---
+
+--- 2026-04-27T09:32:33.129Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000041}
+---
+
+--- 2026-04-27T09:32:33.130Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000041, result: { id: '71b3f3911fad60c6' } }
+---
+
+--- 2026-04-27T09:32:34.286Z debug
+DevEnv teardown beginning...
+---
+
+--- 2026-04-27T09:32:34.286Z debug
+ConfigController teardown beginning...
+---
+
+--- 2026-04-27T09:32:34.287Z debug
+BundlerController teardown beginning...
+---
+
+--- 2026-04-27T09:32:34.289Z debug
+LocalRuntimeController teardown beginning...
+---
+
+--- 2026-04-27T09:32:34.289Z log
+⎔ Shutting down local server...
+---
+
+--- 2026-04-27T09:32:34.289Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-04-27T09:32:34.289Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-04-27T09:32:34.289Z debug
+ProxyController teardown beginning...
+---
+
+--- 2026-04-27T09:32:34.289Z debug
+ConfigController teardown complete
+---
+
+--- 2026-04-27T09:32:34.299Z debug
+LocalRuntimeController teardown complete
+---
+
+--- 2026-04-27T09:32:34.299Z debug
+ProxyController teardown complete
+---
