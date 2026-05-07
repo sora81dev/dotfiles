@@ -43,10 +43,21 @@ vim.filetype.add({
   }
 })
 
+vim.o.background = 'light'
+
+vim.g.edge_ename_italic = true
+vim.g.edge_style = 'aura'
+vim.g.edge_float_style = 'blend'
+vim.g.diagnostic_line_highlight = 1
+vim.g.edge_colors_override = {
+  bg0 = {'#f2f2f2', '255'}
+}
+
 require("config.autopairs")
 require("config.lazy")
 require("config.keymap")
 require("config.lsp")
+require("config.lualine")
 require("config.neo-tree")
 require("config.nvim-cmp")
 require("config.nvim-highlight-colors")

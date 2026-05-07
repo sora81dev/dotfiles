@@ -3,6 +3,6 @@ return {
   event = { "BufNewFile", "BufReadPre" },
   
   config = function()
-    require("extensions.comment")
+    require("extensions.Comment")
   end,
-ij}
+}
