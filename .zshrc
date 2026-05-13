@@ -152,22 +152,6 @@ mkdircd() {
 
 eval "$(rbenv init -)"
 
-autoload -U promptinit; promptinit
-prompt pure
-export PATH="/opt/homebrew/bin:$PATH"
-
-bindkey -r '^P'
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-# C (gcc) Compiler
-alias gcc="gcc-15";
-alias g++="g++-15";
-
-export STM32CubeMX_PATH=/Applications/STMicroelectronics/STM32CubeMX.app/Contents/Resources
-
-export STM32_PRG_PATH=/Applications/STMicroelectronics/STM32Cube/STM32CubeProgrammer/STM32CubeProgrammer.app/Contents/MacOs/bin
-
 # gcccompile command
 gcccompile() {
   if [[ -f "$1" ]]; then
@@ -192,3 +176,6 @@ export PATH="$PATH:/home/sora81dev/.local/bin"
 
 # PlatformIO Core
 export PATH="$PATH:/home/sora81dev/.platformio/penv/bin"
+
+# Rust
+. "$HOME/.cargo/env"
