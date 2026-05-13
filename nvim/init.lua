@@ -3,6 +3,9 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
 
+-- File Settings --
+vim.opt.fileencofing = "utf-8"
+
 -- Tab Spaces --
 vim.opt.autoindent = true
 vim.opt.tabstop = 2
