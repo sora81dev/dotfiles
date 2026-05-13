@@ -96,10 +96,10 @@ config.keys = {
 
 -- イベントハンドラ
 -- 起動時に画面を最大化
-wezterm.on("gui-startup", function()
-    local _, _, window = mux.spawn_window({})
-    window:gui_window():maximize()
-end)
+-- wezterm.on("gui-startup", function()
+--     local _, _, window = mux.spawn_window({})
+--     window:gui_window():maximize()
+-- end)
 
 -- タブタイトルのフォーマット
 local SOLID_LEFT_ARROW = wezterm.nerdfonts.pl_right_hard_divider
@@ -170,5 +170,3 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
 end)
 
 return config
-
-
