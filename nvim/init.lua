@@ -4,7 +4,7 @@ vim.opt.relativenumber = true
 vim.opt.cursorline = true
 
 -- File Settings --
-vim.opt.fileencofing = "utf-8"
+vim.opt.fileencoding = "utf-8"
 
 -- Tab Spaces --
 vim.opt.autoindent = true
