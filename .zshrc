@@ -181,4 +181,6 @@ export PATH="$PATH:/home/sora81dev/.platformio/penv/bin"
 . "$HOME/.cargo/env"
 
 # Colors
-export LS_COLORS="di=38;5;69"
+eval "$(dircolors -b)"
+LS_COLORS=$LS_COLORS':tw=0:ow=0:st=0'
+export LS_COLORS
