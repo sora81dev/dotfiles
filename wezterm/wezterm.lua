@@ -4,7 +4,7 @@ local act = wezterm.action
 local mux = wezterm.mux
 
 -- カラー設定
-local purple = '#9c7af2'
+local purple = '#ea9cfc'
 local blue = '#6EADD8'
 local light_green = "#7dcd5d"
 local orange = "#e19500"
@@ -50,15 +50,15 @@ config.colors = {
     selection_fg = 'red',
     cursor_bg = blue,
     cursor_fg = "white",
-    cursor_border = purple,
+    cursor_border = 'purple',
     tab_bar = {         
         inactive_tab_edge = "none",
     },
     ansi = {
-        'black', red, purple, light_green, blue, yellow, 'teal', 'silver',
+        'black', red, '#ea9cfc', light_green, blue, yellow, 'teal', 'silver',
     },
     brights = {
-        'grey', 'red', 'lime', 'yellow', 'blue', 'fuchsia', 'aqua', 'white',
+        'grey', 'red', 'lime', 'yellow', blue, purple, 'aqua', 'white',
     },
 }
 
