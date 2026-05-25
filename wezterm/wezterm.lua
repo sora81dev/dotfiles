@@ -8,7 +8,7 @@ local purple = '#ea9cfc'
 local blue = '#6EADD8'
 local light_green = "#7dcd5d"
 local orange = "#e19500"
-local red = "#E50000"
+local red = "#f9b8f9"
 local yellow = "#D7650C"
 
 -- 基本設定
@@ -58,7 +58,7 @@ config.colors = {
         'black', red, '#ea9cfc', light_green, blue, yellow, 'teal', 'silver',
     },
     brights = {
-        'grey', 'red', 'lime', 'yellow', blue, purple, 'aqua', 'white',
+        'grey', red, 'lime', 'yellow', blue, purple, 'aqua', 'white',
     },
 }
 
