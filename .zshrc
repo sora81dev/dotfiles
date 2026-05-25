@@ -179,3 +179,6 @@ export PATH="$PATH:/home/sora81dev/.platformio/penv/bin"
 
 # Rust
 . "$HOME/.cargo/env"
+
+# Colors
+export LS_COLORS="di=38;5;69"
