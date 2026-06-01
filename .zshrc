@@ -181,3 +181,6 @@ export PATH=$HOME/sora81dev/.juliaup/bin:$PATH                # Julia
 eval "$(dircolors -b)"
 LS_COLORS=$LS_COLORS':tw=0:ow=0:st=0'
 export LS_COLORS
+
+# Homebrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
