@@ -1,0 +1,4 @@
+gui:
+  authorColors:
+    'sora81dev': '#61a6c6'
+    '*': '#f767e9'
