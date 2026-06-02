@@ -70,8 +70,8 @@ config.colors = {
 
 -- ショートカットキー設定
 config.keys = {
-  { key = "j", mods = "ALT", action = wezterm.action.ActivateTabRelative(-1) },
-  { key = "k", mods = "ALT", action = wezterm.action.ActivateTabRelative(1) }
+  { key = "j", mods = "CTRL", action = act.ActivateTabRelative(-1) },
+  { key = "k", mods = "CTRL", action = act.ActivateTabRelative(1) },
 }
 
 -- タブタイトルのフォーマット
