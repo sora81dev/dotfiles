@@ -91,8 +91,10 @@ config.keys = {
     action = act.SendKey {
       key = "w",
       mods = "CTRL",
-    },
-  },
+   },
+ },
+  { key = "j", mods = "ALT", action = wezterm.action.ActivateTabRelative(-1) },
+  { key = "k", mods = "ALT", action = wezterm.action.ActivateTabRelative(1) }
 }
 
 
