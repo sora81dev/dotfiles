@@ -56,10 +56,24 @@ config.colors = {
         inactive_tab_edge = "none",
     },
     ansi = {
-        'black', red, '#ea9cfc', light_green, blue, yellow, 'teal', 'silver',
+        '#000000',    -- black 
+        '#f98b93',    -- red
+        '#7cc988',    -- green 
+        '#e7ed4e',    -- yellow 
+        '#90b7f9',    -- blue 
+        '#d66ffc',    -- magenta
+        '#51d3f7',    -- cyan 
+        '#f7f7f7',    -- white
     },
     brights = {
-        'grey', red, 'lime', 'yellow', light_blue, purple, 'aqua', 'white',
+        '#dddddd',    -- blight black 
+        '#fcbfc3',    -- bright red 
+        '#91e29d',    -- bright green 
+        '#f4f7ad'     -- bright yellow 
+        '#bed3f7',    -- bright blue
+        '#e8bef7',    -- bright magenta 
+        '#5df4f4',    -- bright cyan 
+        '#ffffff',    -- bright white
     },
 }
 
