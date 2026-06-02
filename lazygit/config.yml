@@ -8,3 +8,11 @@ gui:
     '^style/' : '#b95dcc'
     '^hotfilx': '#ff0000'
     '^feat/'  : '#26d11d'
+
+  customIcons:
+    extensions:
+      "*":
+        color: "#aaaaaa"
+
+      ".env":
+        color: "#ff0000"
