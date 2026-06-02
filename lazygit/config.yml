@@ -16,3 +16,23 @@ gui:
 
       ".env":
         color: "#ff0000"
+
+  theme:
+    activeBorderColor:
+      - "#61a6c6"
+      - bold
+
+    optionsTextColor:
+      - "#61a6cb"
+
+    selectedLineBgColor:
+      - "#c0c0c0"
+
+    nerdFontsVersion: "2"
+
+    showFileIcons: true
+
+git:
+  papers:
+    - colorArg: always
+      pager: delta --paging=never --side-by-side
