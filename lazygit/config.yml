@@ -1,4 +1,10 @@
 gui:
   authorColors:
     'sora81dev': '#61a6c6'
-    '*': '#f767e9'
+
+  branchColorPatterns:
+    '^main$'  : '#43a08e'
+    '^fix/'   : '#e8439d'
+    '^style/' : '#b95dcc'
+    '^hotfilx': '#ff0000'
+    '^feat/'  : '#26d11d'
