@@ -69,19 +69,10 @@ config.colors = {
 }
 
 -- ショートカットキー設定
-
 config.keys = {
   { key = "j", mods = "ALT", action = wezterm.action.ActivateTabRelative(-1) },
   { key = "k", mods = "ALT", action = wezterm.action.ActivateTabRelative(1) }
 }
-
-
--- イベントハンドラ
--- 起動時に画面を最大化
--- wezterm.on("gui-startup", function()
---     local _, _, window = mux.spawn_window({})
---     window:gui_window():maximize()
--- end)
 
 -- タブタイトルのフォーマット
 local SOLID_LEFT_ARROW = wezterm.nerdfonts.pl_right_hard_divider
