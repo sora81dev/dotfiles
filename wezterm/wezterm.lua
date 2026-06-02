@@ -3,15 +3,6 @@ local config = wezterm.config_builder()
 local act = wezterm.action
 local mux = wezterm.mux
 
--- カラー設定
-local purple = '#ea9cfc'
-local blue = '#6eadd8'
-local light_blue = '#9dcae8'
-local light_green = "#7dcd5d"
-local orange = "#e19500"
-local red = "#f9b8f9"
-local yellow = "#d7650c"
-
 -- 基本設定
 config.automatically_reload_config = true
 config.window_close_confirmation = "NeverPrompt"
