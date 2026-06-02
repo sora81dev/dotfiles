@@ -72,6 +72,9 @@ config.colors = {
 config.keys = {
   { key = "j", mods = "CTRL", action = act.ActivateTabRelative(-1) },
   { key = "k", mods = "CTRL", action = act.ActivateTabRelative(1) },
+  { key = "t", mods = "CTRL", action = act.SpawnTab 'CurrentPaneDomain'},
+  { key = "q", mods = "CTRL", action = act.CloseCurrentTab { confirm = true}},
+  { key = "q", mods = "CTRL|SHIFT", action = act.CloseCurrentTab { confirm = false}}
 }
 
 -- タブタイトルのフォーマット
