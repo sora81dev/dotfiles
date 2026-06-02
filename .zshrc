@@ -169,13 +169,10 @@ gcccompile() {
 }
 
 # Add PATH
-export PATH=$HOME/app/nvim-linux-x86_64/bin:$PATH 
-
-# Created by `pipx` on 2026-04-29 04:07:05
 export PATH="$PATH:/home/sora81dev/.local/bin"
-
-# PlatformIO Core
-export PATH="$PATH:/home/sora81dev/.platformio/penv/bin"
+export PATH=$HOME/app/nvim-linux-x86_64/bin:$PATH             # Neovim
+export PATH="$PATH:/home/sora81dev/.platformio/penv/bin"      # PlatformIO Core
+export PATH=$HOME/sora81dev/.juliaup/bin:$PATH                # Julia
 
 # Rust
 . "$HOME/.cargo/env"
@@ -184,3 +181,6 @@ export PATH="$PATH:/home/sora81dev/.platformio/penv/bin"
 eval "$(dircolors -b)"
 LS_COLORS=$LS_COLORS':tw=0:ow=0:st=0'
 export LS_COLORS
+
+# Homebrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
