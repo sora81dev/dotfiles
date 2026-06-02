@@ -1,6 +1,5 @@
 local map = vim.keymap.set
 
-
 -- neo-tree --
 map('n', '<C-n>', '<cmd>Neotree toggle left<CR>', { silent = true })
 
@@ -20,3 +19,6 @@ map('n', '<Leader>fh', "<cmd>Telescope help_tags<CR>", { noremap = true, silent 
 
 map('n', '<C-h>', '<C-w>h')
 map('n', '<C-l>', '<C-w>l')
+
+-- Lazygit
+map('n', '<leader>lg', "<cmd>LazyGit<cr>", { desc = "Lazygit" }
