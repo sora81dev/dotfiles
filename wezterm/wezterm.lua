@@ -60,7 +60,7 @@ config.colors = {
         '#dddddd',    -- blight black 
         '#fcbfc3',    -- bright red 
         '#91e29d',    -- bright green 
-        '#f4f7ad'     -- bright yellow 
+        '#f4f7ad',    -- bright yellow 
         '#bed3f7',    -- bright blue
         '#e8bef7',    -- bright magenta 
         '#5df4f4',    -- bright cyan 
