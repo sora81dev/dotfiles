@@ -54,7 +54,7 @@ config.colors = {
         '#90b7f9',    -- blue 
         '#d66ffc',    -- magenta
         '#51d3f7',    -- cyan 
-        '#f7f7f7',    -- white
+        '#fafafa',    -- white
     },
     brights = {
         '#dddddd',    -- blight black 
