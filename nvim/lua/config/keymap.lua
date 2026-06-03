@@ -21,4 +21,4 @@ map('n', '<C-h>', '<C-w>h')
 map('n', '<C-l>', '<C-w>l')
 
 -- Lazygit
-map('n', '<leader>lg', "<cmd>LazyGit<cr>", { desc = "Lazygit" }
+map('n', '<leader>lg', "<cmd>LazyGit<cr>", { desc = "Lazygit" })
