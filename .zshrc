@@ -77,8 +77,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -136,6 +134,11 @@ zinit light-mode for \
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Plugins
+plugins = (
+  zsh-autosuggestions
+)
+
 # Python
 alias python="python3"
 alias pip="pip3"
@@ -184,3 +187,8 @@ export LS_COLORS
 
 # Homebrew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+
+# ZSH Autosuggestions
+source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666"
