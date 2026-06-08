@@ -1,4 +1,4 @@
-#!/bin/zsh
+#! /bin/zsh
 
 # grg commands
 # --------------
@@ -6,43 +6,46 @@
 # Created at : 2026.06.08
 # Updated at : 2026.06.08
 
-local OPTIND
-local selected dir
-local lsopts="-la"
+grg() {
+  local OPTIND
+  local selected dir
+  local lsopts="-la"
   
-while [ $# -gt 0 ]; do
-  case "$1" in
-    -h|--help)
-      sed 's/^      //' <<< "Usage: grg [OPTIONS]
-      Options:
-        -c, --compact   Compact mode
-        -h, --help      Show this help
-      "
-      return 0
-      ;;
-    -c|--compact)
-      lsopts=""
-      shift
-      ;;
-    -*)
-      echo "grg: invalid option -- '$1'"
-      return 1
-      ;;
-    *)
-      break
-      ;;
-  esac
-done
+  while [ $# -gt 0 ]; do
+    case "$1" in
+      -h|--help)
+        sed 's/^        //' <<< "Usage: grg [OPTIONS]
 
-selected=$(ghq list | sed 's|^github.com/||' \
-  | fzf --layout=reverse --border \
-        --preview 'ls '"$lsopts"' "$(ghq root)/github.com/"{}')
+        Options:
+          -c, --compact   Compact mode
+          -h, --help      Show this help
+        "
+        return 0
+        ;;
+      -c|--compact)
+        lsopts=""
+        shift
+        ;;
+      -*)
+        echo "grg: invalid option -- '$1'"
+        return 1
+        ;;
+      *)
+        break
+        ;;
+    esac
+  done
 
-[ -n "$selected" ] || return
+  selected=$(ghq list | sed 's|^github.com/||' \
+    | fzf --layout=reverse --border \
+          --preview 'ls '"$lsopts"' "$(ghq root)/github.com/"{}')
 
-dir=$(ghq list -p "github.com/$selected")
-[ -d "$dir" ] || return
+  [ -n "$selected" ] || return
 
-cd "$dir" || return
+  dir=$(ghq list -p "github.com/$selected")
+  [ -d "$dir" ] || return
 
-pwd
+  cd "$dir" || return
+
+  pwd
+}
