@@ -134,11 +134,6 @@ zinit light-mode for \
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.config/.p10k.zsh ]] || source ~/.config/.p10k.zsh
 
-# Plugins
-plugins=(
-  zsh-autosuggestions
-)
-
 # Python
 alias python="python3"
 alias pip="pip3"
@@ -241,3 +236,8 @@ grg() {
 
   pwd
 }
+
+# Plugins
+plugins=(
+  zsh-autosuggestions
+)
