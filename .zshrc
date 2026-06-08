@@ -140,14 +140,6 @@ alias pip="pip3"
 
 export PATH="/usr/local/bin:$PATH"
 
-
-# My cmd
-mkdircd() {
-    text="$1"
-    mkdir $1
-    cd $1
-}
-
 eval "$(rbenv init -)"
 
 # gcccompile command
