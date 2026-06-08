@@ -169,6 +169,9 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666"
 # ghq
 export GHQ_ROOT=~/ghq
 
+# zoxide
+eval "$(zoxide init zsh)"
+
 # Plugins
 plugins=(
   zsh-autosuggestions
