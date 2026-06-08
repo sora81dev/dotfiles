@@ -172,6 +172,7 @@ export PATH=$HOME/app/nvim-linux-x86_64/bin:$PATH             # Neovim
 export PATH="$PATH:/home/sora81dev/.platformio/penv/bin"      # PlatformIO Core
 export PATH=$HOME/sora81dev/.juliaup/bin:$PATH                # Julia
 export PATH=$PATH:$GOPATH/bin                                 # Go Lang
+export PATH="$PATH:$HOME/.config/command"                     # Load commands
 
 # Rust
 . "$HOME/.cargo/env"
@@ -191,52 +192,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666"
 
 # ghq
 export GHQ_ROOT=~/ghq
-
-## grg commands
-##    This command finds valid ghq repository with fuzzy-finder.
-grg() {
-  local OPTIND
-  local selected dir
-  local lsopts="-la"
-  
-  while [ $# -gt 0 ]; do
-    case "$1" in
-      -h|--help)
-        sed 's/^        //' <<< "Usage: grg [OPTIONS]
-
-        Options:
-          -c, --compact   Compact mode
-          -h, --help      Show this help
-        "
-        return 0
-        ;;
-      -c|--compact)
-        lsopts=""
-        shift
-        ;;
-      -*)
-        echo "grg: invalid option -- '$1'"
-        return 1
-        ;;
-      *)
-        break
-        ;;
-    esac
-  done
-
-  selected=$(ghq list | sed 's|^github.com/||' \
-    | fzf --layout=reverse --border \
-          --preview 'ls '"$lsopts"' "$(ghq root)/github.com/"{}')
-
-  [ -n "$selected" ] || return
-
-  dir=$(ghq list -p "github.com/$selected")
-  [ -d "$dir" ] || return
-
-  cd "$dir" || return
-
-  pwd
-}
 
 # Plugins
 plugins=(
