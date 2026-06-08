@@ -193,3 +193,6 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666"
+
+# ghq
+export GHQ_ROOT=~/ghq
