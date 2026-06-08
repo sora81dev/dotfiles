@@ -225,7 +225,8 @@ grg() {
   done
 
   selected=$(ghq list | sed 's|^github.com/||' \
-    | fzf --preview 'ls '"$lsopts"' "$(ghq root)/github.com/"{}')
+    | fzf --layout=reverse --border \
+          --preview 'ls '"$lsopts"' "$(ghq root)/github.com/"{}')
 
   [ -n "$selected" ] || return
 
