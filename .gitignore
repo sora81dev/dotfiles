@@ -1,3 +1,4 @@
 .wrangler*
 .zcompdump*
 go/
+gh/
