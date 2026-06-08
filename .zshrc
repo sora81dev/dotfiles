@@ -135,7 +135,7 @@ zinit light-mode for \
 [[ ! -f ~/.config/.p10k.zsh ]] || source ~/.config/.p10k.zsh
 
 # Plugins
-plugins = (
+plugins=(
   zsh-autosuggestions
 )
 
