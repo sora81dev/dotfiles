@@ -146,7 +146,9 @@ export PATH=$HOME/app/nvim-linux-x86_64/bin:$PATH             # Neovim
 export PATH="$PATH:/home/sora81dev/.platformio/penv/bin"      # PlatformIO Core
 export PATH=$HOME/sora81dev/.juliaup/bin:$PATH                # Julia
 export PATH=$PATH:$GOPATH/bin                                 # Go Lang
-export PATH="$PATH:$HOME/.config/commands"                     # Load commands
+
+# Load Original Commands
+for f in $HOME/.config/commands/*(N-.); do source "$f"; done
 
 # Rust
 . "$HOME/.cargo/env"
