@@ -1,4 +1,4 @@
-#! /bin/zsh
+#!/bin/zsh
 
 # mkdircd
 # --------------
@@ -6,8 +6,6 @@
 # Created at : 2025.05.13
 # Updated at : 2026.05.13
 
-mkdircd() {
-    text="$1"
-    mkdir $1
-    cd $1
-}
+text="$1"
+mkdir $1
+cd $1
