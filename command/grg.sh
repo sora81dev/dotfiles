@@ -3,6 +3,8 @@
 # grg commands
 # --------------
 # Description: This command finds valid ghq repository with fuzzy-finder.
+# Created at : 2026.06.08
+# Updated at : 2026.06.08
 
 grg() {
   local OPTIND

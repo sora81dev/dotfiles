@@ -3,6 +3,8 @@
 # gcccompile
 # --------------
 # Description: This command can quickly compile c lang file with gcc
+# Created at : 2026.05.07
+# Updated at : 2026.05.07
 
 gcccompile() {
   if [[ -f "$1" ]]; then
