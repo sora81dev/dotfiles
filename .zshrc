@@ -172,7 +172,11 @@ export GHQ_ROOT=~/ghq
 # zoxide
 eval "$(zoxide init zsh)"
 
+# GPG Key
+export GPG_TTY=$(tty)
+
 # Plugins
 plugins=(
   zsh-autosuggestions
 )
+
