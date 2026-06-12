@@ -3,7 +3,7 @@ require("mason-lspconfig").setup {
   ensure_installed = {
     "clangd",
     "eslint",
-    "ts_lsp",
+    "ts_ls",
     "lua_ls"
   }
 }
