@@ -19,6 +19,7 @@
   # environment.
   home.packages = [
     pkgs.tree
+    pkgs.prettier
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
