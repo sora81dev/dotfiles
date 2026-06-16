@@ -169,9 +169,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666"
 # ghq
 export GHQ_ROOT=~/ghq
 
-# zoxide
-eval "$(zoxide init zsh)"
-
 # GPG Key
 export GPG_TTY=$(tty)
 
