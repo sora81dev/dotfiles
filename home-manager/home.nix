@@ -20,6 +20,9 @@
   home.packages = [
     pkgs.tree
     pkgs.prettier
+
+    # Load fonts
+    pkgs.nerd-fonts.jetbrains-mono
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -77,7 +80,7 @@
   programs.home-manager.enable = true;
 
   news.display = "silent";
-
+  
   programs.zoxide = {
     enable = true;
     enableZshIntegration = true;
