@@ -1,0 +1,15 @@
+#! /bin/bash
+
+# afcg
+# --------------
+# Description: This command can apply zsh configuration quickly
+# Created at : 2026.06.16
+# Updated at : 2026.05.16
+
+afcg() {
+  # apply .zshrc configuration
+  source ~/.config/.zshrc
+
+  # clear zsh command cache (for new commands)
+  rehash
+}
