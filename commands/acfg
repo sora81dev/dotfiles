@@ -6,7 +6,7 @@
 # Created at : 2026.06.16
 # Updated at : 2026.05.16
 
-afcg() {
+acfg() {
   # apply .zshrc configuration
   source ~/.config/.zshrc
 
