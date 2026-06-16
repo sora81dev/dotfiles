@@ -5,7 +5,7 @@
 - [ ] GitHub Verifired Commitのexportを入れる
 
 ## Nix home-manager
-- [ ] zoxideの設定  
+- [x] zoxideの設定  
       Ref: [NixOS Search - packages - zoxide](https://search.nixos.org/packages?channel=26.05&query=zoxide)
 - [ ] zshの設定
       Ref: [NixOS Search - packages - zsh](https://search.nixos.org/packages?channel=26.05&query=zsh#show=zsh)
