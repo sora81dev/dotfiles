@@ -20,8 +20,6 @@ vim.api.nvim_set_var('loaded_netrwPlugin', 1)
 vim.g.mapleader = " "
 
 -- Diagnostic --
-vim.g.mapleader = " "
-
 vim.diagnostic.config({
   virtual_text = {
     prefix = "●",
@@ -53,7 +51,7 @@ vim.g.edge_style = 'aura'
 vim.g.edge_float_style = 'blend'
 vim.g.diagnostic_line_highlight = 1
 vim.g.edge_colors_override = {
-  bg0 = {'#f2f2f2', '255'}
+  bg0 = { '#f2f2f2', '255' }
 }
 
 require("config.autopairs")
