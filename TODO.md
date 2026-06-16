@@ -10,6 +10,7 @@
 - [ ] zshの設定
       Ref: [NixOS Search - packages - zsh](https://search.nixos.org/packages?channel=26.05&query=zsh#show=zsh)
   - [ ] zshに追記する(既存configのロード)  
+        (pkgsの追記不要)
 ```diff
 + programs.zsh = {
 +   enable = true;
@@ -35,6 +36,7 @@ programs.zsh = {
 };
 ```
   - [ ] NerdFonts入れる  
+        Ref [Fonts - NixOS Wiki](https://nixos.wiki/wiki/Fonts)
 ```diff
 + fonts.packages = with pkgs; [
 +   nerd-fonts.jetbrains-mono
