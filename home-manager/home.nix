@@ -82,4 +82,12 @@
     enable = true;
     enableZshIntegration = true;
   };
+
+  programs.zsh = {
+    enable = true;
+
+    initExtra = ''
+      source ~/.config/.zshrc
+    '';
+  };
 }
