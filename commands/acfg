@@ -7,9 +7,13 @@
 # Updated at : 2026.05.16
 
 acfg() {
+  echo "Applying .zshrc settings..."
+
   # apply .zshrc configuration
+  echo "Clearing command cache..."
   source ~/.config/.zshrc
 
   # clear zsh command cache (for new commands)
+  echo "Done"
   rehash
 }
