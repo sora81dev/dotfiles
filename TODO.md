@@ -12,6 +12,6 @@
   - [ ] NerdFonts入れる  
 ```nix
 fonts.packages = with pkgs; [
-  nerd-fonts.jetbrains-mono  # おすすめのNerd Font（2026年現在の書き方）
+  nerd-fonts.jetbrains-mono
 ];
 ```
