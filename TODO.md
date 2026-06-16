@@ -30,7 +30,7 @@ programs.zsh = {
 
   initExtra = ''
     source ~/.config/.zshrc
-+     source ~/.config/.p10k.zsh
++   source ~/.config/.p10k.zsh
   '';
 };
 ```
