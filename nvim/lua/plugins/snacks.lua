@@ -9,7 +9,7 @@ return {
     -- refer to the configuration section below
     bigfile = { enabled = true },
     dashboard = require("config.dashboard"),
-    explorer = { enabled = true },
+    explorer = { enabled = false },
     indent = { enabled = true },
     input = { enabled = true },
     picker = { enabled = true },
@@ -21,4 +21,3 @@ return {
     words = { enabled = true },
   },
 }
-
