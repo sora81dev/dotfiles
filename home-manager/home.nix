@@ -19,7 +19,10 @@
   # environment.
   home.packages = [
     pkgs.tree
+
+    # Add packages for neovim
     pkgs.prettier
+    pkgs.ripgrep
 
     # Load fonts
     pkgs.nerd-fonts.jetbrains-mono
