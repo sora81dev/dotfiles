@@ -6,17 +6,12 @@
   home.username = "sora81dev";
   home.homeDirectory = "/home/sora81dev";
 
-  # This value determines the Home Manager release that your configuration is
-  # compatible with. This helps avoid breakage when a new Home Manager release
-  # introduces backwards incompatible changes.
-  #
   # You should not change this value, even if you update Home Manager. If you do
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
-  home.stateVersion = "26.05"; # Please read the comment before changing.
+  home.stateVersion = "26.05";
 
-  # The home.packages option allows you to install Nix packages into your
-  # environment.
+  # Packages
   home.packages = [
     pkgs.tree
 
@@ -25,13 +20,7 @@
     pkgs.ripgrep
 
     # Load fonts
-    pkgs.nerd-fonts.jetbrains-mono
-
-    # # It is sometimes useful to fine-tune packages, for example, by applying
-    # # overrides. You can do that directly here, just don't forget the
-    # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
-    # # fonts?
-    # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
+    pkgs.nerd-fonts.jetbrains-
 
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your
@@ -86,9 +75,11 @@
     enableZshIntegration = true;
   };
 
+  # TODO: Load oh-my-zsh for powerlevel10k
   programs.zsh = {
     enable = true;
 
+    # Load zsh configuration file
     initExtra = ''
       source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
       source ~/.config/.zshrc
