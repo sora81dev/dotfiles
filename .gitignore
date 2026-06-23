@@ -2,3 +2,11 @@
 .zcompdump*
 go/
 gh/
+.gsd-keyboard.settings-ported
+evolution/
+gnome-initial-setup-done
+gtk-3.0/
+ibus/
+pulse/
+user-dirs.dirs
+user-dirs.locale
