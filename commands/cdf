@@ -1,0 +1,71 @@
+#!/bin/bash
+
+# cdf
+# --------------
+# Description: This command can create date folder quickly.
+# Created at : 2026.06.16
+# Updated at : 2026.05.16
+
+cdf() {
+  local foldermove=1
+  local skipcheck=0
+
+  while [ $# -gt 0 ]; do
+    case "$1" in
+      -h|--help)
+        sed 's/^        //' <<< "Usage: cdf [OPTIONS]
+
+        Options:
+          -y, --yes       Pass previewing folder.
+          -n, --no-move   Just create folder.
+          -h, --help      Show this help
+        "
+        return 0
+        ;;
+      -y|--yes)
+        skipcheck=1
+        shift
+        ;;
+      -n|--no-move)
+        foldermove=0
+        shift
+        ;;
+      -*)
+        echo "grg: invalid option -- '$1'"
+        return 1
+        ;;
+      *)
+        break
+        ;;
+    esac
+  done
+
+  # シェルスクリプトで日本時間のYYYYMMDDを返す by amay077 | Qiita
+  # https://qiita.com/amay077/items/901a04254cd71fa1a957
+  local jst_ymd_today=$(TZ=UTC-9 date '+%Y-%m-%d')
+
+  if [ $skipcheck -eq 0 ]; then
+    echo 'date folder will be created; "'$jst_ymd_today'"'
+
+    echo 'are you sure want to create? [Y/n]: '
+    read ANS
+
+    case $ANS in
+      [Yy]* )
+        ;;
+      * )
+        echo 'looks not found answer'
+        echo 'folder will not create'
+        return 1
+        ;;
+    esac
+  fi
+
+  mkdir -p ./$jst_ymd_today
+  echo 'date folder created: "'$jst_ymd_today'"'
+
+  if [ $foldermove -eq 1 ]; then
+    cd ./$jst_ymd_today
+    pwd
+  fi
+}
