@@ -4,11 +4,17 @@
 
 { config, lib, pkgs, ... }:
 
+let
+  agenixSrc = builtins.fetchTarball "https://github.com/ryantm/agenix/archive/main.tar.gz";
+in
+
 {
-  imports =
-    [ # Include the results of the hardware scan.
+  imports = [
       ./hardware-configuration.nix
-    ];
+      
+      # for github secret Tokens (agenix)
+      "${agenixSrc}/modules/age.nix"
+  ];
 
   # Use the GRUB 2 boot loader.
   boot.loader.grub.enable = true;
@@ -76,6 +82,14 @@
     vim
     git
     wget
+    curl
+
+    # agenix module
+    age
+    ssh-to-age
+
+    # agenix CLI
+    (pkgs.callPackage "${agenixSrc}/pkgs/agenix.nix" {})
   ];
 
   programs.git = {
@@ -85,7 +99,18 @@
         name = "sora81dev";
         email = "117363029+sora81dev@users.noreply.github.com";
       };
+      
+      credential = {
+        helper = "!f() { echo username=sora81dev; echo password=$(cat /run/agenix/github-token); }; f";
+      };
     };
+  };
+
+  age.secrets.github-token = {
+    file = /etc/nixos/secrets/github-token.age;
+    owner = "sora81dev";
+    group = "users";
+    mode = "0400";
   };
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
