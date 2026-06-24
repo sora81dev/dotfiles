@@ -11,6 +11,8 @@ in
 {
   imports = [
       ./hardware-configuration.nix
+
+     <home-manager/nixos>
       
       # for github secret Tokens (agenix)
       "${agenixSrc}/modules/age.nix"
@@ -77,6 +79,7 @@ in
   };
 
   programs.firefox.enable = true;
+  programs.home-manager.enable = true;
 
   environment.systemPackages = with pkgs; [
     vim
@@ -112,6 +115,7 @@ in
     group = "users";
     mode = "0400";
   };
+
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 

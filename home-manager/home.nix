@@ -13,6 +13,7 @@
 
   # Packages
   home.packages = [
+    pkgs.neovim
     pkgs.tree
 
     # Add packages for neovim
@@ -20,7 +21,7 @@
     pkgs.ripgrep
 
     # Load fonts
-    pkgs.nerd-fonts.jetbrains-
+    pkgs.nerd-fonts.jetbrains-mono
 
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your
