@@ -73,19 +73,21 @@ in
   # Enable touchpad support (enabled default in most desktopManager).
   # services.libinput.enable = true;
 
+  programs.zsh.enable = true;
   users.users.sora81dev = {
     isNormalUser = true;
+    shell = pkgs.zsh;
     extraGroups = [ "wheel" ];
   };
 
   programs.firefox.enable = true;
-  programs.home-manager.enable = true;
 
   environment.systemPackages = with pkgs; [
     vim
     git
     wget
     curl
+    zsh
 
     # agenix module
     age

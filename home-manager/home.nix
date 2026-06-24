@@ -16,6 +16,8 @@
     pkgs.neovim
     pkgs.tree
 
+    pkgs.ghq
+
     # Add packages for neovim
     pkgs.prettier
     pkgs.ripgrep
