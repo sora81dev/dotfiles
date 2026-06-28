@@ -1,9 +1,10 @@
 require("mason-lspconfig").setup {
   -- Install LSP Automatically
   ensure_installed = {
-    "clangd",
-    "eslint",
-    "ts_ls",
-    "lua_ls"
+    "clangd",     -- C Language
+    "eslint",     -- Formatter
+    "ts_ls",      -- Typescript
+    "lua_ls",     -- Lua
+    "tailwindcss" -- Tailwind CSS
   }
 }
