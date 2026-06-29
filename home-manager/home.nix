@@ -23,6 +23,10 @@
     pkgs.ripgrep
     pkgs.fzf
 
+    # NodeJS
+    pkgs.nodejs
+    pkgs.pnpm
+
     # Load fonts
     pkgs.nerd-fonts.jetbrains-mono
 
