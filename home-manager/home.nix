@@ -92,7 +92,7 @@
     enable = true;
 
     # Load zsh configuration file
-    initExtra = ''
+    initContent = ''
       source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
       source ~/.config/.zshrc
       source ~/.config/.p10k.zsh
