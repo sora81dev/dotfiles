@@ -129,9 +129,6 @@ export PATH=$PATH:$GOPATH/bin                                 # Go Lang
 # Load Original Commands
 for f in $HOME/.config/commands/*(N-.); do source "$f"; done
 
-# Rust
-. "$HOME/.cargo/env"
-
 # Colors
 eval "$(dircolors -b)"
 LS_COLORS=$LS_COLORS':tw=0:ow=0:st=0'

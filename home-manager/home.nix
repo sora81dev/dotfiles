@@ -16,6 +16,10 @@
     pkgs.neovim
     pkgs.tree
 
+    # Rust
+    pkgs.cargo
+    pkgs.tokei
+
     pkgs.ghq
 
     # Add packages for neovim
