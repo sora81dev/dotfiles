@@ -125,6 +125,7 @@ export PATH="$PATH:/home/sora81dev/.local/bin"
 export PATH="$PATH:/home/sora81dev/.platformio/penv/bin"      # PlatformIO Core
 export PATH=$HOME/sora81dev/.juliaup/bin:$PATH                # Julia
 export PATH=$PATH:$GOPATH/bin                                 # Go Lang
+export PATH="$HOME/.nix-profile/bin:$PATH"
 
 # Load Original Commands
 for f in $HOME/.config/commands/*(N-.); do source "$f"; done
