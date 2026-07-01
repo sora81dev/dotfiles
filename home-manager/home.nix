@@ -1,8 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  # Home Manager needs a bit of information about you and the paths it should
-  # manage.
   home.username = "sora81dev";
   home.homeDirectory = "/home/sora81dev";
 
@@ -32,13 +30,6 @@
 
     # Load fonts
     pkgs.nerd-fonts.jetbrains-mono
-
-    # # You can also create simple shell scripts directly inside your
-    # # configuration. For example, this adds a command 'my-hello' to your
-    # # environment:
-    # (pkgs.writeShellScriptBin "my-hello" ''
-    #   echo "Hello, ${config.home.username}!"
-    # '')
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -56,22 +47,6 @@
     # '';
   };
 
-  # Home Manager can also manage your environment variables through
-  # 'home.sessionVariables'. These will be explicitly sourced when using a
-  # shell provided by Home Manager. If you don't want to manage your shell
-  # through Home Manager then you have to manually source 'hm-session-vars.sh'
-  # located at either
-  #
-  #  ~/.nix-profile/etc/profile.d/hm-session-vars.sh
-  #
-  # or
-  #
-  #  ~/.local/state/nix/profiles/profile/etc/profile.d/hm-session-vars.sh
-  #
-  # or
-  #
-  #  /etc/profiles/per-user/sora81dev/etc/profile.d/hm-session-vars.sh
-  #
   home.sessionVariables = {
     # EDITOR = "emacs";
   };
@@ -89,8 +64,10 @@
   # TODO: Load oh-my-zsh for powerlevel10k
   programs.zsh = {
     enable = true;
-   
-    autosuggestions.enable = true;
+		
+    # zsh utilities(autosuggestions, syntaxHighlighting)
+	  autosuggestions.enable = true;
+    syntaxHighlighting.enable = true;
 
     plugins = [
       {
