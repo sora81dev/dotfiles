@@ -50,7 +50,7 @@ in
     ssh-to-age
 
     # agenix CLI
-    inputs.agenix.packages.${pkpgs.system}.default
+    inputs.agenix.packages.${pkgs.system}.default
 
     # Graphical Software
     wezterm
