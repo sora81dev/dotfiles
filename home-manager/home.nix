@@ -13,7 +13,6 @@
 
   # Packages
   home.packages = [
-    pkgs.neovim
     pkgs.tree
 
     # Rust
@@ -97,5 +96,14 @@
       source ~/.config/.zshrc
       source ~/.config/.p10k.zsh
     '';
+  };
+
+  programs.neovim = {
+    enable = true;
+
+    defaultEditor = true;
+
+    viAlias = true;
+    vimAlias = true;
   };
 }
