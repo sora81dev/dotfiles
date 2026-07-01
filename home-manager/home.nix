@@ -89,6 +89,16 @@
   # TODO: Load oh-my-zsh for powerlevel10k
   programs.zsh = {
     enable = true;
+   
+    autosuggestions.enable = true;
+
+    plugins = [
+      {
+        name = "powerlevel10k";
+        src  = pkgs.zsh-powerlevel10k;
+        file = "share/zsh-powerlevel10k/powerlevel-10k.zsh-theme";
+      }
+    ];
 
     # Load zsh configuration file
     initContent = ''
