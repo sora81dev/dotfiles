@@ -7,24 +7,16 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    agenix = {
-      url = "github:ryanthm/agenix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { self, nixpkgs, home-manager, agenix, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, ...}@inputs: {
     nixosConfigurations = {
       hp-notebook = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 
-        specialArgs = { inherit inputs; };
-
         modules = [
           ./nixos/machines/hp-notebook/hardware-configuration.nix
           ./nixos/configuration.nix
-
-          agenix.nixosModules.default
 
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
@@ -35,6 +27,7 @@
         ];
       };
     };
+
     homeConfigurations."sora81dev" = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
 
