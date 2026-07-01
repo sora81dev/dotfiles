@@ -4,10 +4,6 @@
 
 { config, lib, pkgs, ... }:
 
-let
-  agenixSrc = builtins.fetchTarball "https://github.com/ryantm/agenix/archive/main.tar.gz";
-in
-
 {
   imports = [
      # ./hardware-configuration.nix
