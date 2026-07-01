@@ -29,17 +29,13 @@
 
   environment.systemPackages = with pkgs; [
     vim
-    git
     wget
     curl
     zsh
 
-    # agenix module
-    age
-    ssh-to-age
-
-    # agenix CLI
-    inputs.agenix.packages.${pkgs.system}.default
+    # Git
+    git
+    gh
 
     # Graphical Software
     wezterm
@@ -53,17 +49,8 @@
         email = "117363029+sora81dev@users.noreply.github.com";
       };
       
-      credential = {
-        helper = "!f() { echo username=sora81dev; echo password=$(cat /run/agenix/github-token); }; f";
-      };
+      credential.helper = "!gh auth git-credential";
     };
-  };
-
-  age.secrets.github-token = {
-    file = /etc/nixos/secrets/github-token.age;
-    owner = "sora81dev";
-    group = "users";
-    mode = "0400";
   };
 
   # Enable the OpenSSH daemon.
