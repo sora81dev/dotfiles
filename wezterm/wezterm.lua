@@ -7,7 +7,6 @@ local mux = wezterm.mux
 config.automatically_reload_config = true
 config.window_close_confirmation = "NeverPrompt"
 config.default_cursor_style = "BlinkingBar"
-config.default_domain = 'WSL:Ubuntu'
 
 -- フォント設定
 config.font = wezterm.font_with_fallback({
