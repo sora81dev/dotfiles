@@ -66,7 +66,7 @@
     enable = true;
 		
     # zsh utilities(autosuggestions, syntaxHighlighting)
-	  autosuggestions.enable = true;
+	  autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
 
     plugins = [
