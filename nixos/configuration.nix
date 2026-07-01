@@ -5,14 +5,7 @@
 { config, lib, pkgs, ... }:
 
 {
-  imports = [
-     # ./hardware-configuration.nix
-
-     # <home-manager/nixos>
-      
-     # for github secret Tokens (agenix)
-     # "${agenixSrc}/modules/age.nix"
-  ];
+  imports = [];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
