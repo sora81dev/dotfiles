@@ -25,6 +25,8 @@
     extraGroups = [ "wheel" ];
   };
 
+  nixpkgs.config.allowUnfree = true;
+
   programs.firefox.enable = true;
 
   environment.systemPackages = with pkgs; [
@@ -55,6 +57,22 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
+
+  # Japanese Inputs
+  i18n.inputMethod = {
+    enable = true;
+    type   = "fcitx5";
+    fcitx5.addons = with pkgs; [
+      fcitx5-mozc
+      fcitx5-gtk
+    ];
+  };
+
+  environment.variables = {
+    GTK_IN_MODULE 	 = "fcitx";
+    QT_IM_MODULE  	 = "fcitx";
+    XMODIFIERS     	 = "@im=fcitx";
+  };
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

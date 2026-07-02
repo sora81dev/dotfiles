@@ -9,6 +9,8 @@
   # release notes.
   home.stateVersion = "26.05";
 
+  nixpkgs.config.allowUnfree = true;
+
   # Packages
   home.packages = [
     pkgs.tree
@@ -30,6 +32,10 @@
 
     # Load fonts
     pkgs.nerd-fonts.jetbrains-mono
+
+    # Graphical Software
+    pkgs.discord
+    pkgs.vencord
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -65,6 +71,10 @@
   programs.zsh = {
     enable = true;
 		
+    oh-my-zsh = {
+      enable  = true;
+      plugins = ["git"];
+    };
     # zsh utilities(autosuggestions, syntaxHighlighting)
 	  autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
@@ -92,4 +102,5 @@
     viAlias = true;
     vimAlias = true;
   };
+
 }

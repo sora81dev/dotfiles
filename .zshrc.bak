@@ -71,7 +71,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -117,8 +116,6 @@ zinit light-mode for \
 alias python="python3"
 alias pip="pip3"
 
-eval "$(rbenv init -)"
-
 # Add PATH
 export PATH="$PATH:/home/sora81dev/.local/bin"
 # export PATH=$HOME/app/nvim-linux-x86_64/bin:$PATH             # Neovim
@@ -135,12 +132,7 @@ eval "$(dircolors -b)"
 LS_COLORS=$LS_COLORS':tw=0:ow=0:st=0'
 export LS_COLORS
 
-# Homebrew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
-
 # ZSH Autosuggestions
-source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666"
 
 # ghq
@@ -148,8 +140,3 @@ export GHQ_ROOT=~/ghq
 
 # GPG Key
 export GPG_TTY=$(tty)
-
-# Plugins
-plugins=(
-  zsh-autosuggestions
-)
