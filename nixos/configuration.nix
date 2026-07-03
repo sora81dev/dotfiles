@@ -41,6 +41,8 @@
 
     # Graphical Software
     wezterm
+
+    gnomeExtensions.kimpanel
   ];
 
   programs.git = {
@@ -61,12 +63,15 @@
   # Japanese Inputs
   i18n.inputMethod = {
     enable = true;
-    type   = "fcitx5";
+    type = "fcitx5";
+    fcitx5.waylandFrontend = true;
     fcitx5.addons = with pkgs; [
       fcitx5-mozc
       fcitx5-gtk
     ];
   };
+
+  services.xserver.exportConfiguration = true;
 
   environment.variables = {
     GTK_IN_MODULE 	 = "fcitx";
