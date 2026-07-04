@@ -7,11 +7,6 @@
 # Updated at : 2026.07.04
 
 git-asc() {
-  if [[ $# -eq 0 ]]; then
-    echo 'ERROR: commit message is not provided.'
-    return 1
-  fi
-
   git add .
   git status
 
@@ -22,15 +17,29 @@ git-asc() {
     [Yy]* )
       ;;
     [Nn]* )
-      echo 'git commit was not created'
+      echo 'commit was not created'
+      git restore --staged .
       return 1
       ;;
     * )
       echo 'looks not found answer'
-      echo 'git commit was not created'
+      echo 'commit was not created'
+      git restore --staged .
       return 1
       ;;
   esac
 
-  git commit -m "$1"
+  echo 'enter commit message: '
+  read commit_msg
+
+  if [ -z "$commit_msg"]; then
+    echo 'no inputs'
+    echo 'commit was not created'
+    git restore --staged .
+    return 1
+  fi
+
+  git commit -m "$commit_msg"
+
+  echo $(git log --oneline | head -n 1)
 }
