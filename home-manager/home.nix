@@ -35,7 +35,9 @@
 
     # Graphical Software
     pkgs.discord
+    pkgs.thunderbird
     pkgs.vencord
+    pkgs.steam
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
