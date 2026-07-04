@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# git-asc
+# --------------
+# Description: This command can git add, git status, git commit.
+# Created at : 2026.07.04
+# Updated at : 2026.07.04
+
+git-asc() {
+  if [[ $# -eq 0 ]]; then
+    echo 'ERROR: commit message is not provided.'
+    return 1
+  fi
+
+  git add .
+  git status
+
+  echo 'are you sure want to commit? [Y/n]: '
+  read ANS
+
+  case $ANS in
+    [Yy]* )
+      ;;
+    [Nn]* )
+      echo 'git commit was not created'
+      return 1
+      ;;
+    * )
+      echo 'looks not found answer'
+      echo 'git commit was not created'
+      return 1
+      ;;
+  esac
+
+  git commit -m "$1"
+}
