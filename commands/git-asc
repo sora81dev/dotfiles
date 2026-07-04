@@ -10,7 +10,7 @@ git-asc() {
   git add .
   git status
 
-  echo 'are you sure want to commit? [Y/n]: '
+  echo -n 'are you sure want to commit? [Y/n]: '
   read ANS
 
   case $ANS in
@@ -29,7 +29,7 @@ git-asc() {
       ;;
   esac
 
-  echo 'enter commit message: '
+  echo -n 'enter commit message: '
   read commit_msg
 
   if [ -z "$commit_msg"]; then
@@ -41,5 +41,7 @@ git-asc() {
 
   git commit -m "$commit_msg"
 
+  echo '\n'
+  echo 'git commit was created:'
   echo $(git log --oneline | head -n 1)
 }
