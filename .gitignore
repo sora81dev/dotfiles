@@ -17,3 +17,6 @@ discord/
 mozc/
 fontconfig/
 systemd/
+environment.d/
+mimeapps.list
+background
