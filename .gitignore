@@ -21,4 +21,9 @@ environment.d/
 mimeapps.list
 background
 nvim/
-!home-manager/dotfiles/nvim/
+goa-1.0/
+gtk-4.0/
+epiphany/
+Vencord/
+fcitx/
+nautilus
