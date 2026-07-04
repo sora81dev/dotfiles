@@ -32,7 +32,7 @@ git-asc() {
   echo -n 'enter commit message: '
   read commit_msg
 
-  if [ -z "$commit_msg"]; then
+  if [ -z "$commit_msg" ]; then
     echo 'no inputs'
     echo 'commit was not created'
     git restore --staged .
