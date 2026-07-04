@@ -1,4 +1,1 @@
-require("nvim-highlight-colors").setup({
-  render = "virtual",
-  enable_tailwind = true
-})
+/nix/store/fw7pxp2r3p8y609vcasvs5lqxydwa50y-home-manager-files/.config/nvim/lua/config/nvim-highlight-colors.lua

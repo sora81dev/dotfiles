@@ -1,14 +1,1 @@
-return {
-	"rebelot/kanagawa.nvim",
-  enabled = false,
-	config=function()
-		require('kanagawa').setup({
-			compile=true
-		});
-		vim.cmd("colorscheme kanagawa");
-	end,
-	build = function ()
-		vim.cmd("KanagawaCompile");
-	end,
-}
-
+/nix/store/fw7pxp2r3p8y609vcasvs5lqxydwa50y-home-manager-files/.config/nvim/lua/plugins/kanagawa.lua

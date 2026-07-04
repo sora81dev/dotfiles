@@ -1,4 +1,1 @@
-return {
-  "nvimtools/none-ls.nvim",
-  dependencies = { "nvim-lua/plenary.nvim" }
-}
+/nix/store/fw7pxp2r3p8y609vcasvs5lqxydwa50y-home-manager-files/.config/nvim/lua/plugins/none-ls.lua

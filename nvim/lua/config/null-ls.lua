@@ -1,8 +1,1 @@
-require("null-ls").setup({
-  sources = {
-    -- Use prettier instead of nix installed when project which installed node modules prettier.
-    null_ls.builtins.formatting.prettier.with({
-      prefer_local = "node_modules/.bin"
-    })
-  }
-})
+/nix/store/fw7pxp2r3p8y609vcasvs5lqxydwa50y-home-manager-files/.config/nvim/lua/config/null-ls.lua

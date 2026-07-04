@@ -1,5 +1,1 @@
-require("lualine").setup {
-  optinos = {
-    theme = 'edge',
-  }
-}
+/nix/store/fw7pxp2r3p8y609vcasvs5lqxydwa50y-home-manager-files/.config/nvim/lua/config/lualine.lua

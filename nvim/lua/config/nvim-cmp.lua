@@ -1,11 +1,1 @@
-require('cmp').setup({
-  formatting = {
-    format = require('lspkind').cmp_format({
-      mode = 'symbol_text',
-      maxwidth = 50,
-      before = function(entry, vim_item)
-        return vim_item
-      end
-    })
-  }
-})
+/nix/store/fw7pxp2r3p8y609vcasvs5lqxydwa50y-home-manager-files/.config/nvim/lua/config/nvim-cmp.lua

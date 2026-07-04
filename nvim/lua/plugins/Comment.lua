@@ -1,8 +1,1 @@
-return {
-  "numToStr/Comment.nvim",
-  event = { "BufNewFile", "BufReadPre" },
-  
-  config = function()
-    require("extensions.Comment")
-  end,
-}
+/nix/store/fw7pxp2r3p8y609vcasvs5lqxydwa50y-home-manager-files/.config/nvim/lua/plugins/Comment.lua

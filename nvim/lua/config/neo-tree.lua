@@ -1,10 +1,1 @@
-require('neo-tree').setup({
-  filesystem = {
-    filtered_items = {
-      hide_dotfiles = false,
-      always_show_by_pattern = {
-        "*.out"
-      }
-    }
-  }
-})
+/nix/store/fw7pxp2r3p8y609vcasvs5lqxydwa50y-home-manager-files/.config/nvim/lua/config/neo-tree.lua

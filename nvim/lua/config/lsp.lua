@@ -1,12 +1,1 @@
-require("mason-lspconfig").setup {
-  -- Install LSP Automatically
-  ensure_installed = {
-    "clangd",        -- C Language
-    "eslint",        -- Formatter
-    "ts_ls",         -- Typescript
-    "lua_ls",        -- Lua
-    "tailwindcss",   -- Tailwind CSS
-    "rust_analyzer", -- Rust Analyzer
-    "nil_ls"         -- Nix
-  }
-}
+/nix/store/fw7pxp2r3p8y609vcasvs5lqxydwa50y-home-manager-files/.config/nvim/lua/config/lsp.lua

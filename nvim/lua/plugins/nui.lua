@@ -1,3 +1,1 @@
-return {
-  "MunifTanjim/nui.nvim"
-}
+/nix/store/fw7pxp2r3p8y609vcasvs5lqxydwa50y-home-manager-files/.config/nvim/lua/plugins/nui.lua
