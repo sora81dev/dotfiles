@@ -15,13 +15,16 @@
   home.packages = with pkgs; [
     tree
 
+    gcc
+
     # Rust
     rustup
     tokei
 
     ghq
 
-    # Add packages for neovim
+    # Neovim Plugins
+    tree-sitter
     prettier
     ripgrep
     fzf
@@ -85,14 +88,14 @@
     '';
   };
 
-  programs.neovim = with pkgs.vimPlugins; {
+  programs.neovim = {
     enable = true;
 
     defaultEditor = true;
 
     viAlias = true;
     vimAlias = true;
-    
+
     withPython3 = true;
   };
 
