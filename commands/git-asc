@@ -39,6 +39,7 @@ git-asc() {
     return 1
   fi
 
+  echo '\n'
   git commit -m "$commit_msg"
 
   echo 'git commit was created:'
