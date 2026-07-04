@@ -36,6 +36,7 @@
     # Graphical Software
     discord
     thunderbird
+    osu-lazer
     vencord
     steam
   ];
