@@ -16,7 +16,7 @@
     tree
 
     # Rust
-    cargo
+    rustup
     tokei
 
     ghq
