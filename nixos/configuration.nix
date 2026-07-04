@@ -34,6 +34,7 @@
     wget
     curl
     zsh
+    unzip
 
     # Git
     git

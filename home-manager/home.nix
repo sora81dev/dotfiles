@@ -85,13 +85,15 @@
     '';
   };
 
-  programs.neovim = {
+  programs.neovim = with pkgs.vimPlugins; {
     enable = true;
 
     defaultEditor = true;
 
     viAlias = true;
     vimAlias = true;
+    
+    withPython3 = true;
   };
 
   xdg.configFile."nvim" = {
