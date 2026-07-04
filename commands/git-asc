@@ -41,7 +41,6 @@ git-asc() {
 
   git commit -m "$commit_msg"
 
-  echo '\n'
   echo 'git commit was created:'
   echo $(git log --oneline | head -n 1)
 }
