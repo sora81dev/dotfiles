@@ -12,32 +12,32 @@
   nixpkgs.config.allowUnfree = true;
 
   # Packages
-  home.packages = [
-    pkgs.tree
+  home.packages = with pkgs; [
+    tree
 
     # Rust
-    pkgs.cargo
-    pkgs.tokei
+    cargo
+    tokei
 
-    pkgs.ghq
+    ghq
 
     # Add packages for neovim
-    pkgs.prettier
-    pkgs.ripgrep
-    pkgs.fzf
+    prettier
+    ripgrep
+    fzf
 
     # NodeJS
-    pkgs.nodejs
-    pkgs.pnpm
+    nodejs
+    pnpm
 
     # Load fonts
-    pkgs.nerd-fonts.jetbrains-mono
+    nerd-fonts.jetbrains-mono
 
     # Graphical Software
-    pkgs.discord
-    pkgs.thunderbird
-    pkgs.vencord
-    pkgs.steam
+    discord
+    thunderbird
+    vencord
+    steam
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
