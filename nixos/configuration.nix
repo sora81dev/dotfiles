@@ -82,7 +82,7 @@
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
-  }
+  };
 
   system.stateVersion = "25.11"; # Did you read the comment?
 
