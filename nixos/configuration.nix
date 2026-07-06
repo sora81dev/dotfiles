@@ -15,10 +15,12 @@
   time.timeZone = "Asia/Tokyo";
 
   services.xserver.enable = true;
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
+  # services.displayManager.gdm.enable = true;
+  # services.desktopManager.gnome.enable = true;
+  services.displayManager.sddm.enable = true;
 
   programs.zsh.enable = true;
+
   users.users.sora81dev = {
     isNormalUser = true;
     shell = pkgs.zsh;
@@ -44,7 +46,19 @@
     wezterm
 
     gnomeExtensions.kimpanel
+
+    # Hyprland
+    wofi
+    waybar
+    swww
+    mako
   ];
+
+  programs.hyprland = {
+    enable = true;
+    withUWSM = true;
+    xwayland.enable = true;
+  };
 
   programs.git = {
     enable = true;
