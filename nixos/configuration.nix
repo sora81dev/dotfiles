@@ -37,6 +37,7 @@
     curl
     zsh
     unzip
+    efibootmgr
 
     # Git
     git
