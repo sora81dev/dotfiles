@@ -33,6 +33,22 @@
   # services.desktopManager.gnome.enable = true;
   services.displayManager.sddm.enable = true;
 
+  services.keyd = {
+    enable = true;
+    keyboards = {
+      default = {
+        ids = [ "*" ];
+      
+        settings = {
+          main = {
+            capslock = "layer(control)";
+          };
+            otherlayer = {};
+          };
+       };
+    };
+  };
+
   programs.zsh.enable = true;
 
   users.users.sora81dev = {
