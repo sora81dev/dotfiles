@@ -83,6 +83,9 @@
     waybar
     swww
     mako
+    hyprshot
+    wl-clipboard
+    ffmpeg
   ];
 
   programs.hyprland = {
