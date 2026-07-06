@@ -81,7 +81,7 @@
     # Hyprland
     wofi
     waybar
-    swww
+    hyprpaper
     mako
     hyprshot
     wl-clipboard
