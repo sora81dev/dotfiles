@@ -24,7 +24,7 @@
   users.users.sora81dev = {
     isNormalUser = true;
     shell = pkgs.zsh;
-    extraGroups = [ "wheel" ];
+    extraGroups = [ "wheel" "networkmanager" "video" "input" ];
   };
 
   nixpkgs.config.allowUnfree = true;
