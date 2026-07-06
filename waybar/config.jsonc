@@ -1,0 +1,11 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-center": ["clock"],
+  "modules-right": [
+    "network",
+    "cpu",
+    "memory",
+    "battery"
+  ]
+}

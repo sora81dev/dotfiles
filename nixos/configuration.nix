@@ -15,9 +15,9 @@
   time.timeZone = "Asia/Tokyo";
 
   services.xserver.enable = true;
-  # services.displayManager.gdm.enable = true;
+  services.displayManager.gdm.enable = true;
   # services.desktopManager.gnome.enable = true;
-  services.displayManager.sddm.enable = true;
+  # services.displayManager.sddm.enable = true;
 
   programs.zsh.enable = true;
 
