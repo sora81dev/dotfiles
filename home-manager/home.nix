@@ -39,7 +39,7 @@
     # Graphical Software
     discord
     thunderbird
-    osu-lazer
+    osu-lazer-bin
     vencord
     steam
   ];
