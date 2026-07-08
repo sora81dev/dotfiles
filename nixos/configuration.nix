@@ -86,6 +86,7 @@
     hyprshot
     wl-clipboard
     ffmpeg
+    wf-recorder
   ];
 
   programs.hyprland = {
