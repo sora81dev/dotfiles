@@ -16,6 +16,7 @@
     tree
 
     gcc
+    clang-tools
 
     # Rust
     rustup
@@ -28,6 +29,7 @@
     prettier
     ripgrep
     fzf
+    lua-language-server
 
     # NodeJS
     nodejs
