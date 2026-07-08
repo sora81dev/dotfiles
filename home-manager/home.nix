@@ -14,7 +14,7 @@
   # Packages
   home.packages = with pkgs; [
     tree
-
+    
     gcc
     clang-tools
 
@@ -23,6 +23,8 @@
     tokei
 
     ghq
+
+    lazygit
 
     # Neovim Plugins
     tree-sitter
