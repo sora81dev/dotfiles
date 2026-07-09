@@ -2,6 +2,7 @@
 {
   imports = [
     ./programs
+    ./packages
   ];
 
   home.username = "sora81dev";
@@ -34,9 +35,6 @@
     # NodeJS
     nodejs
     pnpm
-
-    # Load fonts
-    nerd-fonts.jetbrains-mono
 
     # Graphical Software
     discord

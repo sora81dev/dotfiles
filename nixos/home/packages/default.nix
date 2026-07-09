@@ -1,0 +1,6 @@
+{ pkgs, ... }:
+{
+  import = [
+    ./fonts
+  ];
+}
