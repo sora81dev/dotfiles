@@ -18,11 +18,12 @@
           ./nixos/machines/hp-notebook/hardware-configuration.nix
           ./nixos/configuration.nix
 
-          home-manager.nixosModules.home-manager {
+          home-manager.nixosModules.home-manager
+          {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
 
-            home-manager.users.sora81dev = import ./home-manager/home.nix;
+            home-manager.users.sora81dev = import ./nixos/home/home.nix;
           }
         ];
       };
@@ -31,7 +32,7 @@
     homeConfigurations."sora81dev" = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
 
-      modules = [ ./home-manager/home.nix ]; 
+      modules = [ ./nixos/home/home.nix ];
     };
   };
 }
