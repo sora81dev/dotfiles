@@ -7,7 +7,7 @@ return {
         bacon_ls = {
           enabled = diagnostics == "bacon-ls",
         },
-        rust_analyzer = { enabled = false },
+        rust_analyzer = { enabled = true },
       },
     },
     config = function()
@@ -51,6 +51,10 @@ return {
           },
         },
       })
+      vim.lsp.enable("rust_analyzer")
+
+      vim.lsp.config("nil_ls", {})
+      vim.lsp.enable("nil_ls")
     end,
   },
 }

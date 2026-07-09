@@ -19,7 +19,8 @@
     clang-tools
 
     # Rust
-    rustup
+    rustc
+    cargo
     tokei
 
     ghq
@@ -31,7 +32,11 @@
     prettier
     ripgrep
     fzf
-    lua-language-server
+
+    # Neovim LSP
+    lua-language-server # Lua
+    rust-analyzer # Rust
+    nil # Nix
 
     # NodeJS
     nodejs
