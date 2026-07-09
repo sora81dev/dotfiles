@@ -1,14 +1,59 @@
--- require("mason-lspconfig").setup {
---   -- Install LSP Automatically
---   ensure_installed = {
---     "clangd",        -- C Language
---     "eslint",        -- Formatter
---     "ts_ls",         -- Typescript
---     "lua_ls",        -- Lua
---     "tailwindcss",   -- Tailwind CSS
---     "rust_analyzer", -- Rust Analyzer
---     "nil_ls"         -- Nix
---   }
--- }
+-- ----------
+-- ESLint
+-- ----------
+vim.lsp.config('eslint', {
+  settings = {
+    run = "onSave",
+  },
+})
+vim.lsp.enable('eslint')
 
-require('lspconfig').clangd.setup({})
+-- ----------
+-- TypeScript
+-- ----------
+vim.lsp.config('ts_ls', {})
+vim.lsp.enable('ts_ls')
+
+-- ----------
+-- C Language
+-- ----------
+vim.lsp.config('clangd', {
+  cmd = {
+    "clangd",
+    "--enable-config",
+    "--background-index",
+    "--clang-tidy",
+  },
+})
+vim.lsp.enable('clangd')
+
+-- ----------
+-- Rust
+-- ----------
+vim.lsp.config("rust_analyzer", {
+  settings = {
+    ["rust-analyzer"] = {
+      imports = {
+        granularity = {
+          group = "module",
+        },
+        prefix = "self",
+      },
+      cargo = {
+        buildScripts = {
+          enable = true,
+        },
+      },
+      procMacro = {
+        enable = true
+      },
+    },
+  },
+})
+vim.lsp.enable("rust_analyzer")
+
+-- ----------
+-- Nix
+-- ----------
+vim.lsp.config("nil_ls", {})
+vim.lsp.enable("nil_ls")
