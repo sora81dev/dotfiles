@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./programs/nvim
+  ];
+
   home.username = "sora81dev";
   home.homeDirectory = "/home/sora81dev";
 
@@ -27,17 +31,6 @@
     ghq
 
     lazygit
-
-    # Neovim Plugins
-    tree-sitter
-    prettier
-    ripgrep
-    fzf
-
-    # Neovim LSP
-    lua-language-server # Lua
-    rust-analyzer # Rust
-    nil # Nix
 
     # NodeJS
     nodejs
@@ -97,21 +90,4 @@
       source ~/.config/.p10k.zsh
     '';
   };
-
-  programs.neovim = {
-    enable = true;
-
-    defaultEditor = true;
-
-    viAlias = true;
-    vimAlias = true;
-
-    withPython3 = true;
-  };
-
-  xdg.configFile."nvim" = {
-    source = ./../../neovim;
-    recursive = true;
-  };
-
 }
