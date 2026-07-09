@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./programs/nvim
+    ./programs
   ];
 
   home.username = "sora81dev";
