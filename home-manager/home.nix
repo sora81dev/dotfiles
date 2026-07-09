@@ -14,7 +14,8 @@
   # Packages
   home.packages = with pkgs; [
     tree
-    
+    direnv
+
     gcc
     clang-tools
 
