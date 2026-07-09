@@ -2,10 +2,15 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
-  imports = [];
+  imports = [ ];
 
   # boot.loader.systemd-boot.enable = true;
 
@@ -38,14 +43,43 @@
     keyboards = {
       default = {
         ids = [ "*" ];
-      
+
         settings = {
           main = {
             capslock = "layer(control)";
           };
-            otherlayer = {};
-          };
-       };
+          otherlayer = { };
+        };
+      };
+    };
+  };
+
+  fonts = {
+    packages = with pkgs; [
+      noto-fonts
+      noto-fonts-cjk-sans
+      noto-fonts-color-emoji
+      nerd-fonts.jetbrains-mono
+      twemoji-color-font
+    ];
+
+    fontconfig.defaultFonts = {
+      serif = [
+        "Noto Serif"
+        "Noto Color Emoji"
+      ];
+      sansSerif = [
+        "Noto Sans"
+        "Noto Color Emoji"
+      ];
+      monospace = [
+        "JetBrainsMono Nerd Font"
+        "Noto Color Emoji"
+      ];
+      emoji = [
+        "Twitter Color Emoji"
+        "Noto Color Emoji"
+      ];
     };
   };
 
@@ -54,7 +88,12 @@
   users.users.sora81dev = {
     isNormalUser = true;
     shell = pkgs.zsh;
-    extraGroups = [ "wheel" "networkmanager" "video" "input" ];
+    extraGroups = [
+      "wheel"
+      "networkmanager"
+      "video"
+      "input"
+    ];
   };
 
   nixpkgs.config.allowUnfree = true;
@@ -102,7 +141,7 @@
         name = "sora81dev";
         email = "117363029+sora81dev@users.noreply.github.com";
       };
-      
+
       credential.helper = "!gh auth git-credential";
     };
   };
@@ -124,9 +163,9 @@
   services.xserver.exportConfiguration = true;
 
   environment.variables = {
-    GTK_IN_MODULE 	 = "fcitx";
-    QT_IM_MODULE  	 = "fcitx";
-    XMODIFIERS     	 = "@im=fcitx";
+    GTK_IN_MODULE = "fcitx";
+    QT_IM_MODULE = "fcitx";
+    XMODIFIERS = "@im=fcitx";
   };
 
   hardware.graphics = {
@@ -137,4 +176,3 @@
   system.stateVersion = "25.11"; # Did you read the comment?
 
 }
-
