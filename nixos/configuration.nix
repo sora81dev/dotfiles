@@ -126,6 +126,7 @@
     wl-clipboard
     ffmpeg
     wf-recorder
+    brightnessctl
   ];
 
   programs.hyprland = {
