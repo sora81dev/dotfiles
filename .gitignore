@@ -5,7 +5,11 @@ gh/
 .gsd-keyboard.settings-ported
 evolution/
 gnome-initial-setup-done
+goa-1.0/
+epiphany/
+Vencord/
 gtk-3.0/
+gtk-4.0/
 ibus/
 pulse/
 user-dirs.dirs
@@ -27,6 +31,7 @@ Vencord/
 fcitx/
 nautilus
 zenn-cli.json
+unity3d/
 
 nvim
 nvim/
