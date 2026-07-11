@@ -57,3 +57,9 @@ vim.lsp.enable("rust_analyzer")
 -- ----------
 vim.lsp.config("nil_ls", {})
 vim.lsp.enable("nil_ls")
+
+-- ----------
+-- CSS
+-- ----------
+vim.lsp.config("cssls", {})
+vim.lsp.enable("cssls");

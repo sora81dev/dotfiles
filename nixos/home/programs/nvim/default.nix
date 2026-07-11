@@ -1,5 +1,23 @@
 { config, pkgs, ... }:
 {
+  home.packages = with pkgs; [
+    # Language servers
+    lua-language-server # Lua
+    rust-analyzer # Rust
+    nil # Nix
+    typescript
+    typescript-language-server # TypeScript
+    vscode-css-languageserver # CSS
+
+    # Plugin build dependencies
+    cmake
+    gcc
+    tree-sitter
+    prettier
+    ripgrep
+    fzf
+  ];
+
   programs.neovim = {
     enable = true;
 
@@ -9,21 +27,6 @@
     vimAlias = true;
 
     withPython3 = true;
-
-    extraPackages = with pkgs; [
-      # Plugin build dependencies
-      cmake
-      gcc
-      tree-sitter
-      prettier
-      ripgrep
-      fzf
-
-      # Language servers
-      lua-language-server # Lua
-      rust-analyzer # Rust
-      nil # Nix
-    ];
   };
 
   home.file = {
