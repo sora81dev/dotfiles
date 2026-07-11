@@ -17,7 +17,7 @@ config.font = wezterm.font_with_fallback({
 config.font_size = 10
 
 -- ウィンドウ設定
-config.window_decorations = "RESIZE"
+config.window_decorations = "NONE"
 config.window_background_opacity = 0.75
 config.macos_window_background_blur = 10
 config.window_background_gradient = {
