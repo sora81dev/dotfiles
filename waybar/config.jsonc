@@ -7,5 +7,26 @@
     "cpu",
     "memory",
     "battery"
-  ]
+  ],
+  "cpu": {
+    "format": "  {usage}%"
+  },
+  "network": {
+    "interface": "wlp0s20f3",
+    "interval": 1,
+    "format-wifi": "   {essid}"
+  },
+  "memory": {
+    "format": "  {}%"
+  },
+  "battery": {
+    "states": {
+      "full": 99,
+      "warning": 50,
+      "ciritical": 10
+    },
+    "full-at": 100,
+    "format": "{icon} {capacity}%",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+  }
 }

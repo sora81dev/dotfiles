@@ -1,0 +1,43 @@
+#cpu {
+  margin-left: 3px;
+  margin-right: 0;
+  padding-left: 13px;
+  padding-right: 10px;
+  color: #ffffff;
+  background-color: #5ed6a4;
+}
+
+#network {
+  margin-left: 3px;
+  margin-right: 0;
+  padding-left: 10px;
+  padding-right: 13px;
+  background-color: #f7c051;
+  color: #ffffff;
+}
+
+#memory {
+  margin-left: 3px;
+  margin-right: 0;
+  padding-left: 10px;
+  padding-right: 13px;
+  background-color: #5ed6a4;
+  color: #ffffff;
+}
+
+#battery {
+  margin-left: 3px;
+  margin-right: 0;
+  padding-left: 10px;
+  padding-right: 13px;
+  background-color: #42bc6c;
+  color: #ffffff;
+}
+
+#battery.warning {
+  background-color: #f5df23;
+}
+
+#battery.critical {
+  background-color: #fe0219;
+}
