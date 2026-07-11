@@ -127,6 +127,8 @@
     ffmpeg
     wf-recorder
     brightnessctl
+    rofimoji
+    wl-clipboard
   ];
 
   programs.hyprland = {
