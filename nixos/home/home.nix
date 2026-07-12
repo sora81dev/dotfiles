@@ -19,6 +19,7 @@
   home.packages = with pkgs; [
     tree
     direnv
+    platformio
 
     gcc
     clang-tools
