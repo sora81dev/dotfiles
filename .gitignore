@@ -32,6 +32,9 @@ fcitx/
 nautilus/
 zenn-cli.json
 unity3d/
+sh.cider.genten/
+Electron/
+kitty/
 
 nvim
 nvim/
