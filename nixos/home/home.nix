@@ -37,13 +37,6 @@
     # NodeJS
     nodejs
     pnpm
-
-    # Graphical Software
-    discord
-    thunderbird
-    osu-lazer-bin
-    vencord
-    steam
   ];
 
   # Let Home Manager install and manage itself.
