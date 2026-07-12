@@ -1,6 +1,7 @@
 include "./display.kdl"
 include "./startup.kdl"
 include "./keymap.kdl"
+include "./window-rule.kdl"
 
 // remove titlebar
 // Ref: 一目惚れから始まった。NixOSに最高の美しさをもたらす「Nix + Noctalia」環境の作り方
