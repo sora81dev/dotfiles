@@ -63,3 +63,9 @@ vim.lsp.enable("nil_ls")
 -- ----------
 vim.lsp.config("cssls", {})
 vim.lsp.enable("cssls");
+
+--- ---------
+--- TOML
+--- ---------
+vim.lsp.config("tombi", {})
+vim.lsp.enable("tombi");
