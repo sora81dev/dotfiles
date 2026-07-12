@@ -127,12 +127,24 @@
     brightnessctl
     rofimoji
     wl-clipboard
+
+    # Niri
+    swaylock
   ];
+
+  programs.niri.enable = true;
 
   programs.hyprland = {
     enable = true;
     withUWSM = true;
     xwayland.enable = true;
+  };
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk
+    ];
   };
 
   programs.git = {
