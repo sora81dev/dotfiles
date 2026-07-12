@@ -9,7 +9,7 @@
 acfg() {
   # apply .zshrc configuration
   echo "Applying .zshrc settings..."
-  source ~/.zshrc
+  source ~/.zshrc_custom
 
   # clear zsh command cache (for new commands)
   echo "Clearing command cache..."
