@@ -1,5 +1,9 @@
 { pkgs, ... }:
 {
+  home.packages = with pkgs; [
+    pure-prompt
+  ];
+
   programs.zoxide = {
     enable = true;
     enableZshIntegration = true;
@@ -7,11 +11,6 @@
 
   programs.zsh = {
     enable = true;
-
-    oh-my-zsh = {
-      enable = true;
-      plugins = [ "git" ];
-    };
 
     # zsh utilities
     autosuggestion.enable = true;
@@ -21,12 +20,18 @@
     ];
 
     # Load zsh configuration file
-    initContent = ''
-      source ~/.zshrc
+    initExtra = ''
+      # Load original configuration
+      source ~/.zshrc_custom
+
+      # Enable Pure prompt
+      fpath+=( "${pkgs.pure-prompt}/share/zsh/site-functions" )
+      autoload -U promptinit; promptinit
+      prompt pure
     '';
   };
 
   home.file = {
-    ".zshrc".source = ./../../../../.zshrc;
+    ".zshrc_custom".source = ./../../../../.zshrc;
   };
 }
