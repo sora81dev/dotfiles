@@ -1,0 +1,30 @@
+"$schema" = "https://starship.rs/config-schema.json"
+
+format = """
+${custom.ghq}[$directory](green bold) $git_branch$git_status$read_only
+$character
+"""
+
+add_newline = true
+
+[directory]
+truncation_length = 1
+truncate_to_repo = true
+format = "$path"
+repo_root_format = "$repo_root"
+
+[custom.ghq]
+shell = ["bash", "--noprofile", "--norc"]
+description = "Custom "
+when = '[[ "$PWD" == "$HOME/ghq/github.com"* ]]'
+
+command = '''
+ROOT="$(ghq root)"
+REL="${PWD#$ROOT/}"
+IFS=/ read -r HOST OWNER REPO _ <<< "$REL"
+
+printf "  %s/" "$OWNER"
+'''
+
+style = "green bold"
+format = "[$output]($style)"
