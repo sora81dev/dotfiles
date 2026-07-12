@@ -1,9 +1,16 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 {
   imports = [
     ./programs
     ./packages
   ];
+
+  _module.args = { inherit inputs; };
 
   home.username = "sora81dev";
   home.homeDirectory = "/home/sora81dev";
@@ -37,6 +44,7 @@
     # NodeJS
     nodejs
     pnpm
+
   ];
 
   # Let Home Manager install and manage itself.
