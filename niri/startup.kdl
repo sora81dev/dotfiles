@@ -1,0 +1,4 @@
+spawn-at-startup "waybar"
+spawn-at-startup "hyprpaper"
+
+spawn-at-startup "bash ~/.config/niri/scripts/reorder-workspaces.sh"
