@@ -22,7 +22,11 @@
 
     # Load zsh configuration file
     initContent = ''
-      source ~/.config/.zshrc
+      source ~/.zshrc
     '';
+  };
+
+  home.file = {
+    ".zshrc".source = ./../../../../.zshrc;
   };
 }

@@ -4,12 +4,12 @@
 # --------------
 # Description: This command can apply zsh configuration quickly
 # Created at : 2026.06.16
-# Updated at : 2026.05.16
+# Updated at : 2026.07.12
 
 acfg() {
   # apply .zshrc configuration
   echo "Applying .zshrc settings..."
-  source ~/.config/.zshrc
+  source ~/.zshrc
 
   # clear zsh command cache (for new commands)
   echo "Clearing command cache..."
