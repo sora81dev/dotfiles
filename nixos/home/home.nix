@@ -27,6 +27,7 @@
     rustc
     cargo
     tokei
+    eza
 
     ghq
 
