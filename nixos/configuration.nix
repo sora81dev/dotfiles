@@ -127,6 +127,7 @@
     brightnessctl
     rofimoji
     wl-clipboard
+    wlogout
 
     # Niri
     swaylock
