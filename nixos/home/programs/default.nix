@@ -4,6 +4,6 @@
     ./nvim
     ./shell
 
-    ./gui-common-software.nix
+    ./gui-common-softwares.nix
   ];
 }
