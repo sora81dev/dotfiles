@@ -7,7 +7,6 @@ include "./window-rule.kdl"
 // Ref: 一目惚れから始まった。NixOSに最高の美しさをもたらす「Nix + Noctalia」環境の作り方
 //      https://note.com/joyful_fish3892/n/n91b03393bb00#83807da1-7bed-45a8-b196-f22be8f2be17
 prefer-no-csd
-
 input {
     // auto focus
     // Ref: 一目惚れから始まった。NixOSに最高の美しさをもたらす「Nix + Noctalia」環境の作り方
@@ -102,10 +101,7 @@ layout {
         width 4
         active-color "#ffc87f"
         inactive-color "#505050"
-
-        // Color of the border around windows that request your attention.
         urgent-color "#9b0000"
-
     }
 
     shadow {
@@ -120,7 +116,6 @@ layout {
         // Offset moves the shadow relative to the window.
         offset x=0 y=5
 
-        // You can also change the shadow color and opacity.
         color "#0007"
     }
 
