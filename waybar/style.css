@@ -1,3 +1,29 @@
+* {
+  min-height: 25px;
+}
+
+#custom {
+  margin-left: 10px;
+}
+
+#custom-logout {
+  margin-right: 0;
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+#custom-shutdown {
+  margin-right: 0;
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+#custom-reboot {
+  margin-right: 0;
+  margin-left: 8px;
+  font-size: 20px;
+}
+
 #cpu {
   margin-left: 3px;
   margin-right: 0;

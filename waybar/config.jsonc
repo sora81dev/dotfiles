@@ -1,6 +1,11 @@
 {
   "layer": "top",
   "position": "top",
+  "modules-left": [
+    "custom/logout", 
+    "custom/shutdown", 
+    "custom/reboot"
+  ],
   "modules-center": ["clock"],
   "modules-right": [
     "network",
@@ -9,12 +14,32 @@
     "memory",
     "battery"
   ],
+  "sway/mode": {
+    "format": "{}"
+  },
+  "custom/logout": {
+    "format": "󰈆 ",
+    "on-click": "wlogout"
+  },
+  "custom/shutdown": {
+    "format": " ",
+    "on-click": "sudo shutdown now"
+  },
+  "custom/reboot": {
+    "format": " ",
+    "on-click": "sudo reboot now"
+  },
+  "clock": {
+    "interval": 1,
+    "format": "{:%Y.%m.%d    %H:%M:%S}",
+    "tooltip-format": "{calendar}"
+  },
   "cpu": {
     "format": "  {usage}%"
   },
   "network": {
     "interface": "wlp0s20f3",
-    "interval": 1,
+    "interval": 30,
     "format-wifi": "   {essid}"
   },
   "pulseaudio": {
