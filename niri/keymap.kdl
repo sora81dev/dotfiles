@@ -24,6 +24,9 @@ binds {
   Mod+Shift+period repeat=false {
       spawn "sh" "-c" "brightnessctl set +5%"
   }
+  Mod+ALT+N repeat=false {
+    spawn "sh" "-c" "rofimoji --files nerd_font"
+  }
 
   // Window Modify
   Mod+R { switch-preset-column-width; }
