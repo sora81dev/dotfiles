@@ -5,7 +5,6 @@
     enableZshIntegration = true;
   };
 
-  # TODO: Load oh-my-zsh for powerlevel10k
   programs.zsh = {
     enable = true;
 
@@ -13,7 +12,8 @@
       enable = true;
       plugins = [ "git" ];
     };
-    # zsh utilities(autosuggestions, syntaxHighlighting)
+
+    # zsh utilities
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
 
