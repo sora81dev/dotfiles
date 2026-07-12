@@ -18,17 +18,11 @@
     syntaxHighlighting.enable = true;
 
     plugins = [
-      {
-        name = "powerlevel10k";
-        src = pkgs.zsh-powerlevel10k;
-        file = "share/zsh-powerlevel10k/powerlevel-10k.zsh-theme";
-      }
     ];
 
     # Load zsh configuration file
     initContent = ''
       source ~/.config/.zshrc
-      source ~/.config/.p10k.zsh
     '';
   };
 }
