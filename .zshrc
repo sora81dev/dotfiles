@@ -23,6 +23,8 @@ export GHQ_ROOT=~/ghq
 export GPG_TTY=$(tty)
 
 # Pure
+#   Ref: zsh用プロンプトpureを入れてみる
+#        https://hene.dev/blog/2019/07/15/pure
 RPROMPT="%{${fg[blue]}%}[%~]%{${reset_color}%}"
 autoload -Uz vcs_info
 setopt prompt_subst
