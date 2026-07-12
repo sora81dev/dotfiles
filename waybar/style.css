@@ -35,7 +35,8 @@
 }
 
 #battery.warning {
-  background-color: #f5df23;
+  background-color: #f2df35;
+  font-weight: bold;
 }
 
 #battery.critical {
