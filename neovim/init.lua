@@ -16,6 +16,9 @@ vim.opt.expandtab = true
 vim.api.nvim_set_var('loaded_netrw', 1)
 vim.api.nvim_set_var('loaded_netrwPlugin', 1)
 
+-- Disable Swapfile --
+vim.opt.swapfile = false
+
 -- Leader Key --
 vim.g.mapleader = " "
 
