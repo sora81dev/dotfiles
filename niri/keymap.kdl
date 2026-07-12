@@ -1,7 +1,11 @@
 binds {
   // Execute Quickly
-  Mod+C hotkey-overlay-title="Open Terminal" { spawn "wezterm"; }
-  Mod+B hotkey-overlay-title="Open Browzer" { spawn "zen"; }
+  Mod+C hotkey-overlay-title="Open Terminal" {
+    spawn "wezterm";
+  }
+  Mod+B repeat=false {
+    spawn "zen";
+  }
 
   // App Launcher
   Mod+E repeat=false {
@@ -13,6 +17,14 @@ binds {
     spawn "swaylock"
   }
 
+  // Brightness
+  Mod+Shift+comma repeat=false {
+      spawn "sh" "-c" "brightnessctl set 5%-"
+  }
+  Mod+Shift+period repeat=false {
+      spawn "sh" "-c" "brightnessctl set +5%"
+  }
+
   // Window Modify
   Mod+R { switch-preset-column-width; }
   Mod+F { maximize-column; }
@@ -20,6 +32,10 @@ binds {
   Mod+M { maximize-window-to-edges; }
   Mod+Ctrl+Shift+R { switch-preset-window-height; }
   Mod+Ctrl+R { reset-window-height; }
+  Mod+Minus { set-column-width "-10%"; }
+  Mod+Equal { set-column-width "+10%"; }
+  Mod+Shift+Minus { set-window-height "-10%"; }
+  Mod+Shift+Equal { set-window-height "+10%"; }
 
   // Overview
   Mod+O repeat=false { toggle-overview; }
@@ -29,13 +45,6 @@ binds {
 
   // Center all fully visible columns on screen.
   Mod+Ctrl+C { center-visible-columns; }
-
-  Mod+Minus { set-column-width "-10%"; }
-  Mod+Equal { set-column-width "+10%"; }
-
-  // Finer height adjustments when in column with other windows.
-  Mod+Shift+Minus { set-window-height "-10%"; }
-  Mod+Shift+Equal { set-window-height "+10%"; }
 
   // Workspace Shortcuts
   Mod+1 { focus-workspace 1; }
@@ -56,4 +65,86 @@ binds {
   Mod+Ctrl+7 { move-column-to-workspace 7; }
   Mod+Ctrl+8 { move-column-to-workspace 8; }
   Mod+Ctrl+9 { move-column-to-workspace 9; }
+
+  // Window Focus
+  Mod+H     { focus-column-left; }
+  Mod+J     { focus-window-down; }
+  Mod+K     { focus-window-up; }
+  // Mod+L     { focus-column-right; }
+  Mod+Home { focus-column-first; }
+  Mod+End  { focus-column-last; }
+  Mod+Shift+H     { focus-monitor-left; }
+  Mod+Shift+J     { focus-monitor-down; }
+  Mod+Shift+K     { focus-monitor-up; }
+  Mod+Shift+L     { focus-monitor-right; }
+  Mod+Page_Down      { focus-workspace-down; }
+  Mod+Page_Up        { focus-workspace-up; }
+  Mod+U              { focus-workspace-down; }
+  Mod+I              { focus-workspace-up; }
+  Mod+WheelScrollDown      cooldown-ms=150 { focus-workspace-down; }
+  Mod+WheelScrollUp        cooldown-ms=150 { focus-workspace-up; }
+  Mod+WheelScrollRight      { focus-column-right; }
+  Mod+WheelScrollLeft       { focus-column-left; }
+  Mod+Shift+WheelScrollDown      { focus-column-right; }
+  Mod+Shift+WheelScrollUp        { focus-column-left; }
+
+
+  // Window Move
+  Mod+Ctrl+H     { move-column-left; }
+  Mod+Ctrl+J     { move-window-down; }
+  Mod+Ctrl+K     { move-window-up; }
+  Mod+Ctrl+L     { move-column-right; }
+  Mod+Ctrl+Home { move-column-to-first; }
+  Mod+Ctrl+End  { move-column-to-last; }
+  Mod+Shift+Ctrl+H     { move-column-to-monitor-left; }
+  Mod+Shift+Ctrl+J     { move-column-to-monitor-down; }
+  Mod+Shift+Ctrl+K     { move-column-to-monitor-up; }
+  Mod+Shift+Ctrl+L     { move-column-to-monitor-right; }
+  Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
+  Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
+  Mod+Ctrl+U         { move-column-to-workspace-down; }
+  Mod+Ctrl+I         { move-column-to-workspace-up; }
+
+  Mod+Shift+Page_Down { move-workspace-down; }
+  Mod+Shift+Page_Up   { move-workspace-up; }
+  Mod+Shift+U         { move-workspace-down; }
+  Mod+Shift+I         { move-workspace-up; }
+  Mod+Ctrl+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
+  Mod+Ctrl+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up; }
+  Mod+Ctrl+WheelScrollRight { move-column-right; }
+  Mod+Ctrl+WheelScrollLeft  { move-column-left; }
+  Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
+  Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
+
+  // ?
+  Mod+BracketLeft  { consume-or-expel-window-left; }
+  Mod+BracketRight { consume-or-expel-window-right; }
+
+  Mod+Comma  { consume-window-into-column; }
+  Mod+Period { expel-window-from-column; }
+
+  Mod+Shift+R { switch-preset-column-width-back; }
+
+  Mod+Ctrl+F { expand-column-to-available-width; }
+
+  // Window Floating
+  Mod+V       { toggle-window-floating; }
+  Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+
+  // Toggle tabbed column display mode.
+  Mod+W { toggle-column-tabbed-display; }
+
+  // Screenshot
+  Print { screenshot; }
+  Ctrl+Print { screenshot-screen; }
+  Alt+Print { screenshot-window; }
+
+  Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+
+  // The quit action will show a confirmation dialog to avoid accidental exits.
+  Mod+Shift+E { quit; }
+  Ctrl+Alt+Delete { quit; }
+
+  // Powers off the monitors.
+  Mod+Shift+P { power-off-monitors; }
 }
