@@ -4,6 +4,7 @@
   "modules-center": ["clock"],
   "modules-right": [
     "network",
+    "pulseaudio",
     "cpu",
     "memory",
     "battery"
@@ -15,6 +16,10 @@
     "interface": "wlp0s20f3",
     "interval": 1,
     "format-wifi": "   {essid}"
+  },
+  "pulseaudio": {
+    "format": "   {volume}%",
+    "scroll-step": 5
   },
   "memory": {
     "format": "  {}%"

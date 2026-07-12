@@ -7,6 +7,15 @@
   background-color: #5ed6a4;
 }
 
+#pulseaudio {
+  margin-left: 3px;
+  margin-right: 0;
+  padding-left: 15px;
+  padding-right: 13px;
+  color: #ffffff;
+  background-color: #fc9ce7;
+}
+
 #network {
   margin-left: 3px;
   margin-right: 0;
