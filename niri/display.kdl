@@ -33,3 +33,15 @@ output "HKC OVERSEAS LIMITED 24E4 0000000000001" {
   transform "normal"
   position x=2400 y=0
 }
+
+// ----------
+// CCR1 Monitor
+// ----------
+output "Sharp Corporation PN-L603W 0x0C359404" {
+  // off
+
+  mode "1920x1080@60.000"
+  scale 1.0
+  transform "normal"
+  position x=2400 y=0
+}
