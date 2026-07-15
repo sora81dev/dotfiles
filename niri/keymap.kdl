@@ -13,9 +13,9 @@ binds {
   }
 
   // Lock
-  Super+L repeat=false { 
-    spawn "swaylock"
-  }
+  // Super+L repeat=false { 
+  //   spawn "swaylock"
+  // }
 
   // Brightness
   Mod+Shift+comma repeat=false {
@@ -73,7 +73,7 @@ binds {
   Mod+H     { focus-column-left; }
   Mod+J     { focus-window-down; }
   Mod+K     { focus-window-up; }
-  // Mod+L     { focus-column-right; }
+  Mod+L     { focus-column-right; }
   Mod+Home { focus-column-first; }
   Mod+End  { focus-column-last; }
   Mod+Shift+H     { focus-monitor-left; }
