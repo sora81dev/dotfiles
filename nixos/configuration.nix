@@ -131,9 +131,14 @@
 
     # Niri
     swaylock
+    xwayland-satellite
+    rofi
+
+    pulseaudio
   ];
 
   programs.niri.enable = true;
+  programs.xwayland.enable = true;
 
   programs.hyprland = {
     enable = true;
@@ -159,6 +164,15 @@
       credential.helper = "!gh auth git-credential";
     };
   };
+
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+  };
+
+  services.pipewire.enable = true;
+  services.pipewire.pulse.enable = true;
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
