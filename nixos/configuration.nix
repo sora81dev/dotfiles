@@ -5,6 +5,7 @@
 {
   lib,
   pkgs,
+  options,
   ...
 }:
 
@@ -31,6 +32,7 @@
   networking.hostName = "hp-notebook";
   networking.networkmanager.enable = true;
   time.timeZone = "Asia/Tokyo";
+  networking.timeServers = options.networking.timeServers.default ++ [ "ntp.nict.jp" ];
 
   services.xserver.enable = true;
   # services.displayManager.gdm.enable = true;
