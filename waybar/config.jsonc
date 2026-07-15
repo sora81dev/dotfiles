@@ -23,11 +23,11 @@
   },
   "custom/shutdown": {
     "format": " ",
-    "on-click": "sudo shutdown now"
+    "on-click": "systemctl poweroff"
   },
   "custom/reboot": {
     "format": " ",
-    "on-click": "sudo reboot now"
+    "on-click": "systemctl reboot"
   },
   "clock": {
     "interval": 1,
