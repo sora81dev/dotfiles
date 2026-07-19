@@ -10,6 +10,7 @@
 
 {
   imports = [
+    ./modules/packages
     ./modules/programs
 
     ./modules/desktop-configuration.nix
@@ -40,8 +41,6 @@
   time.timeZone = "Asia/Tokyo";
   networking.timeServers = options.networking.timeServers.default ++ [ "ntp.nict.jp" ];
 
-  programs.zsh.enable = true;
-
   users.users.sora81dev = {
     isNormalUser = true;
     shell = pkgs.zsh;
@@ -52,38 +51,6 @@
       "input"
     ];
   };
-
-  nixpkgs.config.allowUnfree = true;
-
-  environment.systemPackages = with pkgs; [
-    vim
-    wget
-    curl
-    zsh
-    unzip
-    efibootmgr
-
-    # Graphical Software
-    wezterm
-
-    gnomeExtensions.kimpanel
-
-    # Hyprland
-    wofi
-    waybar
-    hyprpaper
-    mako
-    hyprshot
-    wl-clipboard
-    ffmpeg
-    wf-recorder
-    brightnessctl
-    rofimoji
-    wl-clipboard
-    wlogout
-
-    pulseaudio
-  ];
 
   programs.hyprland = {
     enable = true;
