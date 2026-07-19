@@ -5,7 +5,6 @@ vim.opt.cursorline = true
 
 -- File Settings --
 vim.opt.fileencoding = "utf-8"
-
 -- Tab Spaces --
 vim.opt.autoindent = true
 vim.opt.tabstop = 2
@@ -65,6 +64,7 @@ require("config.lualine")
 require("config.neo-tree")
 require("config.nvim-cmp")
 require("config.nvim-highlight-colors")
+require("config.template")
 require("config.treesitter")
 require("config.ts-autotag")
 

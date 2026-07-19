@@ -22,3 +22,6 @@ map('n', '<C-l>', '<C-w>l')
 
 -- Lazygit
 map('n', '<leader>lg', "<cmd>LazyGit<cr>", { desc = "Lazygit" })
+
+-- Template --
+map('n', '<Leader>t', function() vim.fn.feedkeys(':Template ') end, { remap = true })
