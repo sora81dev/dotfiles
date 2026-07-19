@@ -58,6 +58,10 @@
   #   xwayland.enable = true;
   # };
 
+  # Enable Removable Media
+  # https://wiki.nixos.org/wiki/USB_storage_devices
+  services.udisks2.enable = true;
+
   services.pipewire.enable = true;
   services.pipewire.pulse.enable = true;
 

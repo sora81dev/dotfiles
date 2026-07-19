@@ -50,4 +50,18 @@
   programs.home-manager.enable = true;
 
   news.display = "silent";
+
+  # Enable Removable Media
+  # https://wiki.nixos.org/wiki/USB_storage_devices
+  services.udiskie = {
+    enable = true;
+    settings = {
+      # workaround for
+      # https://github.com/nix-community/home-manager/issues/632
+      program_options = {
+        # replace with your favorite file manager
+        file_manager = "${pkgs.nemo-with-extensions}/bin/nemo";
+      };
+    };
+  };
 }

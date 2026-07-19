@@ -36,6 +36,8 @@ sh.cider.genten/
 Electron/
 kitty/
 zen/
+QtProject.conf
+udiskie/
 
 nvim
 nvim/
