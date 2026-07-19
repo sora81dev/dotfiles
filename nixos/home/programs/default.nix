@@ -1,6 +1,5 @@
 { inputs, ... }: {
   imports = [
-    ./firefox
     ./nvim
     ./shell
     ./zen-browser
