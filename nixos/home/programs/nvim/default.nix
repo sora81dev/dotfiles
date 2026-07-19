@@ -28,6 +28,10 @@
     vimAlias = true;
 
     withPython3 = true;
+
+    plugins = with pkgs.vimPlugins; [
+      lazy-nvim
+    ];
   };
 
   home.file = {
