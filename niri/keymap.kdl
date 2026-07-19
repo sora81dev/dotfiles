@@ -9,7 +9,7 @@ binds {
 
   // App Launcher
   Mod+E repeat=false {
-    spawn "sh" "-c" "wofi --show drun"
+    spawn "sh" "-c" "rofi -show drun"
   }
 
   // Lock

@@ -16,7 +16,6 @@
     gnomeExtensions.kimpanel
 
     # Hyprland
-    wofi
     waybar
     hyprpaper
     mako
