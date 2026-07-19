@@ -36,11 +36,6 @@
   time.timeZone = "Asia/Tokyo";
   networking.timeServers = options.networking.timeServers.default ++ [ "ntp.nict.jp" ];
 
-  services.xserver.enable = true;
-  # services.displayManager.gdm.enable = true;
-  # services.desktopManager.gnome.enable = true;
-  services.displayManager.sddm.enable = true;
-
   services.keyd = {
     enable = true;
     keyboards = {
@@ -99,16 +94,8 @@
     wl-clipboard
     wlogout
 
-    # Niri
-    swaylock
-    xwayland-satellite
-    rofi
-
     pulseaudio
   ];
-
-  programs.niri.enable = true;
-  programs.xwayland.enable = true;
 
   programs.hyprland = {
     enable = true;
