@@ -65,12 +65,6 @@
     ];
   };
 
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true;
-    dedicatedServer.openFirewall = true;
-  };
-
   services.pipewire.enable = true;
   services.pipewire.pulse.enable = true;
 
@@ -78,11 +72,6 @@
   services.openssh.enable = true;
 
   services.xserver.exportConfiguration = true;
-
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
-  };
 
   system.stateVersion = "25.11"; # Did you read the comment?
 }
