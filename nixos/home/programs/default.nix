@@ -2,7 +2,7 @@
   imports = [
     ./games
     ./nvim
-    ./shell
+    ./zsh
     ./zen-browser
 
     ./gui-common-softwares.nix

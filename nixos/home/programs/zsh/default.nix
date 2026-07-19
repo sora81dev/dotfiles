@@ -18,7 +18,7 @@
     syntaxHighlighting.enable = true;
 
     # Load zsh configuration file
-    initExtra = ''
+    initContent = ''
       source ~/.zshrc_custom
     '';
   };
