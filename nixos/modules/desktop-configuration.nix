@@ -10,6 +10,11 @@
     swaylock
     xwayland-satellite
     rofi
+    waybar
+    hyprpaper
+    brightnessctl
+    rofimoji
+    wl-clipboard
   ];
 
   programs.niri.enable = true;
