@@ -80,10 +80,6 @@
     unzip
     efibootmgr
 
-    # Git
-    git
-    gh
-
     # Graphical Software
     wezterm
 
