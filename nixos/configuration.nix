@@ -12,6 +12,7 @@
   imports = [
     ./modules/programs
     ./modules/fonts.nix
+    ./modules/desktop-configuration.nix
   ];
 
   # boot.loader.systemd-boot.enable = true;
