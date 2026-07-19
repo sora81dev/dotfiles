@@ -36,6 +36,7 @@
 
   networking.hostName = "hp-notebook";
   networking.networkmanager.enable = true;
+
   time.timeZone = "Asia/Tokyo";
   networking.timeServers = options.networking.timeServers.default ++ [ "ntp.nict.jp" ];
 
@@ -117,5 +118,4 @@
   };
 
   system.stateVersion = "25.11"; # Did you read the comment?
-
 }
