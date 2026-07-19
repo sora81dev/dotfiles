@@ -30,4 +30,5 @@ require("lazy").setup({
 
   checker = { enabled = true  },
   rocks   = { enabled = false },
+  readme  = { enabled = false },
 })
