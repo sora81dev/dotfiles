@@ -21,3 +21,10 @@ export GHQ_ROOT=~/ghq
 
 # GPG Key
 export GPG_TTY=$(tty)
+
+# eza
+alias l="ls"
+alias ls="eza --group-directories-first"
+alias lg="eza --group-directories-first --git-ignore"
+alias lag="eza --group-directories-first -la --git-ignore"
+alias la="eza --group-directories-first -la"
