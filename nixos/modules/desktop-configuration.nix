@@ -6,8 +6,14 @@
   services.displayManager.sddm.enable = true;
 
   environment.systemPackages = with pkgs; [
-    # Lockdesign
+    # Lock Design
     swaylock
+
+    # Logout Deisng
+    wlogout
+
+    # Notification
+    mako
 
     # For Compatibility
     xwayland-satellite

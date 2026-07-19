@@ -20,7 +20,6 @@
     hyprshot
     ffmpeg
     wf-recorder
-    wlogout
   ];
 
   programs.zsh.enable = true;
