@@ -11,8 +11,10 @@
 {
   imports = [
     ./modules/programs
-    ./modules/fonts.nix
+
     ./modules/desktop-configuration.nix
+    ./modules/fonts.nix
+    ./modules/keyboard.nix
   ];
 
   # boot.loader.systemd-boot.enable = true;
@@ -36,22 +38,6 @@
   networking.networkmanager.enable = true;
   time.timeZone = "Asia/Tokyo";
   networking.timeServers = options.networking.timeServers.default ++ [ "ntp.nict.jp" ];
-
-  services.keyd = {
-    enable = true;
-    keyboards = {
-      default = {
-        ids = [ "*" ];
-
-        settings = {
-          main = {
-            capslock = "layer(control)";
-          };
-          otherlayer = { };
-        };
-      };
-    };
-  };
 
   programs.zsh.enable = true;
 
@@ -123,24 +109,7 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
-  # Japanese Inputs
-  i18n.inputMethod = {
-    enable = true;
-    type = "fcitx5";
-    fcitx5.waylandFrontend = true;
-    fcitx5.addons = with pkgs; [
-      fcitx5-mozc
-      fcitx5-gtk
-    ];
-  };
-
   services.xserver.exportConfiguration = true;
-
-  environment.variables = {
-    GTK_IN_MODULE = "fcitx";
-    QT_IM_MODULE = "fcitx";
-    XMODIFIERS = "@im=fcitx";
-  };
 
   hardware.graphics = {
     enable = true;
