@@ -65,6 +65,7 @@ require("config.lualine")
 require("config.neo-tree")
 require("config.nvim-cmp")
 require("config.nvim-highlight-colors")
+require("config.treesitter")
 require("config.ts-autotag")
 
 -- Fix Hilight --
