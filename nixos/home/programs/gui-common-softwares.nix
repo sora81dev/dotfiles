@@ -4,5 +4,6 @@
     thunderbird
     osu-lazer-bin
     discord
+    kdePackages.dolphin
   ];
 }

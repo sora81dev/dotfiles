@@ -21,6 +21,7 @@ discord/
 mozc/
 fontconfig/
 systemd/
+session/
 environment.d/
 mimeapps.list
 background
