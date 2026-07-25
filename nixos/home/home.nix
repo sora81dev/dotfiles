@@ -38,8 +38,6 @@
 
     ghq
 
-    lazygit
-
     # NodeJS
     nodejs
     pnpm

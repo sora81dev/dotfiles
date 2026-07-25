@@ -1,6 +1,7 @@
 { inputs, ... }: {
   imports = [
     ./games
+    ./git
     ./nvim
     ./rofi
     ./zsh
