@@ -19,7 +19,7 @@
 
     # Load zsh configuration file
     initContent = ''
-      source ~/.zshrc_custom
+      source ~/.zshrc
     '';
   };
 
@@ -38,6 +38,6 @@
   };
 
   home.file = {
-    ".zshrc_custom".source = ./../../../../.zshrc;
+    ".zshrc".source = ./../../../../.zshrc;
   };
 }
