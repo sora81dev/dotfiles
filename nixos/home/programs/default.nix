@@ -1,9 +1,16 @@
 { inputs, ... }: {
   imports = [
+    ./dolphin
+    ./fcitx5
     ./games
+    ./git
+    ./niri
     ./nvim
-    ./zsh
+    ./rofi
+    ./waybar
+    ./wezterm
     ./zen-browser
+    ./zsh
 
     ./gui-common-softwares.nix
   ];

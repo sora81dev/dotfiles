@@ -18,9 +18,6 @@
     # For Compatibility
     xwayland-satellite
 
-    # Application Execute
-    rofi
-
     # Top Infobar
     waybar
 
@@ -38,7 +35,6 @@
     pulseaudio
   ];
 
-  programs.niri.enable = true;
   programs.xwayland.enable = true;
 
   xdg.portal = {

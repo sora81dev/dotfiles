@@ -10,9 +10,6 @@
     unzip
     efibootmgr
 
-    # Graphical Software
-    wezterm
-
     gnomeExtensions.kimpanel
 
     # Hyprland

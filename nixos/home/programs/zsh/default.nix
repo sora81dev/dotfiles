@@ -19,7 +19,7 @@
 
     # Load zsh configuration file
     initContent = ''
-      source ~/.zshrc_custom
+      source ~/.zshrc
     '';
   };
 
@@ -37,7 +37,11 @@
     ];
   };
 
-  home.file = {
-    ".zshrc_custom".source = ./../../../../.zshrc;
-  };
+  home.file.".zshrc".source = ./../../../../.zshrc;
+
+  xdg.configFile."commands".force = true;
+  xdg.configFile."commands".source = ./../../../../commands;
+
+  xdg.configFile."starship.toml".force = true;
+  xdg.configFile."starship.toml".source = ./../../../../starship.toml;
 }
