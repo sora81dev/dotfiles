@@ -1,5 +1,6 @@
 { inputs, ... }: {
   imports = [
+    ./dolphin
     ./fcitx5
     ./games
     ./git
