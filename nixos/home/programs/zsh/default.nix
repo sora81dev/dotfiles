@@ -41,4 +41,7 @@
 
   xdg.configFile."commands".force = true;
   xdg.configFile."commands".source = ./../../../../commands;
+
+  xdg.configFile."starship.toml".force = true;
+  xdg.configFile."starship.toml".source = ./../../../../starship.toml;
 }
