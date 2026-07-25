@@ -7,6 +7,7 @@
     ./nvim
     ./rofi
     ./waybar
+    ./wezterm
     ./zen-browser
     ./zsh
 
