@@ -1,5 +1,4 @@
 {
-  config,
   pkgs,
   inputs,
   ...
@@ -14,6 +13,9 @@
 
   home.username = "sora81dev";
   home.homeDirectory = "/home/sora81dev";
+
+  xdg.configFile."nix".force = true;
+  xdg.configFile."nix".source = ./../../nix;
 
   # You should not change this value, even if you update Home Manager. If you do
   # want to update the value, then make sure to first check the Home Manager

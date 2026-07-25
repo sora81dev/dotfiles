@@ -1,7 +1,9 @@
 { inputs, ... }: {
   imports = [
+    ./fcitx5
     ./games
     ./git
+    ./niri
     ./nvim
     ./rofi
     ./waybar
