@@ -34,7 +34,6 @@
     ];
   };
 
-  home.file = {
-    ".config/nvim".source = ./../../../../neovim;
-  };
+  xdg.configFile."nvim".force = true;
+  xdg.configFile."nvim".source = ./../../../../nvim;
 }

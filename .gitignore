@@ -39,7 +39,3 @@ kitty/
 zen/
 QtProject.conf
 udiskie/
-
-nvim
-nvim/
-!/nixos/home/programs/nvim/
