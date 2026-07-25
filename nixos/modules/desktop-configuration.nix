@@ -18,9 +18,6 @@
     # For Compatibility
     xwayland-satellite
 
-    # Application Execute
-    rofi
-
     # Top Infobar
     waybar
 

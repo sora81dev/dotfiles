@@ -2,6 +2,7 @@
   imports = [
     ./games
     ./nvim
+    ./rofi
     ./zsh
     ./zen-browser
 
