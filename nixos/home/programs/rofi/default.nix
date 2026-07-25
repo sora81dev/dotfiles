@@ -2,6 +2,6 @@
 {
   programs.rofi.enable = true;
 
-  home.file."rofi".force = true;
-  home.file."rofi".source = ./../../../../rofi;
+  xdg.configFile."rofi".force = true;
+  xdg.configFile."rofi".source = ./../../../../rofi;
 }
