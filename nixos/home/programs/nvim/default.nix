@@ -36,4 +36,7 @@
 
   xdg.configFile."nvim".force = true;
   xdg.configFile."nvim".source = ./../../../../nvim;
+
+  xdg.configFile."tree-sitter".force = true;
+  xdg.configFile."tree-sitter".source = ./../../../../tree-sitter;
 }
