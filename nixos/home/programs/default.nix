@@ -4,8 +4,9 @@
     ./git
     ./nvim
     ./rofi
-    ./zsh
+    ./waybar
     ./zen-browser
+    ./zsh
 
     ./gui-common-softwares.nix
   ];

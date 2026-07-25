@@ -18,9 +18,6 @@
     # For Compatibility
     xwayland-satellite
 
-    # Top Infobar
-    waybar
-
     # Wallpaper
     hyprpaper
 
