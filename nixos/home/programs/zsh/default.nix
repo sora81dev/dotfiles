@@ -37,7 +37,8 @@
     ];
   };
 
-  home.file = {
-    ".zshrc".source = ./../../../../.zshrc;
-  };
+  home.file.".zshrc".source = ./../../../../.zshrc;
+
+  xdg.configFile."commands".force = true;
+  xdg.configFile."commands".source = ./../../../../commands;
 }
