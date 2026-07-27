@@ -35,8 +35,11 @@
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
 
-              home-manager.users.sora81dev = import ./nixos/home/home.nix;
-              home-manager.extraSpecialArgs = { inherit inputs; };
+              home-manager.users.sora81dev = import ./nixos/home/shared.nix;
+              home-manager.extraSpecialArgs = {
+                inherit inputs;
+                isNixOS = true;
+              };
             }
           ];
         };
@@ -45,7 +48,10 @@
       homeConfigurations."sora81dev" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
 
-        modules = [ ./nixos/home/home.nix ];
+        modules = [ ./nixos/home/shared.nix ];
+        extraSpecialArgs = {
+          isNixOS = false;
+        };
       };
     };
 }

@@ -11,19 +11,6 @@
 
   _module.args = { inherit inputs; };
 
-  home.username = "sora81dev";
-  home.homeDirectory = "/home/sora81dev";
-
-  xdg.configFile."nix".force = true;
-  xdg.configFile."nix".source = ./../../nix;
-
-  # You should not change this value, even if you update Home Manager. If you do
-  # want to update the value, then make sure to first check the Home Manager
-  # release notes.
-  home.stateVersion = "26.05";
-
-  nixpkgs.config.allowUnfree = true;
-
   # Packages
   home.packages = with pkgs; [
     tree
@@ -45,11 +32,6 @@
     pnpm
 
   ];
-
-  # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
-
-  news.display = "silent";
 
   # Enable Removable Media
   # https://wiki.nixos.org/wiki/USB_storage_devices
