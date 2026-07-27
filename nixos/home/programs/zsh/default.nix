@@ -19,7 +19,7 @@
 
     # Load zsh configuration file
     initContent = ''
-      source ~/.zshrc
+      source ~/.zshrc_custom
     '';
   };
 
@@ -37,7 +37,7 @@
     ];
   };
 
-  home.file.".zshrc".source = ./../../../../.zshrc;
+  home.file.".zshrc_custom".source = ./../../../../.zshrc;
 
   xdg.configFile."commands".force = true;
   xdg.configFile."commands".source = ./../../../../commands;
