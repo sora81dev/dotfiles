@@ -23,6 +23,7 @@
     # Rust
     rustc
     cargo
+    rustfmt
     tokei
 
     ghq
