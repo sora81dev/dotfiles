@@ -69,3 +69,9 @@ vim.lsp.enable("cssls");
 --- ---------
 vim.lsp.config("tombi", {})
 vim.lsp.enable("tombi");
+
+--- ---------
+--- LaTeX
+--- ---------
+vim.lsp.config("texlab", {})
+vim.lsp.enable("texlab");
