@@ -56,7 +56,10 @@ vim.g.edge_colors_override = {
   bg0 = { '#f2f2f2', '255' }
 }
 
-require("config.autopairs")
+-- IMPORTANT INFORMATION
+--   config.autopairs doesn't need to require.
+--   this file requires inside of plugins/autopairs.lua 
+--   (if it was required here, autopairs doesn't work)
 require("config.lazy")
 require("config.keymap")
 require("config.lsp")
