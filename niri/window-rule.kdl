@@ -36,3 +36,20 @@ window-rule {
     match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
     default-floating-position x=10 y=10 relative-to="bottom-right"
 }
+
+window-rule {
+    match app-id="BongoCat.x86-64"
+    open-floating true
+    default-floating-position x=0 y=0 relative-to="bottom"
+    default-window-height { proportion 1.0; }
+    default-column-width { proportion 1.0; }
+    block-out-from "screencast"
+
+    focus-ring {
+      off
+    }
+
+    border {
+      off
+    }
+}
