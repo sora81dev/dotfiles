@@ -1,4 +1,5 @@
 require("nvim-treesitter").install {
   "lua",
-  "nix"
+  "nix",
+  "c"
 }
