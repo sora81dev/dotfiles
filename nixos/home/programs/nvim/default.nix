@@ -9,6 +9,7 @@
     typescript-language-server # TypeScript
     vscode-css-languageserver # CSS
     tombi # TOML
+    texlab # LaTeX
 
     # Plugin build dependencies
     cmake

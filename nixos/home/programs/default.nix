@@ -4,6 +4,7 @@
     ./fcitx5
     ./games
     ./git
+    ./latex
     ./niri
     ./nvim
     ./rofi
