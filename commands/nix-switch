@@ -7,5 +7,5 @@
 # Updated at : 2026.07.04
 
 nix-switch() {
-  sudo nixos-rebuild switch --flake /home/sora81dev/.config#hp-notebook --show-trace --verbose
+  sudo nixos-rebuild switch --flake /home/sora81dev/dotfiles#hp-notebook --show-trace --verbose
 }
