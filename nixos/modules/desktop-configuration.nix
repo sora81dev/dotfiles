@@ -6,12 +6,6 @@
   services.displayManager.sddm.enable = true;
 
   environment.systemPackages = with pkgs; [
-    # Lock Design
-    swaylock
-
-    # Logout Deisng
-    wlogout
-
     # Notification
     mako
 

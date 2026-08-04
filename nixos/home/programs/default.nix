@@ -10,6 +10,7 @@
     ./rofi
     ./waybar
     ./wezterm
+    ./wlogout
     ./zen-browser
     ./zsh
 
