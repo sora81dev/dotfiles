@@ -7,6 +7,15 @@ include "./window-rule.kdl"
 // Ref: 一目惚れから始まった。NixOSに最高の美しさをもたらす「Nix + Noctalia」環境の作り方
 //      https://note.com/joyful_fish3892/n/n91b03393bb00#83807da1-7bed-45a8-b196-f22be8f2be17
 prefer-no-csd
+
+cursor {
+  xcursor-theme "breeze_cursors"
+  xcursor-size 10
+  
+  // hide-when-typoing
+  // hide-after-inactive-ms 1000
+}
+
 input {
     // auto focus
     // Ref: 一目惚れから始まった。NixOSに最高の美しさをもたらす「Nix + Noctalia」環境の作り方
