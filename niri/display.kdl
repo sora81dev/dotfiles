@@ -32,6 +32,7 @@ output "HKC OVERSEAS LIMITED 24E4 0000000000001" {
   scale 1.0
   transform "normal"
   position x=2400 y=0
+  focus-at-startup
 }
 
 // ----------
