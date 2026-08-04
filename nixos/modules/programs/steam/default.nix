@@ -13,4 +13,6 @@
       intel-media-driver
     ];
   };
+
+  programs.gamescope.enable = true;
 }
