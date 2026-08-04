@@ -4,5 +4,6 @@
     fastfetch
     zip
     github-copilot-cli
+    simple-scan
   ];
 }

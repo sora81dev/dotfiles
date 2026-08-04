@@ -49,8 +49,28 @@
       "networkmanager"
       "video"
       "input"
+      "scanner"
+      "lp"
     ];
   };
+
+  # ----------
+  # Scanner
+  # ----------
+  hardware.sane.enable = true;
+
+  hardware.sane.extraBackends = [
+    pkgs.sane-airscan
+  ];
+
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+  };
+
+  services.udev.packages = [
+    pkgs.sane-airscan
+  ];
 
   # programs.hyprland = {
   #   enable = true;
