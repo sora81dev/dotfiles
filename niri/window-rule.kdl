@@ -26,9 +26,8 @@ window-rule {
     // block-out-from "screencast"
 }
 
-// Rounded corners for all windows.
 window-rule {
-    geometry-corner-radius 15
+    geometry-corner-radius 0
     clip-to-geometry true
 }
 
