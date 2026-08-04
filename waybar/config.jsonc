@@ -51,9 +51,8 @@
   },
   "battery": {
     "states": {
-      "full": 99,
-      "warning": 50,
-      "ciritical": 10
+      "warning": 30,
+      "ciritical": 15
     },
     "full-at": 100,
     "format": "{icon} {capacity}%",
