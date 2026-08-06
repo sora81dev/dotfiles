@@ -6,5 +6,8 @@
 
     # convert file encoding
     nkf
+
+    # check usb device
+    usbutils
   ];
 }
