@@ -1,5 +1,6 @@
 { inputs, ... }: {
   imports = [
+    ./direnv
     ./dolphin
     ./fcitx5
     ./games
