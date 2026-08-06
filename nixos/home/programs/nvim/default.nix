@@ -10,6 +10,7 @@
     vscode-css-languageserver # CSS
     tombi # TOML
     texlab # LaTeX
+    yaml-language-server # YAML
 
     # Plugin build dependencies
     cmake
