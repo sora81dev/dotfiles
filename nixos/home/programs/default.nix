@@ -8,6 +8,7 @@
     ./niri
     ./nvim
     ./rofi
+    ./stm32
     ./waybar
     ./wezterm
     ./wlogout
