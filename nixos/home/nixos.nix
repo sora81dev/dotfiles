@@ -14,7 +14,6 @@
   # Packages
   home.packages = with pkgs; [
     tree
-    direnv
     platformio
 
     gcc
