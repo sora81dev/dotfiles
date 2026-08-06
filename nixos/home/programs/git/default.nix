@@ -1,4 +1,4 @@
-{ ... }:
+{ lib, ... }:
 {
   programs.lazygit.enable = true;
 
@@ -6,8 +6,8 @@
   xdg.configFile."lazygit".source = ./../../../../lazygit;
 
   programs.gh.enable = true;
-  xdg.configFile."gh".force = true;
-  xdg.configFile."gh".source = ./../../../../gh;
+  xdg.configFile."gh/config.yml".force = true;
+  xdg.configFile."gh/config.yml".source = lib.mkForce ./../../../../gh/config.yml;
 
   programs.git = {
     enable = true;
