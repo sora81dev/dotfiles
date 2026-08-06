@@ -1,4 +1,8 @@
 # dotfiles
-私の設定ファイルたちです！
 
-Nixのhome-managerもあるけど設定中なのでお待ちを
+![Overview](./assets/images/screenshot.png)
+
+My dotfiles Repository.  
+Made with NixOS, Niri.  
+
+There are **nothing** programs made with LLM.
