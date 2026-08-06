@@ -21,8 +21,7 @@
   "custom/logout": {
     "format": "󰈆 ",
     "on-click": "wlogout"
-  },
-  "custom/shutdown": {
+  }, "custom/shutdown": {
     "format": " ",
     "on-click": "systemctl poweroff"
   },
@@ -40,7 +39,7 @@
     "return-type": "json",
     "format": "  {text}",
     "interval": 2,
-    "max-length": 50,
+    "max-length": 45,
     "on-click": "playerctl play-pause"
   },
   "cpu": {
