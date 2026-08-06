@@ -77,3 +77,9 @@
 #battery.critical {
   background-color: #fe0219;
 }
+
+#custom-music {
+  min-width: 60px;
+  padding-left: 10px;
+  padding-right: 13px;
+}

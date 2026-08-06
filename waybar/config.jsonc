@@ -8,6 +8,7 @@
   ],
   "modules-center": ["clock"],
   "modules-right": [
+    "custom/music",
     "network",
     "pulseaudio",
     "cpu",
@@ -33,6 +34,14 @@
     "interval": 1,
     "format": "{:%Y.%m.%d    %H:%M:%S}",
     "tooltip-format": "{calendar}"
+  },
+  "custom/music": {
+    "exec": "/home/sora81dev/dotfiles/waybar/script/playing-music.sh 2> /tmp/music_err.log",
+    "return-type": "json",
+    "format": "  {text}",
+    "interval": 2,
+    "max-length": 30,
+    "on-click": "playerctl play-pause"
   },
   "cpu": {
     "format": "  {usage}%"
