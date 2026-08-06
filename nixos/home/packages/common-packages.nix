@@ -5,5 +5,7 @@
     zip
     github-copilot-cli
     simple-scan
+    playerctl
+    jq
   ];
 }
