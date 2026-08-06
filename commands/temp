@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# afcg
+# --------------
+# Description: This command can create template file and open with neovim
+# Created at : 2026.08.06
+# Updated at : 2026.08.06
+
+temp() {
+  cd ~/temp/
+
+  local jst_ymd_today=$(TZ=UTC-9 date '+%Y-%m-%d')
+  mkdircd $jst_ymd_today
+
+  touch $1
+  nvim $1
+}
