@@ -1,5 +1,29 @@
 * {
+  background-color: #f0f0f0;
+
   min-height: 25px;
+}
+
+#custom-music,
+#network,
+#pulseaudio,
+#cpu,
+#memory,
+#battery {
+  border-right: 2px solid #c8c8c8;
+  margin-top: 3px;
+  margin-bottom: 3px;
+
+  padding-left: 10px;
+  padding-right: 8px;
+}
+
+#custom-music {
+  padding-right: 15px;
+}
+
+#battery {
+  border-right: none;
 }
 
 #custom {
@@ -24,62 +48,6 @@
   font-size: 20px;
 }
 
-#cpu {
-  margin-left: 3px;
-  margin-right: 0;
-  padding-left: 13px;
-  padding-right: 10px;
-  color: #ffffff;
-  background-color: #5ed6a4;
-}
-
-#pulseaudio {
-  margin-left: 3px;
-  margin-right: 0;
-  padding-left: 15px;
-  padding-right: 13px;
-  color: #ffffff;
-  background-color: #fc9ce7;
-}
-
-#network {
-  margin-left: 3px;
-  margin-right: 0;
-  padding-left: 10px;
-  padding-right: 13px;
-  background-color: #f7c051;
-  color: #ffffff;
-}
-
-#memory {
-  margin-left: 3px;
-  margin-right: 0;
-  padding-left: 10px;
-  padding-right: 13px;
-  background-color: #5ed6a4;
-  color: #ffffff;
-}
-
-#battery {
-  margin-left: 3px;
-  margin-right: 0;
-  padding-left: 10px;
-  padding-right: 13px;
-  background-color: #42bc6c;
-  color: #ffffff;
-}
-
 #battery.warning {
-  background-color: #f2df35;
   font-weight: bold;
-}
-
-#battery.critical {
-  background-color: #fe0219;
-}
-
-#custom-music {
-  min-width: 60px;
-  padding-left: 10px;
-  padding-right: 13px;
 }

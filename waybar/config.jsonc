@@ -40,23 +40,31 @@
     "return-type": "json",
     "format": "  {text}",
     "interval": 2,
-    "max-length": 30,
+    "max-length": 50,
     "on-click": "playerctl play-pause"
   },
   "cpu": {
-    "format": "  {usage}%"
+    "format": "  {usage}%",
+    "min-length": 7,
+    "max-length": 7
   },
   "network": {
     "interface": "wlp0s20f3",
     "interval": 30,
-    "format-wifi": "   {essid}"
+    "format-wifi": "   {essid}",
+    "min-length": 20,
+    "max-length": 20
   },
   "pulseaudio": {
     "format": "   {volume}%",
-    "scroll-step": 5
+    "scroll-step": 5,
+    "min-length": 7,
+    "max-length": 7
   },
   "memory": {
-    "format": "  {}%"
+    "format": "  {}%",
+    "min-length": 7,
+    "max-length": 7
   },
   "battery": {
     "states": {
@@ -67,6 +75,8 @@
     "format": "{icon} {capacity}%",
     "format-charging": "󰂄 {capacity}%",
     "format-plugged": "󰚥 {capacity}%",
-    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "min-length": 7,
+    "max-length": 7
   }
 }
