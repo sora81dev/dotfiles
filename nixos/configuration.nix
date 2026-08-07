@@ -68,8 +68,10 @@
     nssmdns4 = true;
   };
 
-  services.udev.packages = [
-    pkgs.sane-airscan
+  services.udev.packages = with pkgs; [
+    sane-airscan
+    platformio-core.udev
+    openocd
   ];
 
   # programs.hyprland = {
