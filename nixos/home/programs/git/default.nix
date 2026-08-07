@@ -21,7 +21,7 @@
       pl = "pull";
       plf = "pull --force";
       rh = "reset --hard";
-      l = "log --graph --oneline --decorate | head -n 5";
+      l = "log --graph --oneline --decorate";
     };
     settings = {
       user = {
