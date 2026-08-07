@@ -11,6 +11,18 @@
 
   programs.git = {
     enable = true;
+    aliases = {
+      a = "add .";
+      as = "add";
+      c = "commit -m";
+      ca = "commit --amend";
+      p = "push";
+      pf = "push --force";
+      pl = "pull";
+      plf = "pull --force";
+      rh = "reset --hard";
+      l = "log --graph --oneline --decorate | head -n 5";
+    };
     settings = {
       user = {
         name = "sora81dev";
