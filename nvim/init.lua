@@ -11,6 +11,9 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
+-- Clipboard
+vim.opt.clipboard:append({ "unnamed", "unnamedplus" })
+
 -- Disable netrw --
 vim.api.nvim_set_var('loaded_netrw', 1)
 vim.api.nvim_set_var('loaded_netrwPlugin', 1)
