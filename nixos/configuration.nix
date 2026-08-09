@@ -45,6 +45,7 @@
     isNormalUser = true;
     shell = pkgs.zsh;
     extraGroups = [
+      "docker"
       "wheel"
       "networkmanager"
       "video"
