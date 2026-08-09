@@ -4,6 +4,7 @@
     chromium
     thunderbird
     osu-lazer-bin
+    rpi-imager
     discord
   ];
 }
