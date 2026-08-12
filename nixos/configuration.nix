@@ -13,6 +13,7 @@
     ./modules/packages
     ./modules/programs
 
+    ./modules/bluetooth.nix
     ./modules/desktop-configuration.nix
     ./modules/fonts.nix
     ./modules/keyboard.nix
