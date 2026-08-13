@@ -1,6 +1,8 @@
 require("nvim-treesitter").install {
+  "c",
   "lua",
   "nix",
   "tex",
-  "c"
+  "tsx",
+  "typescript"
 }
