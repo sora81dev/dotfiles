@@ -10,6 +10,7 @@
     ./nvim
     ./rofi
     ./stm32
+    ./vial
     ./waybar
     ./wezterm
     ./wlogout

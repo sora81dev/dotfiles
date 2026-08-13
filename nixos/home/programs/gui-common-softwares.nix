@@ -6,5 +6,6 @@
     osu-lazer-bin
     rpi-imager
     discord
+    vial
   ];
 }

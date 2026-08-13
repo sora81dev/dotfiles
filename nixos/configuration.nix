@@ -74,6 +74,11 @@
     sane-airscan
     platformio-core.udev
     openocd
+    qmk
+    qmk-udev-rules
+    qmk_hid
+    via
+    vial
   ];
 
   # programs.hyprland = {
