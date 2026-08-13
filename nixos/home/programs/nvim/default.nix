@@ -5,6 +5,7 @@
     lua-language-server # Lua
     rust-analyzer # Rust
     nil # Nix
+    tailwindcss-language-server # TailwindCSS
     typescript
     typescript-language-server # TypeScript
     vscode-css-languageserver # CSS

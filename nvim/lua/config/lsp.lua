@@ -96,3 +96,9 @@ vim.lsp.config("yamlls", {
   }
 })
 vim.lsp.enable("yamlls")
+
+--- ----------
+--- TailwindCSS 
+--- ----------
+vim.lsp.config("tailwindcss", {});
+vim.lsp.enable("tailwindcss");
