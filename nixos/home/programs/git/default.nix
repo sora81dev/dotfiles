@@ -21,6 +21,7 @@
       pl = "pull";
       plf = "pull --force";
       rh = "reset --hard";
+      s = "status";
       l = "log --graph --oneline --decorate";
     };
     settings = {
