@@ -2,10 +2,11 @@
 {
   home.packages = with pkgs; [
     fastfetch
-    zip
     github-copilot-cli
-    simple-scan
-    playerctl
     jq
+    playerctl
+    simple-scan
+    vlc
+    zip
   ];
 }
