@@ -4,6 +4,7 @@
     ./cloudflare-warp
     ./docker
     ./niri
+    ./postgreSQL
     ./steam
   ];
 }
