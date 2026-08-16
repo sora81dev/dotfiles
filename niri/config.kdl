@@ -1,6 +1,6 @@
 include "./display.kdl"
-include "./startup.kdl"
 include "./keymap.kdl"
+include "./startup.kdl"
 include "./window-rule.kdl"
 
 // remove titlebar
