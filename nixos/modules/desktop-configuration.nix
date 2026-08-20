@@ -24,9 +24,6 @@
 
     # Control Brightess with CLI
     brightnessctl
-
-    # Control Audio with CLI
-    pulseaudio
   ];
 
   programs.niri.enable = true;
