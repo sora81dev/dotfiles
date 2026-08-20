@@ -6,6 +6,7 @@
     ./games
     ./git
     ./latex
+    ./mpris-proxy
     ./niri
     ./nvim
     ./rofi
