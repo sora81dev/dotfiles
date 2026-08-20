@@ -91,9 +91,6 @@
   # https://wiki.nixos.org/wiki/USB_storage_devices
   services.udisks2.enable = true;
 
-  services.pipewire.enable = true;
-  services.pipewire.pulse.enable = true;
-
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
