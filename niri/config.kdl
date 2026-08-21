@@ -8,9 +8,14 @@ include "./window-rule.kdl"
 //      https://note.com/joyful_fish3892/n/n91b03393bb00#83807da1-7bed-45a8-b196-f22be8f2be17
 prefer-no-csd
 
+environment {
+  XCURSOR_THEME "Bibata-Modern-Ice"
+  XCURSOR_SIZE "20"
+}
+
 cursor {
-  xcursor-theme "breeze_cursors"
-  xcursor-size 10
+  xcursor-theme "Bibata-Modern-Ice"
+  xcursor-size 24
   
   // hide-when-typoing
   // hide-after-inactive-ms 1000
