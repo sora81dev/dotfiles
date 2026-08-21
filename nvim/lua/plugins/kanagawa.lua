@@ -1,14 +1,15 @@
 return {
 	"rebelot/kanagawa.nvim",
-  enabled = false,
+  enabled = true,
 	config=function()
 		require('kanagawa').setup({
 			compile=true
 		});
-		vim.cmd("colorscheme kanagawa");
+		-- vim.cmd("colorscheme kanagawa");
 	end,
-	build = function ()
-		vim.cmd("KanagawaCompile");
-	end,
+  
+	-- build = function ()
+	-- 	vim.cmd("KanagawaCompile");
+	-- end,
 }
 
