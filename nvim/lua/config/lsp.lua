@@ -30,27 +30,17 @@ vim.lsp.enable('clangd')
 -- ----------
 -- Rust
 -- ----------
-vim.lsp.config("rust_analyzer", {
-  settings = {
-    ["rust-analyzer"] = {
-      imports = {
-        granularity = {
-          group = "module",
+vim.g.rustaceanvim = {
+  server = {
+    settings = {
+      ["rust-analyzer"] = {
+        check = {
+          allTargets = false,
         },
-        prefix = "self",
-      },
-      cargo = {
-        buildScripts = {
-          enable = true,
-        },
-      },
-      procMacro = {
-        enable = true
       },
     },
   },
-})
-vim.lsp.enable("rust_analyzer")
+}
 
 -- ----------
 -- Nix
