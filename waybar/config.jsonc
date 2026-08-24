@@ -51,14 +51,13 @@
     "interface": "wlp0s20f3",
     "interval": 30,
     "format-wifi": "   {essid}",
-    "min-length": 20,
     "max-length": 20
   },
   "pulseaudio": {
     "format": "   {volume}%",
     "scroll-step": 5,
-    "min-length": 7,
-    "max-length": 7
+    "min-length": 10,
+    "max-length": 10
   },
   "memory": {
     "format": "  {}%",
