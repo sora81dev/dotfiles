@@ -11,6 +11,9 @@ prefer-no-csd
 environment {
   XCURSOR_THEME "Bibata-Modern-Ice"
   XCURSOR_SIZE "20"
+
+  // STM32CubeMX
+  _JAVA_AWT_WM_NONREPARENTING "1"
 }
 
 cursor {
