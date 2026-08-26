@@ -9,5 +9,8 @@
 
     # check usb device
     usbutils
+
+    # convert image
+    imagemagick
   ];
 }
