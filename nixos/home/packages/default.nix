@@ -4,5 +4,6 @@
     ./management-tools
 
     ./common-packages.nix
+    ./utilities.nix
   ];
 }
