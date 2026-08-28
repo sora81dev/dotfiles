@@ -1,4 +1,4 @@
-{ lib, ... }:
+{ config, lib, ... }:
 {
   programs.lazygit.enable = true;
 
@@ -32,6 +32,12 @@
       init.defaultBranch = "main";
 
       credential.helper = "!gh auth git-credential";
+    };
+
+    signing = {
+      format = "ssh";
+      key = "${config.home.homeDirectory}/.ssh/github.pub";
+      signByDefault = true;
     };
   };
 }
