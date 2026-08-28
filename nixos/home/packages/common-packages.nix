@@ -5,6 +5,7 @@
     github-copilot-cli
     jetbrains.idea
     jq
+    kicad
     playerctl
     simple-scan
     vlc
