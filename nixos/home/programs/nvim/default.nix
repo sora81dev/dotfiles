@@ -8,9 +8,9 @@
     tailwindcss-language-server # TailwindCSS
     typescript
     typescript-language-server # TypeScript
-    vscode-css-languageserver # CSS
     tombi # TOML
     texlab # LaTeX
+    vscode-langservers-extracted # HTML, CSS, JSON
     yaml-language-server # YAML
 
     # Plugin build dependencies
