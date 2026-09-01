@@ -15,6 +15,7 @@
 
     ./modules/audio.nix
     ./modules/bluetooth.nix
+    ./modules/can.nix
     ./modules/desktop-configuration.nix
     ./modules/fonts.nix
     ./modules/keyboard.nix
