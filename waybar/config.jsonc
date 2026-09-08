@@ -55,7 +55,7 @@
   },
   "pulseaudio": {
     "format": "   {volume}%",
-    "scroll-step": 5,
+    "scroll-step": 2,
     "min-length": 10,
     "max-length": 10
   },
