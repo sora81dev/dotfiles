@@ -60,7 +60,7 @@
     "max-length": 10
   },
   "memory": {
-    "format": "  {}%",
+    "format": "   {}%",
     "min-length": 7,
     "max-length": 7
   },
