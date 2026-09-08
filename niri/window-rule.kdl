@@ -5,7 +5,7 @@ window-rule {
     // Work around WezTerm's initial configure bug
     // by setting an empty default-column-width.
     match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
+    default-column-width { proportion 0.50; }
 }
 
 // Open the Zen picture-in-picture player as floating by default.
