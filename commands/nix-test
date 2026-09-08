@@ -6,6 +6,6 @@
 # Created at : 2026.09.08
 # Updated at : 2026.09.08
 
-nix-switch() {
+nix-test() {
   nixos-rebuild test --flake /home/sora81dev/dotfiles#hp-notebook --show-trace --verbose
 }
