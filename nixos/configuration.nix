@@ -22,6 +22,7 @@
   ];
 
   # boot.loader.systemd-boot.enable = true;
+  programs.nix-ld.enable = true;
 
   boot.loader = {
     systemd-boot.enable = false;
@@ -55,8 +56,10 @@
       "input"
       "scanner"
       "lp"
+      "plugdev"
     ];
   };
+  users.groups.plugdev = { };
 
   # ----------
   # Scanner
