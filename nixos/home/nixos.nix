@@ -22,6 +22,7 @@
     # Rust
     rustc
     cargo
+    cargo-generate
     rustfmt
     tokei
 
