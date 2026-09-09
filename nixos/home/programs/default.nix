@@ -12,6 +12,7 @@
     ./nvim
     ./rofi
     ./stm32
+    ./swaync
     ./vial
     ./waybar
     ./wezterm

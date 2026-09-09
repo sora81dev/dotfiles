@@ -6,9 +6,6 @@
   services.displayManager.sddm.enable = true;
 
   environment.systemPackages = with pkgs; [
-    # Notification
-    mako
-
     # For Compatibility
     xwayland-satellite
 
