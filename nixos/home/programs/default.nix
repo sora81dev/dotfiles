@@ -4,6 +4,7 @@
     ./dolphin
     ./fcitx5
     ./games
+    ./ghostty
     ./git
     ./latex
     ./mpris-proxy
@@ -16,7 +17,6 @@
     ./swaync
     ./vial
     ./waybar
-    ./wezterm
     ./wlogout
     ./zen-browser
     ./zsh
