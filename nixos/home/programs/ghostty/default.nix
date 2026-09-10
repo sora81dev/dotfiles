@@ -32,4 +32,8 @@
       gtk-custom-css = "~/.config/ghostty/style.css";
     };
   };
+
+  xdg.configFile."ghostty".force = true;
+  xdg.configFile."ghostty".recursive = true;
+  xdg.configFile."ghostty".source = ./../../../../ghostty;
 }
