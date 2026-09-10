@@ -12,6 +12,8 @@
       theme = "Tomorrow";
       background = "f8f8f8";
       window-theme = "ghostty";
+
+      gtk-single-instance = false;
     };
   };
 }
