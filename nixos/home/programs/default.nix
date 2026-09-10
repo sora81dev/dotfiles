@@ -8,6 +8,7 @@
     ./latex
     ./mpris-proxy
     ./nextcloud-client
+    ./nh
     ./niri
     ./nvim
     ./rofi
