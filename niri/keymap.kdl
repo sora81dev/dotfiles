@@ -1,7 +1,7 @@
 binds {
   // Execute Quickly
   Mod+C hotkey-overlay-title="Open Terminal" {
-    spawn "wezterm";
+    spawn "ghostty";
   }
   Mod+B repeat=false {
     spawn "zen";
