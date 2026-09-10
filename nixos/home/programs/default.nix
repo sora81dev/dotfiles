@@ -4,6 +4,7 @@
     ./dolphin
     ./fcitx5
     ./games
+    ./ghostty
     ./git
     ./latex
     ./mpris-proxy
