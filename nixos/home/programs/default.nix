@@ -16,7 +16,6 @@
     ./swaync
     ./vial
     ./waybar
-    ./wezterm
     ./wlogout
     ./zen-browser
     ./zsh
