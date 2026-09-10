@@ -1,15 +1,33 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    fastfetch
+    # Agent
     github-copilot-cli
-    jetbrains.idea
-    jq
-    kicad
+
+    # Audio Control
     playerctl
     pwvucontrol
-    simple-scan
-    vlc
+
+    # Circuit Editor
+    kicad
+
+    # Create zip
     zip
+
+    # grep for JSON
+    jq
+
+    # Java Programming Editor
+    jetbrains.idea
+
+    # Scannar
+    simple-scan
+
+    # System Information
+    fastfetch
+
+    # Music Player
+    vlc
+
   ];
 }
