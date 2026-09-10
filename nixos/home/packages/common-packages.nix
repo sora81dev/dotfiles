@@ -7,6 +7,7 @@
     jq
     kicad
     playerctl
+    pwvucontrol
     simple-scan
     vlc
     zip
