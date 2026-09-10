@@ -4,8 +4,8 @@
 # --------------
 # Description: This command can apply nix configuration quickly with boot
 # Created at : 2026.09.08
-# Updated at : 2026.09.08
+# Updated at : 2026.09.10
 
 nix-boot() {
-  nixos-rebuild boot --flake /home/sora81dev/dotfiles#hp-notebook --show-trace --verbose --sudo
+  sudo nixos-rebuild boot --flake /home/sora81dev/dotfiles#hp-notebook --show-trace --verbose
 }

@@ -4,8 +4,8 @@
 # --------------
 # Description: This command can apply nix configuration quickly
 # Created at : 2026.07.04
-# Updated at : 2026.09.08
+# Updated at : 2026.09.10
 
 nix-switch() {
-  nixos-rebuild switch --flake /home/sora81dev/dotfiles#hp-notebook --show-trace --verbose --sudo
+  sudo nixos-rebuild switch --flake /home/sora81dev/dotfiles#hp-notebook --show-trace --verbose
 }
