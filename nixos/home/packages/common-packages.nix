@@ -11,6 +11,9 @@
     # Circuit Editor
     kicad
 
+    # Cloud Storage Service
+    immich-cli
+
     # Create zip
     zip
 
