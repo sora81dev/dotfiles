@@ -29,6 +29,9 @@
     # System Information
     fastfetch
 
+    # Text Editor
+    marktext
+
     # Music Player
     vlc
 
