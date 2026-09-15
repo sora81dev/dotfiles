@@ -1,0 +1,6 @@
+window-rule {
+  match app-id="^thunderbird$"
+
+  open-on-workspace "mail"
+  open-focused false
+}
