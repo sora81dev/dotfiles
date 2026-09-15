@@ -16,6 +16,7 @@
     ./rofi
     ./stm32
     ./swaync
+    ./thunderbird
     ./vial
     ./waybar
     ./wlogout
