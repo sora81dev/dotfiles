@@ -63,6 +63,7 @@ vim.g.edge_colors_override = {
 --   config.autopairs doesn't need to require.
 --   this file requires inside of plugins/autopairs.lua 
 --   (if it was required here, autopairs doesn't work)
+require("config.completion")
 require("config.lazy")
 require("config.keymap")
 require("config.lsp")
