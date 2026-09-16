@@ -36,6 +36,17 @@
     plugins = with pkgs.vimPlugins; [
       lazy-nvim
     ];
+
+    initLua = ''
+      vim.lsp.config['astro'] = {
+        init_options = {
+          typescript = {
+            tsdk = ${pkgs.typescript}/lib/node_modules/typescript/lib,
+          },
+        },
+      }
+      vim.lsp.enable('astro')
+    '';
   };
 
   xdg.configFile."nvim".force = true;

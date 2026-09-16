@@ -102,5 +102,5 @@ vim.lsp.enable("html");
 --- ----------
 --- Astro
 --- ----------
-vim.lsp.config("astro", {});
-vim.lsp.enable("astro");
+-- vim.lsp.config("astro", {});
+-- vim.lsp.enable("astro");
