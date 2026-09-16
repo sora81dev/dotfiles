@@ -9,4 +9,6 @@
       canConfig.BitRate = "1000K";
     };
   };
+
+  services.resolved.enable = false;
 }
