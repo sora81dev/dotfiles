@@ -6,6 +6,7 @@ require("nvim-treesitter").install {
   "rust",
   "lua",
   "markdown",
+  "markdown_inline",
   "nix",
   "latex",
   "tsx",
