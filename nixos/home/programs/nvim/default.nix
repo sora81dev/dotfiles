@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     # Language servers
+    astro-language-server # Astro
     lua-language-server # Lua
     rust-analyzer # Rust
     nil # Nix

@@ -98,3 +98,9 @@ vim.lsp.enable("tailwindcss");
 --- ----------
 vim.lsp.config("html", {});
 vim.lsp.enable("html");
+
+--- ----------
+--- Astro
+--- ----------
+vim.lsp.config("astro", {});
+vim.lsp.enable("astro");
