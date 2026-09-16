@@ -5,9 +5,9 @@ require("nvim-treesitter").install {
   "html",
   "rust",
   "lua",
-  "md",
+  "markdown",
   "nix",
-  "tex",
+  "latex",
   "tsx",
-  "typescript"
+  "typescript",
 }
