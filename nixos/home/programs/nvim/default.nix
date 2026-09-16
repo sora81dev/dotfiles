@@ -14,6 +14,9 @@
     vscode-langservers-extracted # HTML, CSS, JSON
     yaml-language-server # YAML
 
+    # Formatter
+    stylua
+
     # Plugin build dependencies
     cmake
     gcc
