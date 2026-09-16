@@ -23,15 +23,41 @@ return {
       },
 
       mapping = {
-        ["<Tab>"] = cmp.mapping(function(fallback)
-          if cmp.visible() then
-            cmp.confirm({ select = true })
-          elseif luasnip.expand_or_jumpable() then
-            luasnip.expand_or_jump()
-          else
-            fallback()
-          end
-        end, { "i", "s" }),
+["<Tab>"] = cmp.mapping(function(fallback)
+  if cmp.visible() then
+    local line = vim.api.nvim_get_current_line()
+    local col = vim.api.nvim_win_get_cursor(0)[2]
+    local before_cursor = line:sub(1, col)
+
+    local is_astro_component =
+      vim.bo.filetype == "astro"
+      and before_cursor:match("<[%u][%w_]*$")
+
+    cmp.confirm({ select = true })
+
+    if is_astro_component then
+      vim.schedule(function()
+        local row, current_col = unpack(vim.api.nvim_win_get_cursor(0))
+
+        vim.api.nvim_buf_set_text(
+          0,
+          row - 1,
+          current_col,
+          row - 1,
+          current_col,
+          { " />" }
+        )
+
+        -- スペースの後、/> の直前にカーソルを置く
+        vim.api.nvim_win_set_cursor(0, { row, current_col + 1 })
+      end)
+    end
+  elseif luasnip.expand_or_jumpable() then
+    luasnip.expand_or_jump()
+  else
+    fallback()
+  end
+end, { "i", "s" }),
 
         ["<S-Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
