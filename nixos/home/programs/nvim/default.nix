@@ -37,14 +37,16 @@
       lazy-nvim
     ];
 
+    sideloadInitLua = true;
+
     initLua = ''
-      vim.lsp.config['astro'] = {
+      vim.lsp.config('astro', {
         init_options = {
           typescript = {
-            tsdk = ${pkgs.typescript}/lib/node_modules/typescript/lib,
+            tsdk = "${pkgs.typescript}/lib/node_modules/typescript/lib",
           },
         },
-      }
+      })
       vim.lsp.enable('astro')
     '';
   };
