@@ -46,6 +46,13 @@
             tsdk = "${pkgs.typescript}/lib/node_modules/typescript/lib",
           },
         },
+        settings = {
+          astro = {
+            ["auto-import-cache"] = {
+              enabled = false,
+            },
+          },
+        },
       })
       vim.lsp.enable('astro')
     '';
