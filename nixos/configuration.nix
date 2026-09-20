@@ -54,6 +54,7 @@
     isNormalUser = true;
     shell = pkgs.zsh;
     extraGroups = [
+      "cdrom"
       "docker"
       "wheel"
       "networkmanager"
