@@ -15,6 +15,7 @@
     yaml-language-server # YAML
 
     # Formatter
+    biome
     stylua
 
     # Plugin build dependencies

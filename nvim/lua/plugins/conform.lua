@@ -10,7 +10,7 @@ return {
 
         astro = { "prettier" },
         javascript = { "prettier" },
-        typescript = { "prettier" },
+        typescript = { "biome" },
         javascriptreact = { "prettier" },
         typescriptreact = { "prettier" },
         html = { "prettier" },
