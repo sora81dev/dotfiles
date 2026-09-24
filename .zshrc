@@ -28,3 +28,8 @@ alias ls="eza --group-directories-first"
 alias lg="eza --group-directories-first --git-ignore"
 alias lag="eza --group-directories-first -la --git-ignore"
 alias la="eza --group-directories-first -la"
+
+# other alias
+alias e="$EDITOR ."
+alias ed="cd /home/sora81dev/dotfiles/ && $EDITOR ."
+alias eg="lazygit"
