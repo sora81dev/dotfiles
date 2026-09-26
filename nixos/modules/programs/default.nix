@@ -7,5 +7,6 @@
     ./niri
     ./postgreSQL
     ./steam
+    ./zoom
   ];
 }

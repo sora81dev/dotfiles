@@ -21,7 +21,6 @@
     ./waybar
     ./wlogout
     ./zen-browser
-    ./zoom
     ./zsh
 
     ./gui-common-softwares.nix
