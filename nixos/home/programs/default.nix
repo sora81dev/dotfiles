@@ -5,6 +5,7 @@
     ./dolphin
     ./fcitx5
     ./games
+    ./gazelle
     ./ghostty
     ./git
     ./latex

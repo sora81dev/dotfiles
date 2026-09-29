@@ -12,6 +12,8 @@
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    gazelle.url = "github:Zeus-Deus/gazelle-tui";
   };
 
   outputs =
@@ -19,6 +21,7 @@
       nixpkgs,
       home-manager,
       zen-browser,
+      gazelle,
       ...
     }@inputs:
     {
@@ -35,7 +38,13 @@
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
 
-              home-manager.users.sora81dev = import ./nixos/home/shared.nix;
+              home-manager.users.sora81dev = {
+                imports = [
+                  ./nixos/home/shared.nix
+                  gazelle.homeModules.gazelle
+                ];
+              };
+
               home-manager.extraSpecialArgs = {
                 inherit inputs;
                 isNixOS = true;
