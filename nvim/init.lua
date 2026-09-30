@@ -15,8 +15,8 @@ vim.opt.expandtab = true
 vim.opt.clipboard:append({ "unnamed", "unnamedplus" })
 
 -- Disable netrw --
-vim.api.nvim_set_var('loaded_netrw', 1)
-vim.api.nvim_set_var('loaded_netrwPlugin', 1)
+vim.api.nvim_set_var("loaded_netrw", 1)
+vim.api.nvim_set_var("loaded_netrwPlugin", 1)
 
 -- Disable Swapfile --
 vim.opt.swapfile = false
@@ -26,42 +26,42 @@ vim.g.mapleader = " "
 
 -- Diagnostic --
 vim.diagnostic.config({
-  virtual_text = {
-    prefix = "●",
-    source = true,
-  },
-  float = {
-    source = true,
-    border = "rounded",
-  },
+	virtual_text = {
+		prefix = "●",
+		source = true,
+	},
+	float = {
+		source = true,
+		border = "rounded",
+	},
 })
 
 -- Trouble --
 vim.api.nvim_create_autocmd("QuickFixCmdPost", {
-  callback = function()
-    vim.cmd([[Trouble qflist open]])
-  end,
+	callback = function()
+		vim.cmd([[Trouble qflist open]])
+	end,
 })
 
 vim.filetype.add({
-  extension = {
-    tsx = "typescriptreact",
-  }
+	extension = {
+		tsx = "typescriptreact",
+	},
 })
 
-vim.o.background = 'light'
+vim.o.background = "light"
 
 vim.g.edge_ename_italic = true
-vim.g.edge_style = 'aura'
-vim.g.edge_float_style = 'blend'
+vim.g.edge_style = "aura"
+vim.g.edge_float_style = "blend"
 vim.g.diagnostic_line_highlight = 1
 vim.g.edge_colors_override = {
-  bg0 = { '#f2f2f2', '255' }
+	bg0 = { "#f2f2f2", "255" },
 }
 
 -- IMPORTANT INFORMATION
 --   config.autopairs doesn't need to require.
---   this file requires inside of plugins/autopairs.lua 
+--   this file requires inside of plugins/autopairs.lua
 --   (if it was required here, autopairs doesn't work)
 require("config.completion")
 require("config.lazy")
