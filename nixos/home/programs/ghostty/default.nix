@@ -25,6 +25,7 @@
       gtk-wide-tabs = false;
       window-show-tab-bar = "always";
       window-new-tab-position = "current";
+      confirm-close-surface = false;
 
       gtk-single-instance = false;
       shell-integration = "zsh";
