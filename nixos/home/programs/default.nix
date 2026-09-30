@@ -1,6 +1,7 @@
 { inputs, ... }: {
   imports = [
     ./btop
+    ./cloudflare-cf
     ./direnv
     ./dolphin
     ./fcitx5
