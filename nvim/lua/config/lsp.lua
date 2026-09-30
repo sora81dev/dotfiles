@@ -1,45 +1,45 @@
 -- ----------
 -- ESLint
 -- ----------
-vim.lsp.config('eslint', {
-  settings = {
-    run = "onSave",
-  },
+vim.lsp.config("eslint", {
+	settings = {
+		run = "onSave",
+	},
 })
-vim.lsp.enable('eslint')
+vim.lsp.enable("eslint")
 
 -- ----------
 -- TypeScript
 -- ----------
-vim.lsp.config('ts_ls', {})
-vim.lsp.enable('ts_ls')
+vim.lsp.config("ts_ls", {})
+vim.lsp.enable("ts_ls")
 
 -- ----------
 -- C Language
 -- ----------
-vim.lsp.config('clangd', {
-  cmd = {
-    "clangd",
-    "--enable-config",
-    "--background-index",
-    "--clang-tidy",
-  },
+vim.lsp.config("clangd", {
+	cmd = {
+		"clangd",
+		"--enable-config",
+		"--background-index",
+		"--clang-tidy",
+	},
 })
-vim.lsp.enable('clangd')
+vim.lsp.enable("clangd")
 
 -- ----------
 -- Rust
 -- ----------
 vim.g.rustaceanvim = {
-  server = {
-    settings = {
-      ["rust-analyzer"] = {
-        check = {
-          allTargets = false,
-        },
-      },
-    },
-  },
+	server = {
+		settings = {
+			["rust-analyzer"] = {
+				check = {
+					allTargets = false,
+				},
+			},
+		},
+	},
 }
 
 -- ----------
@@ -52,52 +52,52 @@ vim.lsp.enable("nil_ls")
 -- CSS
 -- ----------
 vim.lsp.config("cssls", {})
-vim.lsp.enable("cssls");
+vim.lsp.enable("cssls")
 
 --- ---------
 --- TOML
 --- ---------
 vim.lsp.config("tombi", {})
-vim.lsp.enable("tombi");
+vim.lsp.enable("tombi")
 
 --- ---------
 --- LaTeX
 --- ---------
 vim.lsp.config("texlab", {})
-vim.lsp.enable("texlab");
+vim.lsp.enable("texlab")
 
 --- ---------
 --- YAML
 --- ---------
 vim.lsp.config("yamlls", {
-  settings = {
-    yaml = {
-      --- k8s YAML JSON Schema
-      schemaStore = {
-        enable = false
-      },
-      schemas = {
-        ["https://raw.githubusercontent.com/yannh/kubernetes-json-schema/refs/heads/master/v1.32.1-standalone-strict/all.json"] = {
-          "k8s/*.yaml",
-          "*.k8s.yaml"
-        }
-      }
-    }
-  }
+	settings = {
+		yaml = {
+			--- k8s YAML JSON Schema
+			schemaStore = {
+				enable = false,
+			},
+			schemas = {
+				["https://raw.githubusercontent.com/yannh/kubernetes-json-schema/refs/heads/master/v1.32.1-standalone-strict/all.json"] = {
+					"k8s/*.yaml",
+					"*.k8s.yaml",
+				},
+			},
+		},
+	},
 })
 vim.lsp.enable("yamlls")
 
 --- ----------
---- TailwindCSS 
+--- TailwindCSS
 --- ----------
-vim.lsp.config("tailwindcss", {});
-vim.lsp.enable("tailwindcss");
+vim.lsp.config("tailwindcss", {})
+vim.lsp.enable("tailwindcss")
 
 --- ----------
 --- HTML
 --- ----------
-vim.lsp.config("html", {});
-vim.lsp.enable("html");
+vim.lsp.config("html", {})
+vim.lsp.enable("html")
 
 --- ----------
 --- Astro
@@ -109,11 +109,17 @@ vim.lsp.enable("html");
 --- JSON
 --- ----------
 vim.lsp.config("jsonls", {
-  settings = {
-    json = {
-      schemas = require("schemastore").json.schemas(),
-      validate = { enable = true },
-    },
-  },
+	settings = {
+		json = {
+			schemas = require("schemastore").json.schemas(),
+			validate = { enable = true },
+		},
+	},
 })
 vim.lsp.enable("jsonls")
+
+--- ----------
+--- Svelte
+--- ----------
+vim.lsp.config("svelte", {})
+vim.lsp.enable("svelte")
