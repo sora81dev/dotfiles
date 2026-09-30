@@ -20,7 +20,7 @@ environment {
   _JAVA_AWT_WM_NONREPARENTING "1"
 
   // SSL
-  SSL_CERT_FILE /etc/ssl/certs/ca-certificates.crt
+  SSL_CERT_FILE "/etc/ssl/certs/ca-certificates.crt"
 }
 
 cursor {
