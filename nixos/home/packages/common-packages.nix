@@ -38,5 +38,8 @@
 
     # Others
     wrangler
+
+    # Programming
+    arduino-ide
   ];
 }
