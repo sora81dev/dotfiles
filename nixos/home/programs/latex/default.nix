@@ -6,13 +6,11 @@ let
   tex = (
     pkgs.texliveBasic.withPackages (
       ps: with ps; [
-        dvisvgm
-        dvipng
-        wrapfig
-        amsmath
-        ulem
-        hyperref
-        capt-of
+        pxrubrica
+        luatexja
+        xkeyval
+        haranoaji
+        enumitem
         #(setq org-latex-compiler "lualatex")
         #(setq org-preview-latex-default-process 'divisvgm)
       ]
@@ -20,7 +18,7 @@ let
   );
 in
 {
-  home.packages = with pkgs; [
+  home.packages = [
     tex
   ];
 }
