@@ -1,6 +1,9 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
+    # 3D Modeling
+    blender
+
     # Agent
     github-copilot-cli
 
