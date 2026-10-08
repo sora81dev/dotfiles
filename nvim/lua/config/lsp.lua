@@ -126,3 +126,9 @@ vim.lsp.enable("jsonls")
 --- ----------
 vim.lsp.config("svelte", {})
 vim.lsp.enable("svelte")
+
+--- ----------
+--- SQL
+--- ----------
+vim.lsp.config("sqls", {})
+vim.lsp.enable("sqls")

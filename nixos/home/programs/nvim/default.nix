@@ -5,6 +5,7 @@
     astro-language-server # Astro
     lua-language-server # Lua
     rust-analyzer # Rust
+    sqls # SQL
     svelte-language-server # Svelte
     nil # Nix
     tailwindcss-language-server # TailwindCSS
