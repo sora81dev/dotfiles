@@ -1,4 +1,17 @@
 local map = vim.keymap.set
+local def_opts = { noremap = true, silent = true }
+
+-- barbar --
+map("n", "<A-h>", "<cmd>BufferPrevious<cr>", def_opts)
+map("n", "<A-l>", "<cmd>BufferNext<cr>", def_opts)
+
+map("n", "<A-w>", "<cmd>BufferClose<cr>", def_opts)
+
+map("n", "<leader>bb", "<cmd>BufferOrderByBufferNumber<cr>", def_opts)
+map("n", "<leader>bn", "<cmd>BufferOrderByName<cr>", def_opts)
+map("n", "<leader>bd", "<cmd>BufferOrderByDirectory<cr>", def_opts)
+map("n", "<leader>bl", "<cmd>BufferOrderByLanguage<cr>", def_opts)
+map("n", "<leader>bw", "<cmd>BufferOrderByWindowNumber<cr>", def_opts)
 
 -- neo-tree --
 map("n", "<C-n>", "<cmd>Neotree toggle left<cr>", { silent = true })
