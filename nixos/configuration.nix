@@ -19,6 +19,7 @@
     ./modules/desktop-configuration.nix
     ./modules/fonts.nix
     ./modules/keyboard.nix
+    ./modules/printing.nix
   ];
 
   # boot.loader.systemd-boot.enable = true;
