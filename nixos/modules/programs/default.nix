@@ -6,6 +6,7 @@
     ./k3b
     ./niri
     ./postgreSQL
+    ./spotify
     ./steam
     ./tailscale
     ./zoom
