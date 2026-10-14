@@ -56,7 +56,7 @@ input {
         left-handed
         // accel-profile "fla
         // scroll-method "two-finger"
-        disabled-on-external-mouse
+        //disabled-on-external-mouse
     }
 
     mouse {
