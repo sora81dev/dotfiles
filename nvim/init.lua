@@ -5,11 +5,15 @@ vim.opt.cursorline = true
 
 -- File Settings --
 vim.opt.fileencoding = "utf-8"
+
 -- Tab Spaces --
 vim.opt.autoindent = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
+
+-- Scroll --
+vim.opt.scrolloff = 10
 
 -- Clipboard
 vim.opt.clipboard:append({ "unnamed", "unnamedplus" })
