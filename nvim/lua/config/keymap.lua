@@ -51,3 +51,9 @@ local dropbar_api = require("dropbar.api")
 map("n", "<leader>;", dropbar_api.pick, def_opts)
 map("n", "[;", dropbar_api.goto_context_start, def_opts)
 map("n", "];", dropbar_api.select_next_context, def_opts)
+
+-- glance --
+map("n", "gD", "<cmd>Glance definitions<cr>", def_opts)
+map("n", "gR", "<cmd>Glance references<cr>", def_opts)
+map("n", "gY", "<cmd>Glance type_definitions<cr>", def_opts)
+map("n", "gM", "<cmd>Glance implementations<cr>", def_opts)
