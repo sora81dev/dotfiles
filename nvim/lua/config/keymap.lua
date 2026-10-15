@@ -45,3 +45,9 @@ map("n", "<leader>lg", "<cmd>LazyGit<cr>", { desc = "Lazygit" })
 map("n", "<Leader>t", function()
 	vim.fn.feedkeys(":Template ")
 end, { remap = true })
+
+local dropbar_api = require("dropbar.api")
+-- dropbar --
+map("n", "<leader>;", dropbar_api.pick, def_opts)
+map("n", "[;", dropbar_api.goto_context_start, def_opts)
+map("n", "];", dropbar_api.select_next_context, def_opts)
