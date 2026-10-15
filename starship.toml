@@ -8,7 +8,7 @@ $character
 add_newline = true
 
 [directory]
-truncation_length = 1
+truncation_length = 0
 truncate_to_repo = true
 format = "$path"
 repo_root_format = "$repo_root"
