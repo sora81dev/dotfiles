@@ -57,3 +57,7 @@ map("n", "gD", "<cmd>Glance definitions<cr>", def_opts)
 map("n", "gR", "<cmd>Glance references<cr>", def_opts)
 map("n", "gY", "<cmd>Glance type_definitions<cr>", def_opts)
 map("n", "gM", "<cmd>Glance implementations<cr>", def_opts)
+
+-- namu --
+map("n", "<leader>ss", "<cmd>Namu symbols<cr>", def_opts)
+map("n", "<leader>sw", "<cmd>Namu workspace<cr>", def_opts)
