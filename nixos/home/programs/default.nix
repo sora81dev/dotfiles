@@ -15,6 +15,7 @@
     ./nh
     ./niri
     ./nvim
+    ./obsidian
     ./rofi
     ./stm32
     ./swaync
