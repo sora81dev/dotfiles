@@ -23,8 +23,8 @@
         "Noto Color Emoji"
       ];
       emoji = [
-        "Twitter Color Emoji"
         "Noto Color Emoji"
+        "Twitter Color Emoji"
       ];
     };
   };
