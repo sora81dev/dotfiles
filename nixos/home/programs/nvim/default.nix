@@ -4,6 +4,7 @@
     # Language servers
     astro-language-server # Astro
     dts-lsp # Device Tree
+    gopls # Go Lang
     lua-language-server # Lua
     rust-analyzer # Rust
     sqls # SQL
