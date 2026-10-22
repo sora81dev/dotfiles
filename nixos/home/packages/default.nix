@@ -5,6 +5,7 @@
 
     ./common-packages.nix
     ./development.nix
+    ./language.nix
     ./utilities.nix
   ];
 }
