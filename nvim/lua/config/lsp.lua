@@ -132,3 +132,9 @@ vim.lsp.enable("svelte")
 --- ----------
 vim.lsp.config("sqls", {})
 vim.lsp.enable("sqls")
+
+--- -----------
+--- Device Tree
+--- -----------
+vim.lsp.config("dts_lsp", {})
+vim.lsp.enable("dts_lsp")

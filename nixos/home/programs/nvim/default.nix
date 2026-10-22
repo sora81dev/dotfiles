@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     # Language servers
     astro-language-server # Astro
+    dts-lsp # Device Tree
     lua-language-server # Lua
     rust-analyzer # Rust
     sqls # SQL
