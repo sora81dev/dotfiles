@@ -21,3 +21,7 @@ Layout=
 [GroupOrder]
 0=Default
 
+[Groups/0/Items/2]
+# Name
+Name=meltype
+Layout=

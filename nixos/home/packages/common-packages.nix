@@ -44,5 +44,8 @@
 
     # Programming
     arduino-ide
+
+    icu
+    libice
   ];
 }
