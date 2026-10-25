@@ -1,0 +1,93 @@
+#!/bin/zsh
+
+kicad-lib-import(){
+  local MODE
+  local UUID
+  local name
+
+  UUID=$(uuidgen)
+
+  if [ -z "$1" ]; then
+    echo "Error: file not provided."
+    return 1;
+  fi
+
+  if [ -z "$2" ]; then
+    echo "Error: option not provided."
+    return 1;
+  fi
+
+  case "$2" in
+    -s|--snapeda)
+      MODE="SnapEDA"
+      ;;
+
+    -u|--ultra-librarian)
+      MODE="UltraLibrarian"
+      ;;
+
+    -*)
+      echo "Error: invalid option -- '$2'"
+      return 1
+      ;;
+
+    *)
+      echo "Error"
+      return 1
+      ;;
+  esac
+
+  echo "Successflly mode selected: $MODE"
+
+  echo "Starting import..."
+
+  echo "Creating working directory..."
+  mkdir -p $HOME/workspace/kicad-lib-import/
+  
+  echo "Extracting..."
+  unzip $1 -d $HOME/workspace/kicad-lib-import/$UUID > /dev/null
+
+  echo "Importing..."
+
+  echo "  Importing KiCAD footprints..."
+  if [ "$MODE" = "SnapEDA" ]; then
+    name=${1##*/}
+    name=${name%.zip}
+    mkdir -p $HOME/Documents/KiCAD/Library/Footprints/$name.pretty
+    cp $HOME/workspace/kicad-lib-import/$UUID/*.kicad_mod $HOME/Documents/KiCAD/Library/Footprints/$name.pretty/
+
+  elif [ "$MODE" = "UltraLibrarian" ]; then
+    name=${1##*/}
+    name=${name#ul_}
+    name=${name%.zip}
+
+    cp -r $HOME/workspace/kicad-lib-import/$UUID/KiCADv6/footprints.pretty/ $HOME/Documents/KiCAD/Library/Footprints/$name.pretty
+
+  else
+    echo "Error: something went wrong."
+    return 1;
+  fi
+
+  echo "  Importing KiCAD symbols..."
+  if [ "$MODE" = "SnapEDA" ]; then
+    cp $HOME/workspace/kicad-lib-import/$UUID/*.kicad_sym $HOME/Documents/KiCAD/Library/Symbols/
+
+  elif [ "$MODE" = "UltraLibrarian" ]; then
+    name=${1##*/}
+    name=${name#ul_}
+    name=${name%.zip}
+
+    cp $HOME/workspace/kicad-lib-import/$UUID/KiCADv6/*.kicad_sym $HOME/Documents/KiCAD/Library/Symbols/$name.kicad_sym
+
+  else
+    echo "Error: something went wrong."
+    return 1;
+  fi
+
+  if [ "$MODE" = "SnapEDA" ]; then
+    echo "  Importing KiCAD 3D..."
+    cp $HOME/workspace/kicad-lib-import/$UUID/*.step $HOME/Documents/KiCAD/Library/3D/
+  fi
+
+  echo "Importing Completed"
+}
