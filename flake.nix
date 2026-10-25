@@ -37,6 +37,7 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
+              home-manager.backupFileExtension = "backup";
 
               home-manager.users.sora81dev = {
                 imports = [
@@ -56,6 +57,7 @@
 
       homeConfigurations."sora81dev" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        backupFileExtension = "backup";
 
         modules = [ ./nixos/home/shared.nix ];
         extraSpecialArgs = {
