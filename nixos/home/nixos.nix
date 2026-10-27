@@ -7,6 +7,7 @@
   imports = [
     ./programs
     ./packages
+    ./development
   ];
 
   _module.args = { inherit inputs; };
