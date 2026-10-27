@@ -1,0 +1,18 @@
+#!/bin/zsh
+
+# zephyr-cp commands
+# --------------
+# Description: This command can create zephyr project.
+# Created at : 2026.10.28
+# Updated at : 2026.10.28
+
+zephyr-cp() {
+  if [ -z "$1" ]; then
+    echo "Project Name not provided."
+  fi
+
+  echo "Creating project"
+  git clone https://github.com/zephyrproject-rtos/example-application $1
+  echo ""
+  echo "Project Creation Ended"
+}
