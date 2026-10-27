@@ -21,6 +21,9 @@ environment {
 
   // SSL
   SSL_CERT_FILE "/etc/ssl/certs/ca-certificates.crt"
+
+  // Zephyr
+  ZEPHYR_BASE "/home/sora81dev/zephyrproject/"
 }
 
 cursor {
