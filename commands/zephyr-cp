@@ -8,11 +8,15 @@
 
 zephyr-cp() {
   if [ -z "$1" ]; then
-    echo "Project Name not provided."
+    echo "Error: Project Name not provided"
+    return 1
   fi
 
   echo "Creating project"
   git clone https://github.com/zephyrproject-rtos/example-application $1
   echo ""
   echo "Project Creation Ended"
+
+  cd $1
+
 }
