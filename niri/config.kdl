@@ -23,7 +23,7 @@ environment {
   SSL_CERT_FILE "/etc/ssl/certs/ca-certificates.crt"
 
   // Zephyr
-  ZEPHYR_BASE "/home/sora81dev/zephyrproject/"
+  ZEPHYR_BASE "/home/sora81dev/zephyrproject/zephyr/"
 }
 
 cursor {
