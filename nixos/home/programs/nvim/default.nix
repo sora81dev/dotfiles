@@ -1,9 +1,14 @@
 { pkgs, ... }:
+let
+  devicetree-language-server =
+    pkgs.callPackage ./../../build-packages/devicetree-language-server.nix
+      { };
+in
 {
   home.packages = with pkgs; [
     # Language servers
     astro-language-server # Astro
-    dts-lsp # Device Tree
+    devicetree-language-server # Device Tree
     gopls # Go Lang
     lua-language-server # Lua
     rust-analyzer # Rust
