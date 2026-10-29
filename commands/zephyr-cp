@@ -4,7 +4,7 @@
 # --------------
 # Description: This command can create zephyr project.
 # Created at : 2026.10.28
-# Updated at : 2026.10.29
+# Updated at : 2026.10.30
 
 zephyr-cp() {
   if [ -z "$1" ]; then
@@ -16,12 +16,29 @@ zephyr-cp() {
   echo "  Copying Sample             (1/3)"
   git clone https://github.com/zephyrproject-rtos/example-application $1 >> /dev/null
 
-  echo "  Copying clang format files (2/3)"
+  echo "  Copying clang files (2/3)"
   cp $HOME/template/zephyr-ws/.clangd $HOME/template/zephyr-ws/.clang-format ./$1
 
-  echo "  Removing unused files      (3/3)"
+
+  echo "  Modify Projects            (3/3)"
+
+  echo "    [1/6] removing overlay"
   rm -f ./$1/app/boards/nucleo_f302r8.overlay
+
+  echo "    [2/6] reset prj.conf"
   echo "" > ./$1/app/prj.conf
+
+  echo "    [3/6] reset main.c"
+  echo "" > ./$1/app/src/main.c
+
+  echo "    [4/6] removing git"
+  rm -rf ./$1/.git
+
+  echo "    [5/6] modify gitignore"
+  echo "\n.cache" >> ./$1/.gitignore
+
+  echo "    [6/6] initialize git"
+  git init ./$1/ >> /dev/null
 
   echo "Project Creation Ended"
 
