@@ -13,16 +13,17 @@ zephyr-cp() {
   fi
 
   echo "Creating project"
-  echo "  Copying Sample             (1/2)"
-  git clone https://github.com/zephyrproject-rtos/example-application $1 > /dev/null
+  echo "  Copying Sample             (1/3)"
+  git clone https://github.com/zephyrproject-rtos/example-application $1 >> /dev/null
 
-  echo ""
+  echo "  Copying clang format files (2/3)"
+  cp $HOME/template/zephyr-ws/.clangd $HOME/template/zephyr-ws/.clang-format ./$1
 
-  echo "  Copying clang format files (2/2)"
-  cp $HOME/template/zephyr-ws/.clangd $HOME/template/zephyr-ws/.clang-format .
+  echo "  Removing unused files      (3/3)"
+  rm -f ./$1/app/boards/nucleo_f302r8.overlay
+  echo "" > ./$1/app/prj.conf
 
   echo "Project Creation Ended"
 
   cd $1
-
 }
