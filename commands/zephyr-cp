@@ -4,7 +4,7 @@
 # --------------
 # Description: This command can create zephyr project.
 # Created at : 2026.10.28
-# Updated at : 2026.10.28
+# Updated at : 2026.10.29
 
 zephyr-cp() {
   if [ -z "$1" ]; then
@@ -13,8 +13,14 @@ zephyr-cp() {
   fi
 
   echo "Creating project"
-  git clone https://github.com/zephyrproject-rtos/example-application $1
+  echo "  Copying Sample             (1/2)"
+  git clone https://github.com/zephyrproject-rtos/example-application $1 > /dev/null
+
   echo ""
+
+  echo "  Copying clang format files (2/2)"
+  cp $HOME/template/zephyr-ws/.clangd $HOME/template/zephyr-ws/.clang-format .
+
   echo "Project Creation Ended"
 
   cd $1
