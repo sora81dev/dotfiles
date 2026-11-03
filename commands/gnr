@@ -1,0 +1,62 @@
+#!/bin/zsh
+
+# grg commands
+# --------------
+# Description: This command finds valid ghq repository with fuzzy-finder.
+# Created at : 2026.06.08
+# Updated at : 2026.06.08
+
+gnr() {
+  local current_dir
+  local repository_name
+  local repository_orgs
+  local repository_type
+
+
+  echo -n "Repository name? :"
+  read ANS
+
+  if [ -z "$ANS" ]; then
+    echo "Repository will not create"
+    return 1
+  fi
+
+  repository_name=$ANS
+
+
+  echo -n "Repository Organization? :"
+  read ANS
+
+  if [ -z "$ANS" ]; then
+    echo "Repository will not create"
+    return 1
+  fi
+
+  repository_orgs=$ANS
+
+
+  echo -n "Repository type (1: public / 2: private / 3: internal): "
+  read ANS
+
+  if [ $ANS -eq 1 ]; then
+    repository_type="--public"
+  elif [ $ANS -eq 2 ]; then
+    repository_type="--private"
+  elif [ $ANS -eq 3 ]; then
+    repository_type="--internal"
+  else
+    echo "Repository will not create";
+    return 1
+  fi
+
+    
+  current_dir=$(pwd)
+
+  mkdir -p $HOME/workspace/gnr
+
+  cd $HOME/workspace/gnr
+  gh repo create $repository_name $repository_type -c --disable-wiki -t $repository_orgs
+  ghq migrate ./$repository_name -y
+
+  cd $current_dir
+}
