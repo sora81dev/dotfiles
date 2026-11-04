@@ -1,6 +1,7 @@
 { inputs, ... }:
 {
   imports = [
+    ./ai.nix
     ./zephyr.nix
   ];
 

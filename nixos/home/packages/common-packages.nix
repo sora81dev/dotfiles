@@ -4,9 +4,6 @@
     # 3D Modeling
     blender
 
-    # Agent
-    github-copilot-cli
-
     # Audio Control
     playerctl
     pwvucontrol
