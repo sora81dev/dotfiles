@@ -5,6 +5,7 @@
 {
   pkgs,
   options,
+  inputs,
   ...
 }:
 
@@ -17,10 +18,13 @@
     ./modules/bluetooth.nix
     ./modules/network.nix
     ./modules/desktop-configuration.nix
+    ./modules/display-manager.nix
     ./modules/fonts.nix
     ./modules/keyboard.nix
     ./modules/printing.nix
   ];
+
+  _module.args = { inherit inputs; };
 
   # boot.loader.systemd-boot.enable = true;
   programs.nix-ld.enable = true;

@@ -136,6 +136,7 @@
         "gazelle": "gazelle",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs_2",
+        "wallpapers": "wallpapers",
         "zen-browser": "zen-browser",
         "zephyr": "zephyr",
         "zephyr-nix": "zephyr-nix"
@@ -175,6 +176,23 @@
         "owner": "pyproject-nix",
         "repo": "uv-python.nix",
         "type": "github"
+      }
+    },
+    "wallpapers": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1793784032,
+        "narHash": "sha256-7kJ0YE67o7rAxZvcG0skvzvIaJuHIGgCbDXQVECesV4=",
+        "ref": "main",
+        "rev": "bce69d27ab1420376b88793b82beb0e59a03b9bb",
+        "revCount": 1,
+        "type": "git",
+        "url": "ssh://git@github.com/sora81dev/dotfiles-wallpapers"
+      },
+      "original": {
+        "ref": "main",
+        "type": "git",
+        "url": "ssh://git@github.com/sora81dev/dotfiles-wallpapers"
       }
     },
     "zen-browser": {

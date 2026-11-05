@@ -25,6 +25,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.zephyr.follows = "zephyr";
     };
+
+    wallpapers = {
+      url = "git+ssh://git@github.com/sora81dev/dotfiles-wallpapers?ref=main";
+      flake = false;
+    };
   };
 
   outputs =
@@ -41,6 +46,10 @@
       nixosConfigurations = {
         hp-notebook = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
+
+          specialArgs = {
+            inherit inputs;
+          };
 
           modules = [
             ./nixos/machines/hp-notebook/hardware-configuration.nix
