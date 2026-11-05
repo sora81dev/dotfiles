@@ -3,6 +3,9 @@ let
   fcitx5-meltype = pkgs.callPackage ../../build-packages/fcitx5-meltype.nix { };
 in
 {
+  # Required so fcitx5's gtk-im-module=fcitx settings apply to XWayland GTK apps.
+  gtk.enable = true;
+
   # Japanese Inputs
   i18n.inputMethod = {
     enable = true;

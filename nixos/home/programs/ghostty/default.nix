@@ -37,4 +37,12 @@
   xdg.configFile."ghostty".force = true;
   xdg.configFile."ghostty".recursive = true;
   xdg.configFile."ghostty".source = ./../../../../ghostty;
+
+  # Ghostty on native Wayland must use GTK's Wayland IM (text-input), not fcitx's
+  # GTK module — otherwise fcitx5/meltype often fails to activate or commit text.
+  # https://github.com/ghostty-org/ghostty/discussions/3628
+  xdg.configFile."systemd/user/app-com.mitchellh.ghostty.service.d/ime.conf".text = ''
+    [Service]
+    Environment=GTK_IM_MODULE=wayland
+  '';
 }
