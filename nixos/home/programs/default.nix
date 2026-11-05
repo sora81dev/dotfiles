@@ -21,6 +21,7 @@
     ./swaync
     ./thunderbird
     ./vial
+    ./vscode
     ./waybar
     ./wine
     ./wlogout
