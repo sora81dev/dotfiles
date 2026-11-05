@@ -20,8 +20,9 @@
     # grep for JSON
     jq
 
-    # Java Programming Editor
+    # Programming Editor
     jetbrains.idea
+    jetbrains.clion
 
     # Scannar
     simple-scan
