@@ -2,8 +2,10 @@
 {
   fonts = {
     packages = with pkgs; [
+      ipafont
       noto-fonts
       noto-fonts-cjk-sans
+      noto-fonts-cjk-serif
       noto-fonts-color-emoji
       nerd-fonts.jetbrains-mono
       twemoji-color-font
