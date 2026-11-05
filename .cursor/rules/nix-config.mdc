@@ -1,0 +1,15 @@
+---
+description: NixOS vs Home Manager boundaries in this flake
+globs: nixos/**/*.nix
+alwaysApply: false
+---
+
+# Nix layout
+
+- `nixos/modules/` — system services (PipeWire, network, keyboard module, `programs.niri` enable).
+- `nixos/home/programs/` — per-app home-manager modules; add new GUI/cli here.
+- `nixos/home/build-packages/` — custom packages; use `callPackage` from programs.
+- `shared.nix` picks `nixos.nix` when `isNixOS = true` (embedded in flake) vs standalone `homeConfigurations`.
+- Prefer extending existing `imports` lists over new top-level flake outputs unless adding a new machine.
+
+Tell the user to rebuild when needed (`#hp-notebook`); do not run `nh` / `nixos-rebuild` / `home-manager switch` unless they ask.

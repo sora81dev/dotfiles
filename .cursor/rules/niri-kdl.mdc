@@ -1,0 +1,12 @@
+---
+description: Niri compositor config in this repo
+globs: niri/**/*.kdl
+alwaysApply: false
+---
+
+# Niri
+
+- Config root: `niri/` → deployed to `~/.config/niri` via `nixos/home/programs/niri/default.nix`.
+- Keybindings: `niri/keymap.kdl` (imported from main config). Window rules: `niri/window-rule.kdl`, startup: `niri/startup.kdl`.
+- System enables Niri in `nixos/modules/desktop-configuration.nix` (`programs.niri.enable`, xwayland, portals).
+- KDL edits need a user-initiated rebuild (see `AGENTS.md`); agents must not run `nh os switch` / test unless asked.

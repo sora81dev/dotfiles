@@ -1,0 +1,13 @@
+---
+description: Dotfiles repo layout, rebuild commands, agent conventions
+alwaysApply: true
+---
+
+# dotfiles (sora81dev)
+
+Read `AGENTS.md` for the full map. Essentials:
+
+- Flake host: `hp-notebook`. User applies changes themselves (see `AGENTS.md`); do **not** run `nh os switch`, `nh os test`, `nh home switch`, `nixos-rebuild`, or `home-manager switch` unless they explicitly ask.
+- System config: `nixos/configuration.nix`, `nixos/modules/`. Home/user: `nixos/home/`.
+- Live dotfile trees synced via HM: `niri/`, `nvim/`, `fcitx5/` (not only Nix strings).
+- Do not commit/push unless explicitly requested. Do not edit `TODO.md`.
