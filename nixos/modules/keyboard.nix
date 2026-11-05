@@ -16,9 +16,6 @@
     };
   };
 
-  environment.variables = {
-    GTK_IN_MODULE = "fcitx";
-    QT_IM_MODULE = "fcitx";
-    XMODIFIERS = "@im=fcitx";
-  };
+  # IME env vars are configured by Home Manager (i18n.inputMethod / fcitx5).
+  # Do not set GTK_IM_MODULE globally on Wayland — it breaks Ghostty + fcitx5.
 }
