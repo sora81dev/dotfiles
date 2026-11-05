@@ -1,7 +1,7 @@
 binds {
   // Execute Quickly
   Mod+C hotkey-overlay-title="Open Terminal" {
-    spawn "ghostty";
+    spawn "sh" "-c" "exec env GTK_IM_MODULE=wayland ghostty";
   }
   Mod+B repeat=false {
     spawn "zen";
