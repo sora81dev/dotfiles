@@ -22,6 +22,7 @@
     ./thunderbird
     ./vial
     ./waybar
+    ./wine
     ./wlogout
     ./zen-browser
     ./zsh
