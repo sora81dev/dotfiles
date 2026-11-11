@@ -56,7 +56,9 @@ in
       vim.lsp.config('astro', {
         init_options = {
           typescript = {
-            tsdk = "${pkgs.typescript}/lib/node_modules/typescript/lib",
+            -- typescript (7.x) is the native compiler and has no tsserverlibrary.js.
+            -- astro-language-server still needs the JS SDK from typescript_5.
+            tsdk = "${pkgs.typescript_5}/lib/node_modules/typescript/lib",
           },
         },
         settings = {
