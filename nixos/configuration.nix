@@ -86,6 +86,7 @@
     nssmdns4 = true;
   };
 
+  users.groups.plugdev = { };
   services.udev.packages = with pkgs; [
     sane-airscan
     platformio-core.udev
@@ -95,7 +96,15 @@
     qmk_hid
     via
     vial
+
+    (pkgs.writeTextFile {
+      name = "openocd-udev-rules";
+      destination = "/etc/udev/rules.d/60-openocd.rules";
+      text = builtins.readFile ./../hardware/60-openocd.rules;
+    })
   ];
+
+  users.groups.plugdev = { };
 
   # programs.hyprland = {
   #   enable = true;

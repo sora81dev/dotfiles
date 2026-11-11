@@ -2,6 +2,7 @@
 {
   imports = [
     ./ai.nix
+    ./nuttx.nix
     ./zephyr.nix
   ];
 
