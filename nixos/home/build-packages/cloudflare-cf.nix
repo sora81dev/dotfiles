@@ -9,11 +9,11 @@
 
 stdenvNoCC.mkDerivation (finalAttrs: {
   pname = "cloudflare-cf";
-  version = "1.0.0-beta.10";
+  version = "1.0.0-beta.29";
 
   src = fetchurl {
     url = "https://registry.npmjs.org/cf/-/cf-${finalAttrs.version}.tgz";
-    hash = "sha256-0Wc7uZ/6A+PwPDeKWakBxPDrzXiHqqmTa74BLRFvKEo=";
+    hash = "sha256-kU8D738RYGExOtD2pcghlrzOPTETsIj5mJEz+o3JsKI=";
   };
 
   nativeBuildInputs = [
