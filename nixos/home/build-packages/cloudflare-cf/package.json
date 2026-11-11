@@ -1,0 +1,8 @@
+{
+  "name": "cloudflare-cf-nix",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "cf": "1.0.0-beta.29"
+  }
+}
