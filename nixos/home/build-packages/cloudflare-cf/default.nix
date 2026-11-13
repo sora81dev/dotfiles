@@ -8,13 +8,13 @@
 
 buildNpmPackage {
   pname = "cloudflare-cf";
-  version = "1.0.0-beta.29";
+  version = "1.0.0-beta.31";
 
   src = ./.;
 
   nodejs = nodejs_24;
 
-  npmDepsHash = "sha256-BmOxosAu83OEVY3J+GYjGhPK0X/oVMFrvT/7aaF1OvE=";
+  npmDepsHash = "sha256-RPao9161+mHohwX+5xbxKKMwqcplMEmi9uZX07aUua4=";
 
   dontNpmBuild = true;
 
