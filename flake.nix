@@ -15,17 +15,6 @@
 
     gazelle.url = "github:Zeus-Deus/gazelle-tui";
 
-    zephyr = {
-      url = "github:zephyrproject-rtos/zephyr/v4.4.0";
-      flake = false;
-    };
-
-    zephyr-nix = {
-      url = "github:nix-community/zephyr-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.zephyr.follows = "zephyr";
-    };
-
     wallpapers = {
       url = "git+ssh://git@github.com/sora81dev/dotfiles-wallpapers?ref=main";
       flake = false;
@@ -38,8 +27,6 @@
       home-manager,
       zen-browser,
       gazelle,
-      zephyr,
-      zephyr-nix,
       ...
     }@inputs:
     {
