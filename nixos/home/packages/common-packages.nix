@@ -34,7 +34,6 @@
     marktext
 
     # Music Player
-    cider-2
     vlc
 
     # Others
