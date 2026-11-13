@@ -8,7 +8,6 @@
   ];
 
   programs.home-manager.enable = true;
-  nixpkgs.config.allowUnfree = true;
 
   home.username = "sora81dev";
   home.homeDirectory = "/home/sora81dev";

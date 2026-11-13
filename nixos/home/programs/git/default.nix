@@ -11,20 +11,20 @@
 
   programs.git = {
     enable = true;
-    aliases = {
-      a = "add .";
-      as = "add";
-      c = "commit -m";
-      ca = "commit --amend";
-      p = "push";
-      pf = "push --force";
-      pl = "pull";
-      plf = "pull --force";
-      rh = "reset --hard";
-      s = "status";
-      l = "log --graph --oneline --decorate";
-    };
     settings = {
+      alias = {
+        a = "add .";
+        as = "add";
+        c = "commit -m";
+        ca = "commit --amend";
+        p = "push";
+        pf = "push --force";
+        pl = "pull";
+        plf = "pull --force";
+        rh = "reset --hard";
+        s = "status";
+        l = "log --graph --oneline --decorate";
+      };
       user = {
         name = "sora81dev";
         email = "117363029+sora81dev@users.noreply.github.com";

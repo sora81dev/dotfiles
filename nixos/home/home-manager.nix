@@ -9,6 +9,8 @@
     ./programs/zsh
   ];
 
+  nixpkgs.config.allowUnfree = true;
+
   xdg.configFile."wezterm".force = true;
   xdg.configFile."wezterm".source = ./../../wezterm;
 }
