@@ -13,6 +13,8 @@
       cups-browsed
       gutenprint
     ];
+
+    cups-pdf.enable = true;
   };
 
   services.ipp-usb.enable = true;
