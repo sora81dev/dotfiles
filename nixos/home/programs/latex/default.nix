@@ -11,6 +11,7 @@ let
         xkeyval
         haranoaji
         enumitem
+        xcolor
         #(setq org-latex-compiler "lualatex")
         #(setq org-preview-latex-default-process 'divisvgm)
       ]
