@@ -15,6 +15,7 @@ in
     sqls # SQL
     svelte-language-server # Svelte
     nil # Nix
+    nixd # Nix
     tailwindcss-language-server # TailwindCSS
     typescript
     typescript-language-server # TypeScript
