@@ -41,6 +41,9 @@ in
   programs.niri.enable = true;
   programs.xwayland.enable = true;
 
+  # Trash / removable / network mounts for file managers
+  services.gvfs.enable = true;
+
   xdg.portal = {
     enable = true;
     extraPortals = [

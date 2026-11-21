@@ -2,6 +2,7 @@
   imports = [
     ./btop
     ./cloudflare-cf
+    ./cosmic-files
     ./direnv
     ./dolphin
     ./fcitx5
