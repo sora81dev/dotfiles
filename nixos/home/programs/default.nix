@@ -11,6 +11,7 @@
     ./ghostty
     ./git
     ./latex
+    ./mime-apps
     ./mpris-proxy
     ./nextcloud-client
     ./nh
