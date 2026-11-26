@@ -214,3 +214,9 @@ vim.lsp.enable("dts_lsp")
 --- ----------
 vim.lsp.config("gopls", {})
 vim.lsp.enable("gopls")
+
+--- ----------
+--- Kotlin
+--- ----------
+vim.lsp.config("kotlin_language_server", {})
+vim.lsp.enable("kotlin_language_server")

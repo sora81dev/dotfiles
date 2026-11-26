@@ -10,6 +10,7 @@ in
     astro-language-server # Astro
     devicetree-language-server # Device Tree
     gopls # Go Lang
+    kotlin-language-server # Kotlin
     lua-language-server # Lua
     rust-analyzer # Rust
     sqls # SQL
