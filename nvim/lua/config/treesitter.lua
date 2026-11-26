@@ -14,6 +14,7 @@ require("nvim-treesitter").install({
 	"nix",
 	"latex",
 	"tsx",
+	"typst",
 	"typescript",
 })
 
@@ -34,6 +35,7 @@ vim.api.nvim_create_autocmd("FileType", {
 		"latex",
 		"typescript",
 		"typescriptreact",
+		"typst",
 	},
 	callback = function()
 		vim.treesitter.start()

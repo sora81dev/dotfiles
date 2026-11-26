@@ -18,6 +18,7 @@ in
     nil # Nix
     nixd # Nix
     tailwindcss-language-server # TailwindCSS
+    tinymist # Typst
     typescript
     typescript-language-server # TypeScript
     tombi # TOML

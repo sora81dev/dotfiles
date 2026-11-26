@@ -220,3 +220,9 @@ vim.lsp.enable("gopls")
 --- ----------
 vim.lsp.config("kotlin_language_server", {})
 vim.lsp.enable("kotlin_language_server")
+
+--- ----------
+--- Typst
+--- ----------
+vim.lsp.config("tinymist", {})
+vim.lsp.enable("tinymist")
