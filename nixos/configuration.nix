@@ -22,6 +22,7 @@
     ./modules/fonts.nix
     ./modules/keyboard.nix
     ./modules/printing.nix
+    ./modules/nixpkgs.nix
   ];
 
   _module.args = { inherit inputs; };
