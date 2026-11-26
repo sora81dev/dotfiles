@@ -38,6 +38,7 @@ vim.api.nvim_create_autocmd("FileType", {
 		"typst",
 	},
 	callback = function()
-		vim.treesitter.start()
+		-- Parser may still be compiling right after install(); skip instead of erroring.
+		pcall(vim.treesitter.start)
 	end,
 })
