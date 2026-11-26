@@ -22,6 +22,7 @@
     ./stm32
     ./swaync
     ./thunderbird
+    ./typst
     ./vial
     ./vscode
     ./waybar
