@@ -30,25 +30,27 @@
   # boot.loader.systemd-boot.enable = true;
   programs.nix-ld.enable = true;
 
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
+  nix.settings = {
+    experimental-features = [
+      "nix-command"
+      "flakes"
+    ];
 
-  nix.settings.substituters = [
-    "https://ros.cachix.org"
-    "https://cache.nixos.org"
-  ];
+    substituters = [
+      "https://ros.cachix.org"
+      "https://cache.nixos.org"
+    ];
 
-  nix.settings.trusted-public-keys = [
-    "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
-    "ros.cachix.org-1:dSyZxI8geDCJrwgvCOHDoAfOm5sV1wCPjBkKL+38Rvo="
-  ];
+    trusted-public-keys = [
+      "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+      "ros.cachix.org-1:dSyZxI8geDCJrwgvCOHDoAfOm5sV1wCPjBkKL+38Rvo="
+    ];
 
-  nix.settings.trusted-users = [
-    "root"
-    "sora81dev"
-  ];
+    trusted-users = [
+      "root"
+      "sora81dev"
+    ];
+  };
 
   boot.loader = {
     systemd-boot.enable = false;
