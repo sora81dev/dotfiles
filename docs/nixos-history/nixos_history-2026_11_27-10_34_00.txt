@@ -1,0 +1,10 @@
+Generation  Build-date           NixOS version           Kernel   Configuration Revision  Specialisation  Current
+476         2026-11-26 11:25:29  26.11.20261113.d5cc683  6.18.63  Unknown                 []              True
+475         2026-11-25 10:30:03  26.11.20261113.d5cc683  6.18.63  Unknown                 []              False
+474         2026-11-21 17:18:25  26.11.20261113.d5cc683  6.18.63  Unknown                 []              False
+473         2026-11-19 11:11:06  26.11.20261113.d5cc683  6.18.63  Unknown                 []              False
+472         2026-11-18 20:14:58  26.11.20261113.d5cc683  6.18.63  Unknown                 []              False
+471         2026-11-17 23:02:23  26.11.20261113.d5cc683  6.18.63  Unknown                 []              False
+470         2026-11-13 21:20:46  26.11.20261111.d4f25a3  6.18.63  Unknown                 []              False
+469         2026-11-13 21:16:05  26.11.20261111.d4f25a3  6.18.63  Unknown                 []              False
+468         2026-11-13 19:34:14  26.11.20260928.7a0f122  Unknown  Unknown                 []              False
