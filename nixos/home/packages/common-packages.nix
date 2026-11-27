@@ -1,4 +1,26 @@
 { pkgs, ... }:
+let
+  # Skiko (Compose Desktop) dlopens libGL.so.1, which is not on the loader path on NixOS
+  idea = pkgs.symlinkJoin {
+    name = "intellij-idea-wrapped";
+    paths = [ pkgs.jetbrains.idea ];
+    nativeBuildInputs = [ pkgs.makeWrapper ];
+    postBuild = ''
+      wrapProgram $out/bin/intellij-idea \
+        --prefix LD_LIBRARY_PATH : ${
+          pkgs.lib.makeLibraryPath [
+            pkgs.libGL
+            pkgs.fontconfig
+            pkgs.libX11
+            pkgs.libXext
+            pkgs.libXrender
+            pkgs.libXi
+            pkgs.libXtst
+          ]
+        }:/run/opengl-driver/lib
+    '';
+  };
+in
 {
   home.packages = with pkgs; [
     # 3D Modeling
@@ -21,7 +43,7 @@
     jq
 
     # Programming Editor
-    jetbrains.idea
+    idea
     jetbrains.clion
 
     # Scannar
