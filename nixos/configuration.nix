@@ -45,6 +45,11 @@
     "ros.cachix.org-1:dSyZxI8geDCJrwgvCOHDoAfOm5sV1wCPjBkKL+38Rvo="
   ];
 
+  nix.settings.trusted-users = [
+    "root"
+    "sora81dev"
+  ];
+
   boot.loader = {
     systemd-boot.enable = false;
 
